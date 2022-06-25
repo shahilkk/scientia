@@ -1,4 +1,6 @@
 {% load static %}
+
+
 <div class="mdk-drawer  js-mdk-drawer" id="default-drawer" data-align="start">
     <div class="mdk-drawer__content">
         <div class="sidebar sidebar-light sidebar-left bg-white" data-perfect-scrollbar>
@@ -18,7 +20,7 @@
                     <div class="dropdown ml-auto">
                         <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"><i class="material-icons">more_vert</i></a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="student-dashboard.html">Dashboard</a>
+                            <a class="dropdown-item" href="{% url 'teacher:dashboard'%}">Dashboard</a>
                             <a class="dropdown-item" href="student-profile.html">My profile</a>
                             <a class="dropdown-item" href="student-edit-account.html">Edit account</a>
                             <div class="dropdown-divider"></div>
@@ -67,7 +69,7 @@
 
 
                     <li class="sidebar-menu-item">
-                        <a class="sidebar-menu-button" href="student-dashboard.html">
+                        <a class="sidebar-menu-button" href="{% url 'teacher:dashboard'%}">
                             <span class="sidebar-menu-icon sidebar-menu-icon--left">
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" width="22" height="22">
                                     <g transform="matrix(1.6666666666666667,0,0,1.6666666666666667,0,0)">
