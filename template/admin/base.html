@@ -22,8 +22,15 @@
 	<link href="{% static 'admin/vendor/jquery-nice-select/css/nice-select.css' %}" rel="stylesheet">
 	<link href="{% static 'admin/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css' %}" rel="stylesheet">
 	
+    <link href="{% static 'admin/vendor/swiper/css/swiper-bundle.min.css' %}" rel="stylesheet">
+
 	<!-- Style css -->
     <link href="{% static 'admin/css/style.css' %}" rel="stylesheet">
+
+    <!-- FAVICONS ICON -->
+
+    <!-- GOOGLE MATERIAL ICON -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 	
 </head>
 <body>
@@ -101,13 +108,28 @@
 	<script src="{% static 'admin/vendor/bootstrap-datetimepicker/js/moment.js' %}"></script>
 	<script src="{% static 'admin/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js' %}"></script>
 
+    <script src="{% static 'admin/vendor/swiper/js/swiper-bundle.min.js' %}"></script>
+
+   
+    <script src="{% static 'admin/js/dlab.carousel.js' %}"></script>
 	<!-- Dashboard 1 -->
 	<!-- <script src="{% static 'admin/js/dashboard/dashboard-1.js' %}"></script> -->
 	
     <script src="{% static 'admin/js/custom.js' %}"></script>
 	<script src="{% static 'admin/js/dlabnav-init.js' %}"></script>
-	<script src="{% static 'admin/js/demo.js"></script>
+	<script src="{% static 'admin/js/demo.js' %}"></script>
     <script src="{% static 'admin/js/styleSwitcher.js' %}"></script>
+
+
+    <script>
+		$(document).ready(function(){
+			$(".pagination-down a").on('click',function(){
+				$(".pagination-down a").removeClass("active");
+				$(this).addClass("active");
+			});
+		});
+		
+	</script>
 	<script>
 		$(function () {
 			$('#datetimepicker').datetimepicker({
