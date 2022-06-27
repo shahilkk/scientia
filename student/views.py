@@ -7,3 +7,21 @@ def base(request):
 
 def home(request):
     return render(request,'student/home.html')
+
+
+def courses(request):
+    return render(request,'student/courses/courses.html')
+
+def classlist(request):
+    return render(request,'student/courses/daywise.html')
+
+def modulwise(request):
+    return render(request,'student/courses/modulwise.html')
+
+def takexam(request):
+    return render(request,'student/exam/takexam.html')
+    
+
+
+def profile(request):
+    return render(request,'student/profile.html')    

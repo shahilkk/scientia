@@ -4,3 +4,11 @@ from django.shortcuts import render
 
 def index(request):
     return render(request,'admin/index.html')
+
+
+
+def courses(request):
+    return render(request,'admin/courses.html')
+
+def crash_course(request):
+    return render(request,'admin/crash_course.html')
