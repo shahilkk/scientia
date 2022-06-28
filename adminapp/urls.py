@@ -7,6 +7,14 @@ urlpatterns = [
     path('',views.index,name='home'),
 
     # course
+    path('addcourse',views.add_course,name='addcourse'),
     path('courses',views.courses,name='courses'),
-    path('crashcourse',views.crash_course,name='crashcourse')
+    path('coursedetails',views.course_details,name='coursedetails'),
+    path('crashcourse',views.crash_course,name='crashcourse'),
+
+    # instructors
+    path('instructordashboard',views.instructor_dashboard,name='instructordashboard'),
+    path('addinstructor',views.add_instructor,name='addinstructor'),
+    path('instructorslist',views.instructors_list,name='instructorslist'),
+
 ]

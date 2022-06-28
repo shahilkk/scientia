@@ -1,0 +1,137 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Datatable -->
+<link href="{% static 'admin/vendor/datatables/css/jquery.dataTables.min.css' %}" rel="stylesheet">
+<!-- Custom Stylesheet -->
+<link href="{% static 'admin/vendor/jquery-nice-select/css/nice-select.css' %}" rel="stylesheet">
+<!-- <link href="css/style.css' %}" rel="stylesheet"> -->
+
+
+<div class="container-fluid">
+    <div class="row page-titles">
+        <ol class="breadcrumb">
+            <li class=" active"><a href="{% url 'admins:home' %}">Dashboard /</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0)"> Add Instructor</a></li>
+        </ol>
+    </div>
+    <!-- row -->
+    <div class="row">
+        <div class="col-xl-12 col-xxl-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Add Instructor</h4>
+                </div>
+                <div class="card-body">
+                    <div id="smartwizard" class="form-wizard order-create">
+                        <ul class="nav nav-wizard">
+                            <li><a class="nav-link" href="#wizard_Service"> 
+                                <span>1</span> 
+                            </a></li>
+                            <li><a class="nav-link" href="#wizard_Time">
+                                <span>2</span>
+                            </a></li>
+                            <li><a class="nav-link" href="#wizard_Payment">
+                                <span>3</span>
+                            </a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="wizard_Service" class="tab-pane" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-2">
+                                        <div class="mb-3">
+                                            <label class="text-label form-label">First Name*</label>
+                                            <input type="text" name="firstName" class="form-control" placeholder="Parsley" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-2">
+                                        <div class="mb-3">
+                                            <label class="text-label form-label">Last Name*</label>
+                                            <input type="text" name="lastName" class="form-control" placeholder="Montana" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-2">
+                                        <div class="mb-3">
+                                            <label class="text-label form-label">Email Address*</label>
+                                            <input type="email" class="form-control" id="inputGroupPrepend2" aria-describedby="inputGroupPrepend2" placeholder="example@example.com.com" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-2">
+                                        <div class="mb-3">
+                                            <label class="text-label form-label">Phone Number*</label>
+                                            <input type="text" name="phoneNumber" class="form-control" placeholder="(+1)408-657-9007" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="wizard_Time" class="tab-pane" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-2">
+                                        <div class="mb-3">
+                                            <label class="text-label form-label">Subject Name*</label>
+                                            <input type="text" name="firstName" class="form-control" placeholder="Cellophane Square" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-2">
+                                        <div class="mb-3">
+                                            <label class="text-label form-label">Experience*</label>
+                                            <input type="email" class="form-control" id="emial1" placeholder="example@example.com.com" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-2">
+                                        <div class="mb-3">
+                                            <label class="text-label form-label">Achievments*</label>
+                                            <input type="text" name="phoneNumber" class="form-control" placeholder="(+1)408-657-9007" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="wizard_Payment" class="tab-pane" role="tabpanel">
+                                
+                                <div class="row">
+                                    <div class="col-lg-6 mb-2">
+                                        <div class="mb-3">
+                                            <label class="text-label form-label">City*</label>
+                                            <input type="text" name="phoneNumber" class="form-control" placeholder="(+1)408-657-9007" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-2">
+                                        <div class="mb-3">
+                                            <label class="text-label form-label">State*</label>
+                                            <input type="text" name="phoneNumber" class="form-control" placeholder="(+1)408-657-9007" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 mb-2">
+                                        <div class="mb-3">
+                                            <label class="text-label form-label">Address*</label>
+                                            <textarea name="" id="" cols="100" rows="5" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="{% static 'admin/vendor/global/global.min' %}"></script>
+    <script src="{% static 'admin/vendor/chart/Chart.bundle.min' %}"></script>
+    <!-- Apex Chart -->
+    <script src="{% static 'admin/vendor/apexchart/apexchart' %}"></script>
+
+    <!-- Datatable -->
+    <script src="{% static 'admin/vendor/datatables/js/jquery.dataTables.min' %}"></script>
+    <script src="js/plugins-init/datatables.init' %}"></script>
+
+    <script src="{% static 'admin/vendor/jquery-nice-select/js/jquery.nice-select.min' %}"></script>
+
+{% endblock %}
