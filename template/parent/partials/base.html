@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Weeducate</title>
+  <!-- Iconic Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="vendors/iconic-fonts/flat-icons/flaticon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'parent/css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- jQuery UI -->
+  <link href="{% static 'parent/css/jquery-ui.min.css' %}" rel="stylesheet">
+  <!-- Page Specific CSS (Slick Slider.css' %}) -->
+  <link href="{% static 'parent/css/slick.css' %}" rel="stylesheet">
+  <!-- Weeducate styles -->
+  <link href="{% static 'parent/css/style.css' %}" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'parent/img/weicon/weicon.ico' %}">
+
+</head>
+
+<body class="ms-body ms-aside-left-open ms-primary-theme ms-has-quickbar">
+
+
+  {% block content %}
+
+
+  {% endblock %}
+
+
+
+
+
+  <!-- SCRIPTS -->
+  <!-- Global Required Scripts Start -->
+  <script src="{% static 'parent/js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'parent/js/popper.min.js' %}"></script>
+  <script src="{% static 'parent/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'parent/js/perfect-scrollbar.js' %}"> </script>
+  <script src="{% static 'parent/js/jquery-ui.min.js' %}"> </script>
+  <!-- Global Required Scripts End -->
+
+  <!-- Page Specific Scripts Start -->
+  <script src="{% static 'parent/js/Chart.bundle.min.js' %}"> </script>
+  <script src="{% static 'parent/js/index.js' %}"> </script>
+  <!-- Page Specific Scripts End -->
+
+  <!-- Weeducate core JavaScript -->
+  <script src="{% static 'parent/js/framework.js' %}"></script>
+
+  <!-- Settings -->
+  <script src="{% static 'parent/js/settings.js' %}"></script>
+ <!-- Page Specific Scripts Start -->
+  <script src="{% static 'parent/js/datatables.min.js' %}"> </script>
+  <script src="{% static 'parent/js/data-tables.js' %}"> </script>
+
+</body>
+
+</html>

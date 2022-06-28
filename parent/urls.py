@@ -3,4 +3,7 @@ from . import views
 
 app_name='parent'
 
-urlpatterns = []
+urlpatterns = [
+    path('index/',views.index,name='index'),
+]
+
