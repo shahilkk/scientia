@@ -15,6 +15,16 @@ def courses(request):
 def classlist(request):
     return render(request,'student/courses/daywise.html')
 
+
+
+def chapter(request):
+    return render(request,'student/courses/chapter.html')
+
+
+def subjectwise(request):
+    return render(request,'student/courses/subjectwise.html')
+
+
 def modulwise(request):
     return render(request,'student/courses/modulwise.html')
 
@@ -25,3 +35,7 @@ def takexam(request):
 
 def profile(request):
     return render(request,'student/profile.html')    
+
+
+def reference(request):
+    return render(request,'student/references.html')    
