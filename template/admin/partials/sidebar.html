@@ -1,0 +1,79 @@
+{% load static %}
+
+<!--**********************************
+        Sidebar start
+***********************************-->
+<div class="dlabnav">
+    <div class="dlabnav-scroll">
+        <ul class="metismenu" id="menu">
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+                    <i class="bi bi-grid"></i>
+                    <span class="nav-text">Dashboard</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li><a href="{% url 'admins:home' %}">Dashboard Light</a></li>
+                    <li><a href="">Dashboard Dark</a></li>
+                    <li><a href="">Message</a></li>
+                    <li><a href="">Profile</a></li>
+                </ul>
+
+            </li>
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+                    <i class="bi bi-book"></i>
+
+                    <span class="nav-text">Courses</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li><a href="{% url 'admins:courses' %}">Courses</a></li>
+                    <li><a href="{% url 'admins:crashcourse' %}">Crash Course</a></li>
+
+                </ul>
+
+            </li>
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+                    <i class="bi bi-people"></i>
+
+                    <span class="nav-text">Instructor</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li><a href="instructor-dashboard.html">Dashboard</a></li>
+                    <li><a href="instructor-courses.html">Add Instructor</a></li>
+                    <li><a href="instructor-schedule.html">Instructor</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+                    <i class="bi bi-people"></i>
+
+                    <span class="nav-text">Student</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li><a href="instructor-dashboard.html">Dashboard</a></li>
+                    <li><a href="instructor-courses.html">Student List</a></li>
+                    <li><a href="instructor-schedule.html">Attendance</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+                    <i class="bi bi-people"></i>
+
+                    <span class="nav-text">Fee</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li><a href="instructor-dashboard.html">Dashboard</a></li>
+                    <li><a href="instructor-courses.html">Student List</a></li>
+                    <li><a href="instructor-schedule.html">Attendance</a></li>
+
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--**********************************
+    Sidebar end
+***********************************-->
