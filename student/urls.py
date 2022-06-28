@@ -13,4 +13,5 @@ urlpatterns = [
     path('modulwise',views.modulwise,name='modulwise'),
     path('takexam',views.takexam,name='takexam'),
     path('profile',views.profile,name='profile'),
+    path('reference',views.reference,name='reference'),
 ]
