@@ -1,0 +1,171 @@
+{% extends 'teacher/partial/base.html' %}
+{% load static %}
+
+    {% block content %}
+    
+    <div class="media-body">
+        <h1 class="m-4">Students Attendece</h1>
+    </div>
+    <div class="card card-form bg-light">
+        <div class="row no-gutters">
+            <div class="col-lg-1">
+
+            </div>
+            <div class="col-lg-10 card-form__body mt-4">
+
+                <div class="table-responsive border-bottom" data-toggle="lists" data-lists-values='["js-lists-values-employee-name"]'>
+
+                    <form action="#" class="">
+                        <div class="d-lg-flex">
+                            <div class="search-form mb-3 mr-3-lg search-form--light">
+                                <input type="text" class="form-control" placeholder="Search courses" id="searchSample02">
+                                <button class="btn" type="button"><i class="material-icons">search</i></button>
+                            </div>
+
+                            <div class="form-inline  mb-3 ml-auto">
+                                <div class="form-group mr-3">
+                                    <label for="custom-select" class="form-label mr-1">Category</label>
+                                    <select id="custom-select" class="form-control custom-select" style="width: 200px;">
+                                        <option selected>All categories</option>
+                                        <option value="1">Vue.js</option>
+                                        <option value="2">Node.js</option>
+                                        <option value="3">GitHub</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="published01" class="form-label mr-1">Status</label>
+                                    <select id="published01" class="form-control custom-select" style="width: 200px;">
+                                        <option selected>All</option>
+                                        <option value="1">Present</option>
+                                        <option value="3">Absent</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <table class="table mb-0 thead-border-top-0">
+                        <thead>
+                            <tr>
+
+                                <th>Name</th>
+
+
+                                <th style="width: 37px;">Present/Absent</th>
+                                <th style="width: 120px;">Total %</th>
+                                <th style="width: 51px;">Report</th>
+                                <th style="width: 24px;"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="list" id="staff02">
+
+                            <tr>
+
+                                <td>
+
+                                    <img src=" {% static 'teacher/images/avatar/demi.png' %} " alt="Avatar" class="avatar-img rounded-circle" style="width: 10%;height:10%;">
+                                    <span class="js-lists-values-employee-name p-2">Michael Smith</span>
+
+                                </td>
+
+
+                                <td><span class="badge badge-danger">Absent</span></td>
+                                <td><small class="text-muted">82%</small></td>
+                                <td><button class="btn btn primary">Send</button></td>
+                                <td><a href="#" class="text-muted"><i class="material-icons">more_vert</i></a></td>
+                            </tr>
+                            <tr>
+
+                                <td>
+
+                                    <img src=" {% static 'teacher/images/avatar/demi.png' %} " alt="Avatar" class="avatar-img rounded-circle" style="width: 10%;height:10%;">
+
+                                    <span class="js-lists-values-employee-name p-2">Connie Smith</span>
+
+                                </td>
+
+
+                                <td><span class="badge badge-success">Present</span></td>
+                                <td><small class="text-muted">1 week ago</small></td>
+                                <td><button class="btn btn primary">Send</button></td>
+                                <td><a href="#" class="text-muted"><i class="material-icons">more_vert</i></a></td>
+                            </tr>
+                            <tr>
+
+                                <td>
+
+                                    <img src=" {% static 'teacher/images/avatar/demi.png' %} " alt="Avatar" class="avatar-img rounded-circle" style="width: 10%;height:10%;">
+
+                                    <span class="js-lists-values-employee-name p-2">John Connor</span>
+
+                                </td>
+
+
+                                <td><span class="badge badge-success">Present</span></td>
+                                <td><small class="text-muted">1 week ago</small></td>
+                                <td><button class="btn btn primary">Send</button></td>
+                                <td><a href="#" class="text-muted"><i class="material-icons">more_vert</i></a></td>
+                            </tr>
+
+                            <tr>
+
+                                <td>
+
+                                    <img src=" {% static 'teacher/images/avatar/demi.png' %} " alt="Avatar" class="avatar-img rounded-circle" style="width: 10%;height:10%;">
+
+                                    <span class="js-lists-values-employee-name p-2">Michael Smith</span>
+
+                                </td>
+
+
+                                <td><span class="badge badge-success">Present</span></td>
+                                <td><small class="text-muted">3 days ago</small></td>
+                                <td><button class="btn btn primary">Send</button></td>
+                                <td><a href="#" class="text-muted"><i class="material-icons">more_vert</i></a></td>
+                            </tr>
+                            <tr>
+
+                                <td>
+
+                                    <img src=" {% static 'teacher/images/avatar/demi.png' %} " alt="Avatar" class="avatar-img rounded-circle" style="width: 10%;height:10%;">
+
+                                    <span class="js-lists-values-employee-name p-2">Connie Smith</span>
+
+                                </td>
+
+
+                                <td><span class="badge badge-danger">Present</span></td>
+                                <td><small class="text-muted">1 week ago</small></td>
+                                <td><button class="btn btn primary">Send</button></td>
+                                <td><a href="#" class="text-muted"><i class="material-icons">more_vert</i></a></td>
+                            </tr>
+                            <tr>
+
+                                <td>
+
+                                    <img src=" {% static 'teacher/images/avatar/demi.png' %} " alt="Avatar" class="avatar-img rounded-circle" style="width: 10%;height:10%;">
+
+                                    <span class="js-lists-values-employee-name p-2">John Connor</span>
+
+                                </td>
+
+
+                                <td><span class="badge badge-success">Present</span></td>
+                                <td><small class="text-muted">1 week ago</small></td>
+                                <td><button class="btn btn primary">Send</button></td>
+                                <td><a href="#" class="text-muted"><i class="material-icons">more_vert</i></a></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+            <div class="col-lg-1">
+                
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
