@@ -26,6 +26,7 @@
                     <span class="nav-text">Courses</span>
                 </a>
                 <ul aria-expanded="false">
+                    <li><a href="{% url 'admins:addcourse' %}">Add Courses</a></li>
                     <li><a href="{% url 'admins:courses' %}">Courses</a></li>
                     <li><a href="{% url 'admins:crashcourse' %}">Crash Course</a></li>
 
@@ -39,9 +40,9 @@
                     <span class="nav-text">Instructor</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="instructor-dashboard.html">Dashboard</a></li>
-                    <li><a href="instructor-courses.html">Add Instructor</a></li>
-                    <li><a href="instructor-schedule.html">Instructor</a></li>
+                    <li><a href="{% url 'admins:instructordashboard' %}">Dashboard</a></li>
+                    <li><a href="{% url 'admins:addinstructor' %}">Add Instructor</a></li>
+                    <li><a href="{% url 'admins:instructorslist' %}">Instructor</a></li>
 
                 </ul>
             </li>
@@ -52,9 +53,9 @@
                     <span class="nav-text">Student</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="instructor-dashboard.html">Dashboard</a></li>
-                    <li><a href="instructor-courses.html">Student List</a></li>
-                    <li><a href="instructor-schedule.html">Attendance</a></li>
+                    <li><a href="{% url 'admins:studentdashboard' %}">Dashboard</a></li>
+                    <li><a href="{% url 'admins:studentslist' %}">Student List</a></li>
+                    <!-- <li><a href="instructor-schedule.html">Attendance</a></li> -->
 
                 </ul>
             </li>
@@ -77,3 +78,4 @@
 <!--**********************************
     Sidebar end
 ***********************************-->
+
