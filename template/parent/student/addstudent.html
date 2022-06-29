@@ -1,0 +1,169 @@
+
+
+
+
+
+{% extends 'parent/partials/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="ms-content-wrapper">
+    <div class="row">
+
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb pl-0">
+            <li class="breadcrumb-item"><a href="#"><i class="material-icons">home</i> Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Student</li>
+            <li class="breadcrumb-item active" aria-current="page">Student Add</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <div class="ms-panel">
+        <div class="ms-panel-header">
+          <h6>Student Add</h6>
+        </div>
+        <div class="ms-panel-body">
+          <form>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">First Name</label>
+                  <input type="text" class="form-control" id="exampleEmail" placeholder="First name">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Last Name</label>
+                  <input type="text" class="form-control" id="exampleEmail" placeholder="Last name">
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Student Xth Result</label>
+                  <input type="text" class="form-control" id="exampleEmail" placeholder="Student Xth Result">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Student XIIth Result</label>
+                  <input type="text" class="form-control" id="exampleEmail" placeholder="Student XIIth Result">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="exampleEmail">Email address</label>
+                  <input type="email" class="form-control" id="exampleEmail" placeholder="name@example.com">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="date">Roll No</label>
+                  <input type="text" class="form-control" id="exampleEmail" placeholder="Roll no">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="examplePassword">Password</label>
+                  <input type="password" class="form-control" id="examplePassword" placeholder="Password">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="examplePassword">Confirm Password</label>
+                  <input type="password" class="form-control" id="examplePassword" placeholder="Confirm Password">
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label for="name">Upload Documents</label>
+                  <input type="file" class="form-control" id="exampleEmail" placeholder="Upload Docuements">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Registration Number</label>
+                  <input type="text" class="form-control" id="exampleEmail" placeholder="Registration Number">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Class</label>
+                  <select class="form-control" id="exampleSelect">
+                    <option value="male">Meachnical</option>
+                    <option value="female">Computer</option>
+                    <option value="male">Electronic</option>
+                    <option value="female">Electrical</option>
+                    <option value="male">Civil</option>
+                    <option value="female">Architecture</option>
+
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="exampleSelect">Gender</label>
+                  <select class="form-control" id="exampleSelect">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Mobile Number</label>
+                  <input type="text" class="form-control" id="exampleEmail" placeholder="Mobile Number">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Parents Name</label>
+                  <input type="text" class="form-control" id="exampleEmail" placeholder="Parents name">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Parent Number</label>
+                  <input type="text" class="form-control" id="exampleEmail" placeholder="Parents Number">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Birth Of Date</label>
+                  <input type="date" class="form-control" id="exampleEmail" placeholder="Last name">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Blood Group</label>
+                  <input type="text" class="form-control" id="exampleEmail" placeholder="Last name">
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label for="exampleTextarea">Address</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="5"></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <center><button type="button" class="btn btn-warning mb-5">Submit</button>
+          <button type="button" class="btn btn-outline-warning mb-5 ml-3">Cancel</button>
+        </center>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+  {% endblock %}
