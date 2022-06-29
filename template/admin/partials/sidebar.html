@@ -53,9 +53,9 @@
                     <span class="nav-text">Student</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="instructor-dashboard.html">Dashboard</a></li>
-                    <li><a href="instructor-courses.html">Student List</a></li>
-                    <li><a href="instructor-schedule.html">Attendance</a></li>
+                    <li><a href="{% url 'admins:studentdashboard' %}">Dashboard</a></li>
+                    <li><a href="{% url 'admins:studentslist' %}">Student List</a></li>
+                    <!-- <li><a href="instructor-schedule.html">Attendance</a></li> -->
 
                 </ul>
             </li>

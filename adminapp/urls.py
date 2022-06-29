@@ -17,4 +17,8 @@ urlpatterns = [
     path('addinstructor',views.add_instructor,name='addinstructor'),
     path('instructorslist',views.instructors_list,name='instructorslist'),
 
+    #Students
+    path('studentdashboard',views.student_dashboard,name='studentdashboard'),
+    path('studentslist',views.students_list,name='studentslist'),
+
 ]

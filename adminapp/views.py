@@ -29,3 +29,11 @@ def add_instructor(request):
 
 def instructors_list(request):
     return render(request,'admin/instructors_list.html')
+
+
+# Student and related
+def student_dashboard(request):
+    return render(request,'admin/student_dashboard.html')
+
+def students_list(request):
+    return render(request,'admin/student_list.html')
