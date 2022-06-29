@@ -225,7 +225,7 @@
                         </div>
                         <div class="item">
                             <div class="card product-card portrait round"><a class="waves-effect hidden-link"
-                                    href="product-detail.html">&nbsp;</a>
+                                    href="{% url 'website:course-detail' %}">&nbsp;</a>
                                 <div class="figure">
                                     <div class="responsive-img"
                                         style="background-image:url({% static 'website/images/courses/c1.jpg' %});">
@@ -248,14 +248,14 @@
                                                     class="material-icons star-icon" title="5">star</i></div>
                                             <strong>$50</strong>
                                         </div><a class="btn btn-outlined primary button block waves-effect"
-                                            href="product-detail.html">see detail</a>
+                                            href="{% url 'website:course-detail' %}">see detail</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="card product-card portrait round"><a class="waves-effect hidden-link"
-                                    href="product-detail.html">&nbsp;</a>
+                                    href="{% url 'website:course-detail' %}">&nbsp;</a>
                                 <div class="figure">
                                     <div class="responsive-img"
                                         style="background-image:url({% static 'website/images/courses/c4.jpeg' %});">
@@ -277,14 +277,14 @@
                                                     class="material-icons star-icon-disable" title="1">star</i></div>
                                             <strong>$10</strong>
                                         </div><a class="btn btn-outlined primary button block waves-effect"
-                                            href="product-detail.html">see detail</a>
+                                            href="{% url 'website:course-detail' %}">see detail</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="card product-card portrait round"><a class="waves-effect hidden-link"
-                                    href="product-detail.html">&nbsp;</a>
+                                    href="{% url 'website:course-detail' %}">&nbsp;</a>
                                 <div class="figure">
                                     <div class="responsive-img"
                                         style="background-image:url({% static 'website/images/courses/c5.jpeg' %});">
@@ -307,14 +307,14 @@
                                                     class="material-icons star-icon" title="5">star</i></div>
                                             <strong>$50</strong>
                                         </div><a class="btn btn-outlined primary button block waves-effect"
-                                            href="product-detail.html">see detail</a>
+                                            href="{% url 'website:course-detail' %}">see detail</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="card product-card portrait round"><a class="waves-effect hidden-link"
-                                    href="product-detail.html">&nbsp;</a>
+                                    href="{% url 'website:course-detail' %}">&nbsp;</a>
                                 <div class="figure">
                                     <div class="responsive-img"
                                         style="background-image:url(../../../res.cloudinary.com/imajin/image/upload/v1627130661/education/game_qm9tvu.jpg);">
@@ -336,14 +336,14 @@
                                                     class="material-icons star-icon-disable" title="2">star</i></div>
                                             <strong>$25</strong>
                                         </div><a class="btn btn-outlined primary button block waves-effect"
-                                            href="product-detail.html">see detail</a>
+                                            href="{% url 'website:course-detail' %}">see detail</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="card product-card portrait round"><a class="waves-effect hidden-link"
-                                    href="product-detail.html">&nbsp;</a>
+                                    href="{% url 'website:course-detail' %}">&nbsp;</a>
                                 <div class="figure">
                                     <div class="responsive-img"
                                         style="background-image:url(../../../res.cloudinary.com/imajin/image/upload/v1592702767/education/sport_ilndwv.jpg);">
@@ -366,14 +366,14 @@
                                                     class="material-icons star-icon" title="5">star</i></div>
                                             <strong>$50</strong>
                                         </div><a class="btn btn-outlined primary button block waves-effect"
-                                            href="product-detail.html">see detail</a>
+                                            href="{% url 'website:course-detail' %}">see detail</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="card product-card portrait round"><a class="waves-effect hidden-link"
-                                    href="product-detail.html">&nbsp;</a>
+                                    href="{% url 'website:course-detail' %}">&nbsp;</a>
                                 <div class="figure">
                                     <div class="responsive-img"
                                         style="background-image:url(../../../res.cloudinary.com/imajin/image/upload/v1592702766/education/geo_pgt0fz.jpg);">
@@ -395,7 +395,7 @@
                                                     class="material-icons star-icon" title="5">star</i></div>
                                             <strong>$40</strong>
                                         </div><a class="btn btn-outlined primary button block waves-effect"
-                                            href="product-detail.html">see detail</a>
+                                            href="{% url 'website:course-detail' %}">see detail</a>
                                     </div>
                                 </div>
                             </div>
@@ -403,14 +403,13 @@
                     </div>
                     <button class="btn-floating nav prev waves-effect" id="prev_project" type="button">
                         <i class="fa-solid fa-arrow-left"></i>
-                        </button> 
-                        <button class="btn-floating nav next waves-effect"
-                        id="next_project" type="button">
+                    </button>
+                    <button class="btn-floating nav next waves-effect" id="next_project" type="button">
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
-        
-    </section> 
+
+    </section>
     <!-- ##### END EXPLORE #####-->
 
 
@@ -448,240 +447,216 @@
     </section><!-- ##### END ABOUT #####-->
 
     <!-- ##### mentor #####-->
-   <div class="space-bottom-short space-top-short">
-                            <div class="about-style">
-                                <div class="bg-wrapper team-root">
-                                    <div class="container">
-                                        <div class="title-main align-left">
-                                            <h4 class="primary"><span>Our Mentors</span></h4>
-                                            <p class="desc use-text-subtitle2">Vestibulum faucibus eget erat eget
-                                                pretium. Donec commodo convallis eget suscipit orci. Lorem ipsum dolor
-                                                sit amet, consectetur adipiscing elit.</p>
-                                        </div>
+    <div class="space-bottom-short space-top-short">
+        <div class="about-style">
+            <div class="bg-wrapper team-root">
+                <div class="container">
+                    <div class="title-main align-left">
+                        <h4 class="primary"><span>Our Mentors</span></h4>
+                        <p class="desc use-text-subtitle2">Vestibulum faucibus eget erat eget
+                            pretium. Donec commodo convallis eget suscipit orci. Lorem ipsum dolor
+                            sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel mt-12">
+                    <div class="team-carousel" id="about_team_carousel">
+                        <div class="item px-3" data-key="0">
+                            <div class="card profile-card landscape round">
+                                <div class="figure">
+                                    <div class="responsive-img"
+                                        style="background-image:url({% static 'website/images/index/mentor/mentorbg3.png' %});">
                                     </div>
-                                    <div class="carousel mt-12">
-                                        <div class="team-carousel" id="about_team_carousel">
-                                            <div class="item px-3" data-key="0">
-                                                <div class="card profile-card landscape round">
-                                                    <div class="figure">
-                                                        <div class="responsive-img"
-                                                            style="background-image:url({% static 'website/images/index/mentor/mentorbg3.png' %});">
-                                                        </div>
-                                                    </div>
-                                                    <div class="avatar-img avatar big"><img
-                                                            src="{% static 'website/images/index/mentor/mentor.jpg' %}"
-                                                            alt="avatar"></div>
-                                                    <div class="properties text-truncate">
-                                                        <div class="card-content">
-                                                            <h6><strong>John Dalton</strong></h6>
-                                                            <div class="subtitle">Web Designer</div>
-                                                            <div class="desc"><span>100 Connection</span></div>
-                                                        </div>
-                                                        <div class="action-area">
-                                                            <div class="card-actions action"><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">account_circle</i>100
-                                                                        Connection</span> </a><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">favorite</i>10
-                                                                        Favorites</span> </a><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">photo_library</i>12
-                                                                        Albums</span></a></div><a
-                                                                class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
-                                                                href="href.html" data-class="btn-small">See Profile</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item px-3" data-key="1">
-                                                <div class="card profile-card landscape round">
-                                                    <div class="figure">
-                                                        <div class="responsive-img"
-                                                            style="background-image:url({% static 'website/images/index/mentor/mentorbg2.png' %});">
-                                                        </div>
-                                                    </div>
-                                                    <div class="avatar-img avatar big"><img
-                                                            src="{% static 'website/images/index/mentor/mentor.jpg' %}"
-                                                            alt="avatar"></div>
-                                                    <div class="properties text-truncate">
-                                                        <div class="card-content">
-                                                            <h6><strong>John Dalton</strong></h6>
-                                                            <div class="subtitle">Web Designer</div>
-                                                            <div class="desc"><span>100 Connection</span></div>
-                                                        </div>
-                                                        <div class="action-area">
-                                                            <div class="card-actions action"><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">account_circle</i>100
-                                                                        Connection</span> </a><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">favorite</i>10
-                                                                        Favorites</span> </a><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">photo_library</i>12
-                                                                        Albums</span></a></div><a
-                                                                class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
-                                                                href="href.html" data-class="btn-small">See Profile</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item px-3" data-key="2">
-                                                <div class="card profile-card landscape round">
-                                                    <div class="figure">
-                                                        <div class="responsive-img"
-                                                            style="background-image:url({% static 'website/images/index/mentor/mentorbg3.png' %});">
-                                                        </div>
-                                                    </div>
-                                                    <div class="avatar-img avatar big"><img
-                                                            src="{% static 'website/images/index/mentor/mentor.jpg' %}"
-                                                            alt="avatar"></div>
-                                                    <div class="properties text-truncate">
-                                                        <div class="card-content">
-                                                            <h6><strong>John Dalton</strong></h6>
-                                                            <div class="subtitle">Web Designer</div>
-                                                            <div class="desc"><span>100 Connection</span></div>
-                                                        </div>
-                                                        <div class="action-area">
-                                                            <div class="card-actions action"><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">account_circle</i>100
-                                                                        Connection</span> </a><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">favorite</i>10
-                                                                        Favorites</span> </a><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">photo_library</i>12
-                                                                        Albums</span></a></div><a
-                                                                class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
-                                                                href="href.html" data-class="btn-small">See Profile</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item px-3" data-key="3">
-                                                <div class="card profile-card landscape round">
-                                                    <div class="figure">
-                                                        <div class="responsive-img"
-                                                            style="background-image:url({% static 'website/images/index/mentor/mentorbg3.png' %});">
-                                                        </div>
-                                                    </div>
-                                                    <div class="avatar-img avatar big"><img
-                                                            src="{% static 'website/images/index/mentor/mentor.jpg' %}"
-                                                            alt="avatar"></div>
-                                                    <div class="properties text-truncate">
-                                                        <div class="card-content">
-                                                            <h6><strong>John Dalton</strong></h6>
-                                                            <div class="subtitle">Web Designer</div>
-                                                            <div class="desc"><span>100 Connection</span></div>
-                                                        </div>
-                                                        <div class="action-area">
-                                                            <div class="card-actions action"><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">account_circle</i>100
-                                                                        Connection</span> </a><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">favorite</i>10
-                                                                        Favorites</span> </a><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">photo_library</i>12
-                                                                        Albums</span></a></div><a
-                                                                class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
-                                                                href="href.html" data-class="btn-small">See Profile</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item px-3" data-key="4">
-                                                <div class="card profile-card landscape round">
-                                                    <div class="figure">
-                                                        <div class="responsive-img"
-                                                            style="background-image:url({% static 'website/images/index/mentor/mentorbg5.png' %});">
-                                                        </div>
-                                                    </div>
-                                                    <div class="avatar-img avatar big"><img
-                                                            src="{% static 'website/images/index/mentor/mentor.jpg' %}"
-                                                            alt="avatar"></div>
-                                                    <div class="properties text-truncate">
-                                                        <div class="card-content">
-                                                            <h6><strong>John Dalton</strong></h6>
-                                                            <div class="subtitle">Web Designer</div>
-                                                            <div class="desc"><span>100 Connection</span></div>
-                                                        </div>
-                                                        <div class="action-area">
-                                                            <div class="card-actions action"><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">account_circle</i>100
-                                                                        Connection</span> </a><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">favorite</i>10
-                                                                        Favorites</span> </a><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">photo_library</i>12
-                                                                        Albums</span></a></div><a
-                                                                class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
-                                                                href="href.html" data-class="btn-small">See Profile</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item px-3" data-key="5">
-                                                <div class="card profile-card landscape round">
-                                                    <div class="figure">
-                                                        <div class="responsive-img"
-                                                            style="background-image:url({% static 'website/images/index/mentor/mentorbg7.png' %});">
-                                                        </div>
-                                                    </div>
-                                                    <div class="avatar-img avatar big"><img
-                                                            src="{% static 'website/images/index/mentor/mentor.jpg' %}"
-                                                            alt="avatar"></div>
-                                                    <div class="properties text-truncate">
-                                                        <div class="card-content">
-                                                            <h6><strong>John Dalton</strong></h6>
-                                                            <div class="subtitle">Web Designer</div>
-                                                            <div class="desc"><span>100 Connection</span></div>
-                                                        </div>
-                                                        <div class="action-area">
-                                                            <div class="card-actions action"><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">account_circle</i>100
-                                                                        Connection</span> </a><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">favorite</i>10
-                                                                        Favorites</span> </a><a
-                                                                    class="waves-effect btn btn-flat" href="#"><span
-                                                                        class="btn-content"><i
-                                                                            class="icon material-icons">photo_library</i>12
-                                                                        Albums</span></a></div><a
-                                                                class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
-                                                                href="href.html" data-class="btn-small">See Profile</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                </div>
+                                <div class="avatar-img avatar big"><img
+                                        src="{% static 'website/images/index/mentor/mentor.jpg' %}" alt="avatar"></div>
+                                <div class="properties text-truncate">
+                                    <div class="card-content">
+                                        <h6><strong>John Dalton</strong></h6>
+                                        <div class="subtitle">Web Designer</div>
+                                        <div class="desc"><span>100 Connection</span></div>
+                                    </div>
+                                    <div class="action-area">
+                                        <div class="card-actions action"><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">account_circle</i>100
+                                                    Connection</span> </a><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">favorite</i>10
+                                                    Favorites</span> </a><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">photo_library</i>12
+                                                    Albums</span></a></div><a
+                                            class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
+                                            href="href.html" data-class="btn-small">See Profile</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="item px-3" data-key="1">
+                            <div class="card profile-card landscape round">
+                                <div class="figure">
+                                    <div class="responsive-img"
+                                        style="background-image:url({% static 'website/images/index/mentor/mentorbg2.png' %});">
+                                    </div>
+                                </div>
+                                <div class="avatar-img avatar big"><img
+                                        src="{% static 'website/images/index/mentor/mentor.jpg' %}" alt="avatar"></div>
+                                <div class="properties text-truncate">
+                                    <div class="card-content">
+                                        <h6><strong>John Dalton</strong></h6>
+                                        <div class="subtitle">Web Designer</div>
+                                        <div class="desc"><span>100 Connection</span></div>
+                                    </div>
+                                    <div class="action-area">
+                                        <div class="card-actions action"><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">account_circle</i>100
+                                                    Connection</span> </a><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">favorite</i>10
+                                                    Favorites</span> </a><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">photo_library</i>12
+                                                    Albums</span></a></div><a
+                                            class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
+                                            href="href.html" data-class="btn-small">See Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item px-3" data-key="2">
+                            <div class="card profile-card landscape round">
+                                <div class="figure">
+                                    <div class="responsive-img"
+                                        style="background-image:url({% static 'website/images/index/mentor/mentorbg3.png' %});">
+                                    </div>
+                                </div>
+                                <div class="avatar-img avatar big"><img
+                                        src="{% static 'website/images/index/mentor/mentor.jpg' %}" alt="avatar"></div>
+                                <div class="properties text-truncate">
+                                    <div class="card-content">
+                                        <h6><strong>John Dalton</strong></h6>
+                                        <div class="subtitle">Web Designer</div>
+                                        <div class="desc"><span>100 Connection</span></div>
+                                    </div>
+                                    <div class="action-area">
+                                        <div class="card-actions action"><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">account_circle</i>100
+                                                    Connection</span> </a><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">favorite</i>10
+                                                    Favorites</span> </a><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">photo_library</i>12
+                                                    Albums</span></a></div><a
+                                            class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
+                                            href="href.html" data-class="btn-small">See Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item px-3" data-key="3">
+                            <div class="card profile-card landscape round">
+                                <div class="figure">
+                                    <div class="responsive-img"
+                                        style="background-image:url({% static 'website/images/index/mentor/mentorbg3.png' %});">
+                                    </div>
+                                </div>
+                                <div class="avatar-img avatar big"><img
+                                        src="{% static 'website/images/index/mentor/mentor.jpg' %}" alt="avatar"></div>
+                                <div class="properties text-truncate">
+                                    <div class="card-content">
+                                        <h6><strong>John Dalton</strong></h6>
+                                        <div class="subtitle">Web Designer</div>
+                                        <div class="desc"><span>100 Connection</span></div>
+                                    </div>
+                                    <div class="action-area">
+                                        <div class="card-actions action"><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">account_circle</i>100
+                                                    Connection</span> </a><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">favorite</i>10
+                                                    Favorites</span> </a><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">photo_library</i>12
+                                                    Albums</span></a></div><a
+                                            class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
+                                            href="href.html" data-class="btn-small">See Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item px-3" data-key="4">
+                            <div class="card profile-card landscape round">
+                                <div class="figure">
+                                    <div class="responsive-img"
+                                        style="background-image:url({% static 'website/images/index/mentor/mentorbg5.png' %});">
+                                    </div>
+                                </div>
+                                <div class="avatar-img avatar big"><img
+                                        src="{% static 'website/images/index/mentor/mentor.jpg' %}" alt="avatar"></div>
+                                <div class="properties text-truncate">
+                                    <div class="card-content">
+                                        <h6><strong>John Dalton</strong></h6>
+                                        <div class="subtitle">Web Designer</div>
+                                        <div class="desc"><span>100 Connection</span></div>
+                                    </div>
+                                    <div class="action-area">
+                                        <div class="card-actions action"><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">account_circle</i>100
+                                                    Connection</span> </a><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">favorite</i>10
+                                                    Favorites</span> </a><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">photo_library</i>12
+                                                    Albums</span></a></div><a
+                                            class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
+                                            href="href.html" data-class="btn-small">See Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item px-3" data-key="5">
+                            <div class="card profile-card landscape round">
+                                <div class="figure">
+                                    <div class="responsive-img"
+                                        style="background-image:url({% static 'website/images/index/mentor/mentorbg7.png' %});">
+                                    </div>
+                                </div>
+                                <div class="avatar-img avatar big"><img
+                                        src="{% static 'website/images/index/mentor/mentor.jpg' %}" alt="avatar"></div>
+                                <div class="properties text-truncate">
+                                    <div class="card-content">
+                                        <h6><strong>John Dalton</strong></h6>
+                                        <div class="subtitle">Web Designer</div>
+                                        <div class="desc"><span>100 Connection</span></div>
+                                    </div>
+                                    <div class="action-area">
+                                        <div class="card-actions action"><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">account_circle</i>100
+                                                    Connection</span> </a><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">favorite</i>10
+                                                    Favorites</span> </a><a class="waves-effect btn btn-flat"
+                                                href="#"><span class="btn-content"><i
+                                                        class="icon material-icons">photo_library</i>12
+                                                    Albums</span></a></div><a
+                                            class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
+                                            href="href.html" data-class="btn-small">See Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- ##### END mentor #####-->
 
@@ -693,7 +668,8 @@
                 <p class="desc use-text-subtitle2">They Are Doing Great Things With Us</p>
             </div>
             <div class="slider-wrap">
-                <div class="carousel"><button class="btn-floating nav prev waves-effect" id="prev_testi"><i class="fa-solid fa-arrow-left"></i></button> <i class="t"></i>
+                <div class="carousel"><button class="btn-floating nav prev waves-effect" id="prev_testi"><i
+                            class="fa-solid fa-arrow-left"></i></button> <i class="t"></i>
                     <div class="slick-carousel" id="testimonial_carousel">
                         <div class="item">
                             <div class="testimonial-card">
@@ -755,7 +731,8 @@
                                 <p class="caption">Senior Graphic Designer</p>
                             </div>
                         </div>
-                    </div><button class="btn-floating nav next waves-effect" id="next_testi"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div><button class="btn-floating nav next waves-effect" id="next_testi"><i
+                            class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
@@ -789,8 +766,7 @@
                     <div class="col-md-6 pa-md-8 pa-0">
                         <div class="video-wrap">
                             <div class="video-carousel">
-                                <div class="card item"><img
-                                        src="{% static 'website/images/index/video.jpg' %}"
+                                <div class="card item"><img src="{% static 'website/images/index/video.jpg' %}"
                                         alt="cover"> <button class="btn play-btn waves-effect modal-trigger"
                                         data-target="video_modal"><i class="icon material-icons">play_arrow</i></button>
                                 </div>
@@ -879,4 +855,7 @@
         </div>
     </div>
 </section>
+
+
+
 {% endblock %}
