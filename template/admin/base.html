@@ -24,13 +24,17 @@
 	
     <link href="{% static 'admin/vendor/swiper/css/swiper-bundle.min.css' %}" rel="stylesheet">
 
+    <link rel="stylesheet" href="{% static 'admin/vendor/magnific-popup/magnific-popup.min.css' %}">
+
 	<!-- Style css -->
     <link href="{% static 'admin/css/style.css' %}" rel="stylesheet">
 
-    <!-- FAVICONS ICON -->
+    <!-- Add Instructors -->
+    <link href="{% static 'admin/vendor/jquery-smartwizard/dist/css/smart_wizard.min.css' %}" rel="stylesheet">
 
-    <!-- GOOGLE MATERIAL ICON -->
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!-- Datatable -->
+    <link href="{% static 'admin/vendor/datatables/css/jquery.dataTables.min.css' %}" rel="stylesheet">
+
 	
 </head>
 <body>
@@ -104,21 +108,56 @@
 	
 	<!-- Apex Chart -->
 	<script src="{% static 'admin/vendor/apexchart/apexchart.js' %}"></script>
+    <script src="{% static 'admin/vendor/magnific-popup/magnific-popup.js' %}"></script><!-- MAGNIFIC-POPUP JS -->
 
-	<script src="{% static 'admin/vendor/bootstrap-datetimepicker/js/moment.js' %}"></script>
+    <!-- Required vendors -->
+    <script src="{% static 'admin/vendor/bootstrap-datetimepicker/js/moment.js' %}"></script>
 	<script src="{% static 'admin/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js' %}"></script>
 
     <script src="{% static 'admin/vendor/swiper/js/swiper-bundle.min.js' %}"></script>
 
    
     <script src="{% static 'admin/js/dlab.carousel.js' %}"></script>
+
+    <!-- Chart piety plugin files -->
+	 <script src="{% static 'admin/vendor/day-fullcalendar/main.min.js' %}"></script>
+     <script src="{% static 'admin/vendor/peity/jquery.peity.min.js' %}"></script>
+
 	<!-- Dashboard 1 -->
-	<!-- <script src="{% static 'admin/js/dashboard/dashboard-1.js' %}"></script> -->
+	<script src="{% static 'admin/js/dashboard/instructor-dashboard.js' %}"></script>
+    <script src="{% static 'admin/js/dashboard/instructor-student.js' %}"></script>
 	
     <script src="{% static 'admin/js/custom.js' %}"></script>
 	<script src="{% static 'admin/js/dlabnav-init.js' %}"></script>
 	<script src="{% static 'admin/js/demo.js' %}"></script>
     <script src="{% static 'admin/js/styleSwitcher.js' %}"></script>
+
+<!-- Add instructors -->
+    <script src="{% static 'admin/vendor/jquery-steps/build/jquery.steps.min.js' %}"></script>
+    <script src="{% static 'admin/vendor/jquery-validation/jquery.validate.min.js' %}"></script>
+    <!-- Form validate init -->
+    <script src="{% static 'admin/js/plugins-init/jquery.validate-init.js' %}"></script>
+    <!-- Form Steps -->
+    <script src="{% static 'admin/vendor/jquery-smartwizard/dist/js/jquery.smartWizard.js' %}"></script>
+    <script src="{% static 'admin/vendor/jquery-nice-select/js/jquery.nice-select.min.js' %}"></script>
+    <script>
+        $(document).ready(function(){
+            // SmartWizard initialize
+            $('#smartwizard').smartWizard(); 
+        });
+    </script>
+
+<!-- Datatable -->
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
+
+    <!-- Datatable -->
+    <script src="{% static 'admin/vendor/datatables/js/jquery.dataTables.min' %}"></script>
+    <script src="{% static 'admin/js/plugins-init/datatables.init' %}"></script>
+    <script src="{% static 'admin/vendor/owl-carousel/owl.carousel.js' %}"></script>
+
+    <script src="{% static 'admin/vendor/jquery-nice-select/js/jquery.nice-select.min' %}"></script>
+
 
 
     <script>

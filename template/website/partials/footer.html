@@ -1,12 +1,45 @@
 {% load static %}
+<section class="bottom-deco-wrap space-top" id="subscribe">
+    <div class="footer-top-deco">
+        <div class="wow zoomInShort" data-wow-offset="0" data-wow-delay="0.2s"
+            data-wow-duration="0.3s"><img class="img-2d3d"
+                src="{% static 'website/images/index/subscribe.png' %}"
+                data-2d="https://res.cloudinary.com/skyrev/image/upload/v1613842290/skyrev/education/footer_2d_2x_sa2kxh.png"
+                data-3d="https://res.cloudinary.com/skyrev/image/upload/v1613842290/skyrev/education/footer_3d_2x_tivfcv.png"
+                alt="footer"></div>
+    </div>
+    <div class="subsribe-form">
+        <div class="root">
+            <div class="container max-sm">
+                <h3 class="use-text-title2 mb-4">Subscribe our newsletter</h3>
+                <p class="use-text-subtitle2">Subscribe our newsletter</p>
+                <div class="form">
+                    <form>
+                        <div class="field outlined">
+                            <div class="input-field dark full-width solo"><input type="email"
+                                    name="email" placeholder="What is your email? *"></div>
+                        </div><button class="btn primary button waves-effect"
+                            type="button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
 <!-- ##### FOOTER #####-->
 <footer class="footer-sitemap">
     <div class="footer-bottom-deco">
-        <div class="left-deco"><img class="img-2d3d" src="{% static 'website/images/index/leftleaf.png' %}"
+        <div class="left-deco"><img class="img-2d3d"
+                src="{% static 'website/images/index/leftleaf.png' %}"
                 data-2d="https://res.cloudinary.com/skyrev/image/upload/v1613842291/skyrev/education/footer_plant_2d_2x_k7m4ff.png"
                 data-3d="https://res.cloudinary.com/skyrev/image/upload/v1613842291/skyrev/education/footer_plant_3d_2x_i8osqq.png"
                 alt="footer"></div>
-        <div class="right-deco"><img class="img-2d3d" src="{% static 'website/images/index/rightleaf.png' %}"
+        <div class="right-deco"><img class="img-2d3d"
+                src="{% static 'website/images/index/rightleaf.png' %}"
                 data-2d="https://res.cloudinary.com/skyrev/image/upload/v1613842291/skyrev/education/footer_plant2_2d_2x_cyd1pl.png"
                 data-3d="https://res.cloudinary.com/skyrev/image/upload/v1613842291/skyrev/education/footer_plant2_3d_2x_dvi0iw.png"
                 alt="footer"></div>
@@ -15,7 +48,8 @@
         <div class="row">
             <div class="col-md-3 pa-lg-4 logo-area">
                 <div class="logo"><span class="logo-main landscape medium"><img
-                            src="{% static 'website/images/logo-education.png' %}" alt="logo">E-Learn</span>
+                            src="{% static 'website/images/logo-education.png' %}"
+                            alt="logo">E-Learn</span>
                 </div>
                 <p class="body-2">Anywhere, anytime. Start learning today! And Get an Exceptional
                     Education Experience.</p>
@@ -25,7 +59,8 @@
                 <ul class="show-sm-down collapsible">
                     <li class="accordion-content">
                         <div class="collapsible-header">
-                            <h6 class="title">Company</h6><i class="material-icons right arrow">expand_more</i>
+                            <h6 class="title">Company</h6><i
+                                class="material-icons right arrow">expand_more</i>
                         </div>
                         <div class="collapsible-body">
                             <ul>
@@ -38,7 +73,8 @@
                     </li>
                     <li class="accordion-content">
                         <div class="collapsible-header">
-                            <h6 class="title">Resources</h6><i class="material-icons right arrow">expand_more</i>
+                            <h6 class="title">Resources</h6><i
+                                class="material-icons right arrow">expand_more</i>
                         </div>
                         <div class="collapsible-body">
                             <ul>
@@ -51,7 +87,8 @@
                     </li>
                     <li class="accordion-content">
                         <div class="collapsible-header">
-                            <h6 class="title">Legal</h6><i class="material-icons right arrow">expand_more</i>
+                            <h6 class="title">Legal</h6><i
+                                class="material-icons right arrow">expand_more</i>
                         </div>
                         <div class="collapsible-body">
                             <ul>
@@ -97,7 +134,7 @@
                     <a class="btn btn-icon waves-effect">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
-                     <a class="btn btn-icon waves-effect">
+                    <a class="btn btn-icon waves-effect">
                         <i class="fa-brands fa-instagram-square"></i>
                     </a>
                     <a class="btn btn-icon waves-effect">
@@ -116,46 +153,5 @@
             </div>
         </div>
     </div>
-</footer><!-- ##### END FOOTER #####-->
-
-<!-- ##### CORNER #####-->
-<!-- <div class="hidden-md-down">
-    <div class="chat">
-        <div class="panel" id="chat_panel">
-            <header>
-                <h3><span class="indicator online"></span>Live Chat</h3>
-                <div class="btn btn-icon waves-effect close" id="close_chat"><i
-                        class="ion-android-close"></i></div>
-            </header>
-            <div class="chat-room" id="chat-container">
-                <ul>
-                    <li class="item">
-                        <div class="avatar"><img class="avatar-img"
-                                src="https://skyone.vercel.app/education/assets/images/avatars/pp_boy4.svg"
-                                alt="visitor"></div><span class="talk from">Hola!, Maecenas</span>
-                    </li>
-                    <li class="item justify-content-end"><span class="talk">Hola!, Maecenas
-                            nisl</span></li>
-                    <li class="item">
-                        <div class="avatar"><img class="avatar-img"
-                                src="https://skyone.vercel.app/education/assets/images/avatars/pp_boy4.svg"
-                                alt="visitor"></div><span class="talk from">Hola!, Maecenas</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="form">
-                <div class="input-field"><input id="chat_field" type="text"> <label
-                        for="chat_field">Ask something</label></div>
-                <div class="btn-floating waves-effect send" id="send_message"><span
-                        class="ion-android-send"></span></div>
-            </div>
-        </div>
-        <div class="btn-floating btn-large chat-button" id="toggle_chat"><span
-                class="indicator online"></span><i class="ion ion-chatbox"></i></div>
-    </div>
-</div> -->
-<!-- ##### END CORNER #####-->
-</div>
-</div>
-</div>
-</div>
+</footer>
+<!-- ##### END FOOTER #####-->
