@@ -3,7 +3,11 @@
 {% block content %}
 
 
-<link href="{% static 'admin/vendor/datatables/css/jquery.dataTables.min.css' %}" rel="stylesheet">
+ <!-- Datatable -->
+ <link href="{% static 'admin/vendor/datatables/css/jquery.dataTables.min.css' %}" rel="stylesheet">
+ <!-- Custom Stylesheet -->
+ <link href="{% static 'admin/vendor/jquery-nice-select/css/nice-select.css' %}" rel="stylesheet">
+ <link href="{% static 'admin/css/style.css' %}" rel="stylesheet">
 
 
 <div class="container-fluid">
@@ -13,7 +17,7 @@
                 <div class="col-xl-4 col-xxl-6 col-sm-6">
                     <div class="card">
                         <div class="card-header border-0 pb-0">
-                            <h4>Total Students</h4>
+                            <h4>Total Teachers</h4>
                         </div>
                         <div class="card-body pt-0 px-0 ">
                             <div id="chartBar" class="chartBar"></div>
@@ -48,165 +52,188 @@
 
                 <div class="col-xl-4 col-xxl-12 col-sm-12">
                     <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Instructors List</h4>
+                            <a href="{% url 'admins:instructorslist' %}">
+                                <button type="button" class="btn btn-rounded btn-outline-primary">view all</button>
+                            </a>
+                        </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table id="example5" class="display table table-stripped table-hover datatable" style="min-width: 845px">
+                                <table id="example3" class="display" style="min-width: 845px">
                                     <thead>
                                         <tr>
-                                            <th>
-                                                <div class="form-check custom-checkbox ms-2">
-                                                    <input type="checkbox" class="form-check-input" id="checkAll"
-                                                        required="">
-                                                    <label class="form-check-label" for="checkAll"></label>
-                                                </div>
-                                            </th>
-                                            <th>Patient ID</th>
-                                            <th>Date Check in</th>
-                                            <th>Patient Name</th>
-                                            <th>Doctor Assgined</th>
-                                            <th>Disease</th>
-                                            <th>Status</th>
-                                            <th>Room no</th>
-                                            <th>Action</th>
+                                            <th></th>
+                                            <th>Name</th>
+                                            <th>Subject</th>
+                                            <th>Mobile</th>
+                                            <th>Email</th>
+                                            <th class="text-end">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>
-                                                <div class="form-check custom-checkbox ms-2">
-                                                    <input type="checkbox" class="form-check-input"
-                                                        id="customCheckBox2" required="">
-                                                    <label class="form-check-label" for="customCheckBox2"></label>
-                                                </div>
-                                            </td>
-                                            <td>#P-00001</td>
-                                            <td>26/02/2020, 12:42 AM</td>
+                                           
+                                            <td><img class="rounded-circle" width="35"
+                                                    src="{% static 'admin/images/profile/small/pic1.jpg' %}" alt=""></td>
                                             <td>Tiger Nixon</td>
-                                            <td>Dr. Cedric</td>
-                                            <td>Cold & Flu</td>
+                                            <td>English</td>
+                                            <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
+                                            <td><a href="javascript:void(0);"><strong><span>Tiger@gmail.com</span></strong></a></td>
+                                            
                                             <td>
-                                                <span class="badge light badge-danger">
-                                                    <i class="fa fa-circle text-danger me-1"></i>
-                                                    New Patient
-                                                </span>
-                                            </td>
-                                            <td>AB-001</td>
-                                            <td>
-                                                <div class="dropdown ms-auto text-end">
-                                                    <div class="btn-link" data-bs-toggle="dropdown">
-                                                        <svg width="24px" height="24px" viewBox="0 0 24 24"
-                                                            version="1.1">
-                                                            <g stroke="none" stroke-width="1" fill="none"
-                                                                fill-rule="evenodd">
-                                                                <rect x="0" y="0" width="24" height="24"></rect>
-                                                                <circle fill="#000000" cx="5" cy="12" r="2">
-                                                                </circle>
-                                                                <circle fill="#000000" cx="12" cy="12" r="2">
-                                                                </circle>
-                                                                <circle fill="#000000" cx="19" cy="12" r="2">
-                                                                </circle>
-                                                            </g>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="dropdown-menu dropdown-menu-end">
-                                                        <a class="dropdown-item" href="#">Accept Patient</a>
-                                                        <a class="dropdown-item" href="#">Reject Order</a>
-                                                        <a class="dropdown-item" href="#">View Details</a>
-                                                    </div>
+                                                <div class="d-flex">
+                                                    <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                                            class="fa fa-eye"></i></a>
+                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                            class="fa fa-trash"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <div class="form-check custom-checkbox ms-2">
-                                                    <input type="checkbox" class="form-check-input"
-                                                        id="customCheckBox3" required="">
-                                                    <label class="form-check-label" for="customCheckBox3"></label>
-                                                </div>
-                                            </td>
-                                            <td>#P-00002</td>
-                                            <td>28/02/2020, 12:42 AM</td>
+                                            
+                                            <td><img class="rounded-circle" width="35"
+                                                    src="{% static 'admin/images/profile/small/pic2.jpg' %}" alt=""></td>
                                             <td>Garrett Winters</td>
-                                            <td>Dr. Cedric</td>
-                                            <td>Sleep Problem</td>
+                                            <td>English</td>
+                                            <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
+                                            <td><a href="javascript:void(0);"><strong><span>Tiger@gmail.com</span></strong></a></td>
+                                            
                                             <td>
-                                                <span class="badge light badge-warning">
-                                                    <i class="fa fa-circle text-warning me-1"></i>
-                                                    In Treatment
-                                                </span>
-                                            </td>
-                                            <td>AB-002</td>
-                                            <td>
-                                                <div class="dropdown ms-auto text-end">
-                                                    <div class="btn-link" data-bs-toggle="dropdown">
-                                                        <svg width="24px" height="24px" viewBox="0 0 24 24"
-                                                            version="1.1">
-                                                            <g stroke="none" stroke-width="1" fill="none"
-                                                                fill-rule="evenodd">
-                                                                <rect x="0" y="0" width="24" height="24"></rect>
-                                                                <circle fill="#000000" cx="5" cy="12" r="2">
-                                                                </circle>
-                                                                <circle fill="#000000" cx="12" cy="12" r="2">
-                                                                </circle>
-                                                                <circle fill="#000000" cx="19" cy="12" r="2">
-                                                                </circle>
-                                                            </g>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="dropdown-menu dropdown-menu-end">
-                                                        <a class="dropdown-item" href="#">Accept Patient</a>
-                                                        <a class="dropdown-item" href="#">Reject Order</a>
-                                                        <a class="dropdown-item" href="#">View Details</a>
-                                                    </div>
+                                                <div class="d-flex">
+                                                    <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                                            class="fa fa-eye"></i></a>
+                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                            class="fa fa-trash"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <div class="form-check custom-checkbox ms-2">
-                                                    <input type="checkbox" class="form-check-input"
-                                                        id="customCheckBox4" required="">
-                                                    <label class="form-check-label" for="customCheckBox4"></label>
-                                                </div>
-                                            </td>
-                                            <td>#P-00003</td>
-                                            <td>26/02/2020, 12:42 AM</td>
+                                            
+                                            <td><img class="rounded-circle" width="35"
+                                                    src="{% static 'admin/images/profile/small/pic3.jpg' %}" alt=""></td>
                                             <td>Ashton Cox</td>
-                                            <td>Dr. Rhona</td>
-                                            <td>Cold & Flu</td>
+                                            <td>English</td>
+                                            <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
+                                            <td><a href="javascript:void(0);"><strong><span>Tiger@gmail.com</span></strong></a></td>
+                                            
                                             <td>
-                                                <span class="badge light badge-success">
-                                                    <i class="fa fa-circle text-success me-1"></i>
-                                                    Recovered
-                                                </span>
-                                            </td>
-                                            <td>AB-003</td>
-                                            <td>
-                                                <div class="dropdown ms-auto text-end">
-                                                    <div class="btn-link" data-bs-toggle="dropdown">
-                                                        <svg width="24px" height="24px" viewBox="0 0 24 24"
-                                                            version="1.1">
-                                                            <g stroke="none" stroke-width="1" fill="none"
-                                                                fill-rule="evenodd">
-                                                                <rect x="0" y="0" width="24" height="24"></rect>
-                                                                <circle fill="#000000" cx="5" cy="12" r="2">
-                                                                </circle>
-                                                                <circle fill="#000000" cx="12" cy="12" r="2">
-                                                                </circle>
-                                                                <circle fill="#000000" cx="19" cy="12" r="2">
-                                                                </circle>
-                                                            </g>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="dropdown-menu dropdown-menu-end">
-                                                        <a class="dropdown-item" href="#">Accept Patient</a>
-                                                        <a class="dropdown-item" href="#">Reject Order</a>
-                                                        <a class="dropdown-item" href="#">View Details</a>
-                                                    </div>
+                                                <div class="d-flex">
+                                                    <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                                            class="fa fa-eye"></i></a>
+                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                            class="fa fa-trash"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
-                                        
+                                        <tr>
+                                           
+                                            <td><img class="rounded-circle" width="35"
+                                                    src="{% static 'admin/images/profile/small/pic4.jpg' %}" alt=""></td>
+                                            <td>Cedric Kelly</td>
+                                            <td>English</td>
+                                            <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
+                                            <td><a href="javascript:void(0);"><strong><span>Tiger@gmail.com</span></strong></a></td>
+                                            
+                                            <td>
+                                                <div class="d-flex">
+                                                    <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                                            class="fa fa-eye"></i></a>
+                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                            class="fa fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                           
+                                            <td><img class="rounded-circle" width="35"
+                                                    src="{% static 'admin/images/profile/small/pic5.jpg' %}" alt=""></td>
+                                            <td>Airi Satou</td>
+                                            <td>English</td>
+                                            <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
+                                            <td><a href="javascript:void(0);"><strong><span>Tiger@gmail.com</span></strong></a></td>
+                                            
+                                            <td>
+                                                <div class="d-flex">
+                                                    <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                                            class="fa fa-eye"></i></a>
+                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                            class="fa fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                           
+                                            <td><img class="rounded-circle" width="35"
+                                                    src="{% static 'admin/images/profile/small/pic6.jpg' %}" alt=""></td>
+                                            <td>Brielle Williamson</td>
+                                            <td>English</td>
+                                            <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
+                                            <td><a href="javascript:void(0);"><strong><span>Tiger@gmail.com</span></strong></a></td>
+                                            
+                                            <td>
+                                                <div class="d-flex">
+                                                    <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                                            class="fa fa-eye"></i></a>
+                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                            class="fa fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                          
+                                            <td><img class="rounded-circle" width="35"
+                                                    src="{% static 'admin/images/profile/small/pic9.jpg' %}" alt=""></td>
+                                            <td>Colleen Hurst</td>
+                                            <td>English</td>
+                                            <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
+                                            <td><a href="javascript:void(0);"><strong><span>Tiger@gmail.com</span></strong></a></td>
+                                            
+                                            <td>
+                                                <div class="d-flex">
+                                                    <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                                            class="fa fa-eye"></i></a>
+                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                            class="fa fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td><img class="rounded-circle" width="35"
+                                                    src="{% static 'admin/images/profile/small/pic10.jpg' %}" alt=""></td>
+                                            <td>Sonya Frost</td>
+                                            <td>English</td>
+                                            <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
+                                            <td><a href="javascript:void(0);"><strong><span>Tiger@gmail.com</span></strong></a></td>
+                                            
+                                            <td>
+                                                <div class="d-flex">
+                                                    <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                                            class="fa fa-eye"></i></a>
+                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                            class="fa fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td><img class="rounded-circle" width="35"
+                                                    src="{% static 'admin/images/profile/small/pic1.jpg' %}" alt=""></td>
+                                            <td>Jena Gaines</td>
+                                            <td>English</td>
+                                            <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
+                                            <td><a href="javascript:void(0);"><strong><span>Tiger@gmail.com</span></strong></a></td>
+                                            
+                                            <td>
+                                                <div class="d-flex">
+                                                    <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                                            class="fa fa-eye"></i></a>
+                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                            class="fa fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -328,9 +355,16 @@
 
 
 {% block js %}
-    <script src="{% static 'vendor/datatables/js/jquery.dataTables.min.js' %}"></script>
-    <script src="{% static 'js/plugins-init/datatables.init.js' %}"></script>
+    <!-- Required vendors -->
     <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="{% static 'admin/vendor/global/global.min.js' %}"></script>
+    <script src="{% static 'admin/vendor/chart.js' %}/Chart.bundle.min.js' %}"></script>
+    <!-- Apex Chart -->
+    <!-- <script src="{% static 'admin/vendor/apexchart/apexchart.js' %}"></script> -->
+
+    <!-- Datatable -->
+    <script src="{% static 'admin/vendor/datatables/js/jquery.dataTables.min.js' %}"></script>
+    <script src="{% static 'admin/js/plugins-init/datatables.init.js' %}"></script>
 {% endblock %}
 
 {% endblock %}

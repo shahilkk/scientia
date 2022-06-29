@@ -1,0 +1,79 @@
+{% extends 'teacher/partial/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="container-fluid page__heading-container">
+    <div class="page__heading d-flex align-items-center justify-content-between">
+        <h1 class="m-0">Edit Course</h1>
+    </div>
+</div>
+
+
+
+
+
+<div class="container-fluid page__container">
+    <div class="row">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-form__body card-body">
+                    <div class="form-group">
+                        <label for="fname">Course Title </label>
+                        <div class="help-block my-1 p-1 text-muted bg-light border rounded">
+                            /course-title-is-editable-here</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fname">About</label>
+                        <textarea id="desc" rows="4" class="form-control"
+                            placeholder="Please enter a description"></textarea>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="desc">Description</label>
+                        <textarea id="desc" rows="4" class="form-control"
+                            placeholder="Please enter a description"></textarea>
+                    </div>
+                    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+                    <!-- Create the editor container -->
+                    <label for="desc">Chapter</label>
+
+                    <div id="editor" style="background-color: white;">
+                        <p>Hello World!</p>
+                        <p>Some initial <strong>bold</strong> text</p>
+                        <p><br></p>
+                    </div>
+
+                </div>
+                <div class="card-body text-center">
+
+                    <button type="submit" class="btn btn-success">Save Changes</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Include the Quill library -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+<!-- Initialize Quill editor -->
+<script>
+    var quill = new Quill('#editor', {
+        theme: 'snow'
+    });
+</script>
+{% endblock %}

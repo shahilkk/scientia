@@ -37,3 +37,11 @@ def student_dashboard(request):
 
 def students_list(request):
     return render(request,'admin/student_list.html')
+
+
+#admin details
+def profile(request):
+    return render(request,'admin/profile.html')
+
+def schedule(request):
+    return render(request,'admin/schedule.html')
