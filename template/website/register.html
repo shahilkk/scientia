@@ -1,0 +1,108 @@
+{% extends 'website/partials/base.html' %}
+{% load static %}
+{% block content %}
+                    <!-- ##### FORM #####-->
+                    <div class="container-general container-front">
+                        <div class="form-style">
+                            <div class="page-wrap">
+                                <div class="container inner-wrap">
+                                    <div class="auth-frame">
+                                        <div class="row mb-0">
+                                            <div class="col-md-6 px-lg-6 px-2">
+                                                <div class="card form-box fragment-fadeUp">
+                                                    <div class="form-wrap">
+                                                        <div class="form-style">
+                                                            <div class="head">
+                                                                <h4 class="use-text-title mq-md-up use-text-primary"
+                                                                    data-class="use-text-subtitle">Create new account
+                                                                </h4>
+                                                            </div>
+                                                            <div class="socmed-side-login"><button
+                                                                    class="btn navi-btn waves-effect"><i
+                                                                        class="ion-social-facebook left"></i>Facebook</button>
+                                                                <button class="btn blue-btn waves-effect"><i
+                                                                        class="ion-social-twitter left"></i>Twitter</button>
+                                                                <button class="btn red-btn waves-effect"><i
+                                                                        class="ion-social-google left"></i>Google</button>
+                                                            </div>
+                                                            <div class="separator">
+                                                                <p>Or register with email</p>
+                                                            </div>
+                                                            <form id="register_form">
+                                                                <div class="row spacing3 mb-0">
+                                                                    <div class="col-sm-12">
+                                                                        <div class="input-field dark"><input
+                                                                                class="validate" id="name" type="text"
+                                                                                name="name" required> <label
+                                                                                for="name">Name? *</label></div>
+                                                                    </div>
+                                                                    <div class="col-sm-12">
+                                                                        <div class="input-field dark"><input
+                                                                                class="validate" id="email" type="email"
+                                                                                name="email" required> <label
+                                                                                for="email">Email? *</label></div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="input-field dark mq-md-up"
+                                                                            data-class="me-2"><input class="validate"
+                                                                                id="password" type="password"
+                                                                                name="password" required> <label
+                                                                                for="password">Password</label></div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="input-field dark mq-md-up"
+                                                                            data-class="ms-2"><input class="validate"
+                                                                                id="confirm" type="password"
+                                                                                name="confirm"
+                                                                                data-validation="confirmation"
+                                                                                data-validation-confirm="password"
+                                                                                required> <label for="confirm">Confirm
+                                                                                Password</label></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="btn-area">
+                                                                    <div class="form-helper">
+                                                                        <div class="form-control-label"><label><input
+                                                                                    class="filled-in secondary"
+                                                                                    type="checkbox" required><span>I
+                                                                                    have read and accept the Terms of <a
+                                                                                        class="link" href="#">Service
+                                                                                        &amp; Privacy Policy
+                                                                                        *</a></span></label></div>
+                                                                    </div>
+                                                                    <div class="mt-4"><button
+                                                                            class="btn primary btn-large waves-effect"
+                                                                            type="submit">Continue</button></div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="hidden-sm-down">
+                                                    <div class="greeting">
+                                                        <h4 class="use-text-title2 use-text-primary pb-2">Just register
+                                                            to join with us</h4>
+                                                        <h6 class="use-text-subtitle2">A platform with efficient
+                                                            integration of many features and so much more</h6>
+                                                        <div class="img"><img class="img-2d3d"
+                                                                src="{% static 'website/images/index/register.png' %}"
+                                                                data-2d="https://res.cloudinary.com/skyrev/image/upload/v1613842318/skyrev/education/register_2d_2x_cvjgpg.png"
+                                                                data-3d="https://res.cloudinary.com/skyrev/image/upload/v1613842319/skyrev/education/register_3d_2x_gyprul.png"
+                                                                alt="registes"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- ##### END FORM #####-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

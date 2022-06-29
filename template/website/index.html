@@ -33,7 +33,7 @@
                                                         class="btn-flat waves-effect btn-large button primary-text"
                                                         href="#">see detail</a> <a
                                                         class="btn waves-effect button btn-large primary"
-                                                        href="register.html">get started</a></div>
+                                                        href="{% url 'website:register' %}">get started</a></div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 px-6">
@@ -228,7 +228,7 @@
                                     href="product-detail.html">&nbsp;</a>
                                 <div class="figure">
                                     <div class="responsive-img"
-                                        style="background-image:url(../../../res.cloudinary.com/imajin/image/upload/v1592702766/education/design_mfqgit.jpg);">
+                                        style="background-image:url({% static 'website/images/courses/c1.jpg' %});">
                                     </div>
                                 </div>
                                 <div class="desc">
@@ -258,7 +258,7 @@
                                     href="product-detail.html">&nbsp;</a>
                                 <div class="figure">
                                     <div class="responsive-img"
-                                        style="background-image:url(../../../res.cloudinary.com/imajin/image/upload/v1592702766/education/cook_bsillr.jpg);">
+                                        style="background-image:url({% static 'website/images/courses/c4.jpeg' %});">
                                     </div>
                                 </div>
                                 <div class="desc">
@@ -287,7 +287,7 @@
                                     href="product-detail.html">&nbsp;</a>
                                 <div class="figure">
                                     <div class="responsive-img"
-                                        style="background-image:url(../../../res.cloudinary.com/imajin/image/upload/v1592702766/education/music_nmw3mb.jpg);">
+                                        style="background-image:url({% static 'website/images/courses/c5.jpeg' %});">
                                     </div>
                                 </div>
                                 <div class="desc">
@@ -400,632 +400,17 @@
                                 </div>
                             </div>
                         </div>
-                    </div><button class="btn-floating nav prev waves-effect" id="prev_project" type="button"><i
-                            class="ion-ios-arrow-back"></i></button> <button class="btn-floating nav next waves-effect"
-                        id="next_project" type="button"><i class="ion-ios-arrow-forward"></i></button>
+                    </div>
+                    <button class="btn-floating nav prev waves-effect" id="prev_project" type="button">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        </button> 
+                        <button class="btn-floating nav next waves-effect"
+                        id="next_project" type="button">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
                 </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ##### END POPULAR #####-->
-    <!-- ##### EXPLORE #####-->
-    <!-- <section id="explore">
-        <div class="root">
-            <div class="container">
-                <div class="px-lg-6">
-                    <div class="px-8 px-lg-0">
-                        <div class="title-main align-left">
-                            <h4 class="primary"><span>Explore Course</span></h4>
-                            <p class="desc use-text-subtitle2">Choose from 100,000 online video
-                                courses with new additions published every month.</p>
-                        </div>
-                    </div>
-                    <div class="rack" id="cat1">
-                        <div class="category-title">
-                            <h3><i class="material-icons small">palette</i>&nbsp; Lorem Ipsum</h3><a
-                                class="btn-flat waves-effect primary-text view-all" href="products.html">see all<i
-                                    class="material-icons icon">arrow_forward</i></a>
-                        </div>
-                        <div class="content">
-                            <div class="book collapsed" style="border: 2px solid #f74e10">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702765/education/architect_vidsni.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #f74e10"><span>Interiors Beyond
-                                            Architecture</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Interiors Beyond
-                                            Architecture</h6>
-                                        <p class="use-text-paragraph">The overall premise of the
-                                            book is to learn Revit Architecture while developing the
-                                            interior of a two story law office</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon" title="5">star</i></div>
-                                            <strong>$50</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book collapsed" style="border: 2px solid #c7618c">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702765/education/art_yxsry4.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #c7618c"><span>Modern Art</span>
-                                    </figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Modern Art</h6>
-                                        <p class="use-text-paragraph">The works stand out for being
-                                            an intellectual painter in the creation of the pictorial
-                                            work from scratch</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon-disable" title="1">star</i></div>
-                                            <strong>$10</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book collapsed" style="border: 2px solid #e59546">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702766/education/cook_bsillr.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #e59546"><span>Joy of
-                                            Cooking</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Joy of Cooking</h6>
-                                        <p class="use-text-paragraph">The famously irreverent chef
-                                            also offers playful riffs on classics, reimagining
-                                            tuna-and-rice bowls.</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon" title="5">star</i></div>
-                                            <strong>$50</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book expanded" style="border: 2px solid #8f46e5">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1627130661/education/game_qm9tvu.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #8f46e5"><span>Metaverse For
-                                            Beginners</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Metaverse For Beginners
-                                        </h6>
-                                        <p class="use-text-paragraph">When people talk about the
-                                            future, they usually mean virtual reality.</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon-disable" title="1">star</i><i
-                                                    class="material-icons star-icon-disable" title="2">star</i></div>
-                                            <strong>$25</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book collapsed" style="border: 2px solid #ac8a55">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702766/education/music_nmw3mb.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #ac8a55"><span>Face the
-                                            Music</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Face the Music</h6>
-                                        <p class="use-text-paragraph">Face the Music is the shocking
-                                            inspirational story of one of rock’s most enduring
-                                            icons.</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon" title="5">star</i></div>
-                                            <strong>$50</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book collapsed" style="border: 2px solid #274be3">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702766/education/geo_pgt0fz.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #274be3"><span>Key Concepts in
-                                            Geography</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Key Concepts in
-                                            Geography</h6>
-                                        <p class="use-text-paragraph">This book clearly outlines key
-                                            concepts that all geographers should readily be able to
-                                            explain</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon" title="5">star</i></div>
-                                            <strong>$40</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book collapsed" style="border: 2px solid #6DB4A7">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702767/education/photo_dyr0df.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #6DB4A7"><span>On
-                                            Photography</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">On Photography</h6>
-                                        <p class="use-text-paragraph">Photographs are everywhere and
-                                            it has profoundly altered our relationship with the
-                                            world.</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon" title="5">star</i></div>
-                                            <strong>$50</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rack" id="cat2">
-                        <div class="category-title">
-                            <h3><i class="material-icons small">brightness_low</i>&nbsp; Lorem Ipsum
-                            </h3><a class="btn-flat waves-effect primary-text view-all" href="products.html">see all<i
-                                    class="material-icons icon">arrow_forward</i></a>
-                        </div>
-                        <div class="content">
-                            <div class="book collapsed" style="border: 2px solid #f74e10">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702765/education/architect_vidsni.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #f74e10"><span>Interiors Beyond
-                                            Architecture</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Interiors Beyond
-                                            Architecture</h6>
-                                        <p class="use-text-paragraph">The overall premise of the
-                                            book is to learn Revit Architecture while developing the
-                                            interior of a two story law office</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon" title="5">star</i></div>
-                                            <strong>$50</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book collapsed" style="border: 2px solid #c7618c">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702765/education/art_yxsry4.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #c7618c"><span>Modern Art</span>
-                                    </figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Modern Art</h6>
-                                        <p class="use-text-paragraph">The works stand out for being
-                                            an intellectual painter in the creation of the pictorial
-                                            work from scratch</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon-disable" title="1">star</i></div>
-                                            <strong>$10</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book expanded" style="border: 2px solid #e59546">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702766/education/cook_bsillr.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #e59546"><span>Joy of
-                                            Cooking</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Joy of Cooking</h6>
-                                        <p class="use-text-paragraph">The famously irreverent chef
-                                            also offers playful riffs on classics, reimagining
-                                            tuna-and-rice bowls.</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon" title="5">star</i></div>
-                                            <strong>$50</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book collapsed" style="border: 2px solid #8f46e5">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1627130661/education/game_qm9tvu.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #8f46e5"><span>Metaverse For
-                                            Beginners</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Metaverse For Beginners
-                                        </h6>
-                                        <p class="use-text-paragraph">When people talk about the
-                                            future, they usually mean virtual reality.</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon-disable" title="1">star</i><i
-                                                    class="material-icons star-icon-disable" title="2">star</i></div>
-                                            <strong>$25</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book collapsed" style="border: 2px solid #ac8a55">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702766/education/music_nmw3mb.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #ac8a55"><span>Face the
-                                            Music</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Face the Music</h6>
-                                        <p class="use-text-paragraph">Face the Music is the shocking
-                                            inspirational story of one of rock’s most enduring
-                                            icons.</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon" title="5">star</i></div>
-                                            <strong>$50</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book collapsed" style="border: 2px solid #274be3">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702766/education/geo_pgt0fz.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #274be3"><span>Key Concepts in
-                                            Geography</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Key Concepts in
-                                            Geography</h6>
-                                        <p class="use-text-paragraph">This book clearly outlines key
-                                            concepts that all geographers should readily be able to
-                                            explain</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon" title="5">star</i></div>
-                                            <strong>$40</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book collapsed" style="border: 2px solid #6DB4A7">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702767/education/photo_dyr0df.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #6DB4A7"><span>On
-                                            Photography</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">On Photography</h6>
-                                        <p class="use-text-paragraph">Photographs are everywhere and
-                                            it has profoundly altered our relationship with the
-                                            world.</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon" title="5">star</i></div>
-                                            <strong>$50</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rack mb-10" id="cat3">
-                        <div class="category-title">
-                            <h3><i class="material-icons small">language</i>&nbsp; Lorem Ipsum</h3>
-                            <a class="btn-flat waves-effect primary-text view-all" href="products.html">see all<i
-                                    class="material-icons icon">arrow_forward</i></a>
-                        </div>
-                        <div class="content">
-                            <div class="book collapsed" style="border: 2px solid #f74e10">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702765/education/architect_vidsni.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #f74e10"><span>Interiors Beyond
-                                            Architecture</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Interiors Beyond
-                                            Architecture</h6>
-                                        <p class="use-text-paragraph">The overall premise of the
-                                            book is to learn Revit Architecture while developing the
-                                            interior of a two story law office</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon" title="5">star</i></div>
-                                            <strong>$50</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book collapsed" style="border: 2px solid #c7618c">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702765/education/art_yxsry4.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #c7618c"><span>Modern Art</span>
-                                    </figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Modern Art</h6>
-                                        <p class="use-text-paragraph">The works stand out for being
-                                            an intellectual painter in the creation of the pictorial
-                                            work from scratch</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon-disable" title="1">star</i></div>
-                                            <strong>$10</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book collapsed" style="border: 2px solid #e59546">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702766/education/cook_bsillr.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #e59546"><span>Joy of
-                                            Cooking</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Joy of Cooking</h6>
-                                        <p class="use-text-paragraph">The famously irreverent chef
-                                            also offers playful riffs on classics, reimagining
-                                            tuna-and-rice bowls.</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon" title="5">star</i></div>
-                                            <strong>$50</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book collapsed" style="border: 2px solid #8f46e5">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1627130661/education/game_qm9tvu.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #8f46e5"><span>Metaverse For
-                                            Beginners</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Metaverse For Beginners
-                                        </h6>
-                                        <p class="use-text-paragraph">When people talk about the
-                                            future, they usually mean virtual reality.</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon-disable" title="1">star</i><i
-                                                    class="material-icons star-icon-disable" title="2">star</i></div>
-                                            <strong>$25</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book collapsed" style="border: 2px solid #ac8a55">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702766/education/music_nmw3mb.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #ac8a55"><span>Face the
-                                            Music</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Face the Music</h6>
-                                        <p class="use-text-paragraph">Face the Music is the shocking
-                                            inspirational story of one of rock’s most enduring
-                                            icons.</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon" title="5">star</i></div>
-                                            <strong>$50</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book collapsed" style="border: 2px solid #274be3">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702766/education/geo_pgt0fz.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #274be3"><span>Key Concepts in
-                                            Geography</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">Key Concepts in
-                                            Geography</h6>
-                                        <p class="use-text-paragraph">This book clearly outlines key
-                                            concepts that all geographers should readily be able to
-                                            explain</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon" title="5">star</i></div>
-                                            <strong>$40</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book expanded" style="border: 2px solid #6DB4A7">
-                                <figure><img
-                                        src="../../../res.cloudinary.com/imajin/image/upload/v1592702767/education/photo_dyr0df.jpg"
-                                        alt="title">
-                                    <figcaption style="background: #6DB4A7"><span>On
-                                            Photography</span></figcaption>
-                                </figure>
-                                <div class="desc">
-                                    <div class="text">
-                                        <h6 class="title pb-2 text-truncate">On Photography</h6>
-                                        <p class="use-text-paragraph">Photographs are everywhere and
-                                            it has profoundly altered our relationship with the
-                                            world.</p>
-                                    </div>
-                                    <div>
-                                        <div class="property">
-                                            <div class="rating"><i class="material-icons star-icon" title="1">star</i><i
-                                                    class="material-icons star-icon" title="2">star</i><i
-                                                    class="material-icons star-icon" title="3">star</i><i
-                                                    class="material-icons star-icon" title="4">star</i><i
-                                                    class="material-icons star-icon" title="5">star</i></div>
-                                            <strong>$50</strong>
-                                        </div><a class="btn btn-outlined primary button block"
-                                            href="product-detail.html">see detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+        
+    </section> 
     <!-- ##### END EXPLORE #####-->
 
 
@@ -1052,7 +437,7 @@
                                     tech industry through accessible education and apprenticeship,
                                     unlocking the door to opportunity and empowering people to
                                     achieve their dreams.</p>
-                            </div><a class="btn secondary waves-effect" href="login.html">Join
+                            </div><a class="btn secondary waves-effect" href="{% url 'website:login' %}">Join
                                 Now</a>
                         </div>
                     </div>
@@ -1308,8 +693,7 @@
                 <p class="desc use-text-subtitle2">They Are Doing Great Things With Us</p>
             </div>
             <div class="slider-wrap">
-                <div class="carousel"><button class="btn-floating nav prev waves-effect" id="prev_testi"><i
-                            class="ion-ios-arrow-back"></i></button>
+                <div class="carousel"><button class="btn-floating nav prev waves-effect" id="prev_testi"><i class="fa-solid fa-arrow-left"></i></button> <i class="t"></i>
                     <div class="slick-carousel" id="testimonial_carousel">
                         <div class="item">
                             <div class="testimonial-card">
@@ -1371,8 +755,7 @@
                                 <p class="caption">Senior Graphic Designer</p>
                             </div>
                         </div>
-                    </div><button class="btn-floating nav next waves-effect" id="next_testi"><i
-                            class="ion-ios-arrow-forward"></i></button>
+                    </div><button class="btn-floating nav next waves-effect" id="next_testi"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
