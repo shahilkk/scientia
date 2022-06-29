@@ -66,49 +66,14 @@
             <div id="home">
                 <div class="main-wrap">
                     <!-- #### HEADER ####-->
-                    <div class="sidenav mobile-nav" id="slide_menu">
-                        <div class="side-multilv">
-                            <div class="collection side-multilv">
-                                <ul class="collapsible expandable">
-                                    <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                            href="{% url 'website:index' %}">home</a></li>
-                                    <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                            href="#popular">Popular Course</a></li>
-                                    <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                            href="#about">About
-                                            Us</a></li>
-                                    <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                            href="#mentor">Mentors</a></li>
-                                    <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                                href="#blog-home">Updates</a></li>
-                                    <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                                    href="#mentor">Contact Us</a></li>
-
-                                </ul>
-
-
-
-
-
-                            </div>
-                            <div class="dropdown-divider"></div>
-                            <div class="collection">
-                                <ul>
-                                    <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                            href="login.html">Login</a></li>
-                                    <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                            href="register.html">register</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    
                     
                     {% include 'website/partials/header.html' %}
                     <!-- #### END HEADER ####-->
 
 
                     {% block content %}
-                    
+
                     {% endblock %}
                     
                     <!-- ##### SUBSCRIBE FORM #####-->
