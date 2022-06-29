@@ -21,4 +21,8 @@ urlpatterns = [
     path('studentdashboard',views.student_dashboard,name='studentdashboard'),
     path('studentslist',views.students_list,name='studentslist'),
 
+    #admin
+    path('profile',views.profile,name='profile'),
+
+
 ]
