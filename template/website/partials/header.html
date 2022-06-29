@@ -6,31 +6,17 @@
                                 <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
                                                 href="{% url 'website:index' %}">home</a></li>
                                 <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                                href="#popular">Popular Course</a></li>
-                                <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                                href="#about">About
-                                                Us</a></li>
-                                <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                                href="#mentor">Mentors</a></li>
-                                <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                                href="#blog-home">Updates</a></li>
-                                <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                                href="#mentor">Contact Us</a></li>
+                                                href="{% url 'website:contact' %}">Contact Us</a></li>
 
                         </ul>
-
-
-
-
-
                 </div>
                 <div class="dropdown-divider"></div>
                 <div class="collection">
                         <ul>
                                 <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                                href="login.html">Login</a></li>
+                                                href="l{% url 'website:login' %}">Login</a></li>
                                 <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                                href="register.html">register</a></li>
+                                                href="{% url 'website:register' %}">register</a></li>
                         </ul>
                 </div>
         </div>
@@ -52,16 +38,6 @@
                                         <ul class="main-menu">
                                                 <li><a class="btn btn-flat anchor-link waves-effect"
                                                                 href="{% url 'website:index' %}">Home</a>
-                                                </li>
-                                                <li><a class="btn btn-flat anchor-link waves-effect"
-                                                                href="#popular">popular
-                                                                course</a></li>
-                                                <li><a class="btn btn-flat anchor-link waves-effect" href="#about">About
-                                                                Us</a></li>
-                                                <li><a class="btn btn-flat anchor-link waves-effect"
-                                                                href="#mentor">mentors</a></li>
-                                                <li><a class="btn btn-flat anchor-link waves-effect"
-                                                                href="#blog-home">Updates</a>
                                                 </li>
                                                 <li><a class="btn btn-flat anchor-link waves-effect"
                                                                 href="{% url 'website:contact' %}">Contact
