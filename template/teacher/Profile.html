@@ -1,0 +1,187 @@
+{% extends 'teacher/partial/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="bg-secondary text-white d-flex justify-content-center align-items-center p-4 mb-4" style="height:400px">
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center text-center text-lg-left">
+        <div class="mr-lg-4 mb-4 mb-lg-0">
+            <img src="{% static 'teacher/images/256_jeremy-banks-798787-unsplash.jpg' %} " class="rounded-circle"
+                width="200" alt="Frontted">
+        </div>
+        <div>
+            <h1 class="mb-lg-4">Adrian Demian</h1>
+            <p class="mb-lg-4">English lecture</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid page__container">
+    <h4 class="mb-4">Details About Adrian</h4>
+
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="card card__course">
+                <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                    <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
+                        <!-- <span><img src=" {% static 'teacher/images/logos/react.svg' %} " class="mb-1"
+                                style="width:34px;" alt="logo"></span> -->
+                        <span class="course__title">English</span>
+                        <span class="course__subtitle">Learn the Basics</span>
+                    </a>
+                </div>
+                <div class="p-3">
+                    <div class="mb-2">
+                        <div class="card">
+                            <ul class="nav nav-tabs nav-tabs-card" style="background-color: #dddddd !important;">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#first" data-toggle="tab">Basic Informations</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#second" data-toggle="tab">Qualification Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#third" data-toggle="tab">Personal Informations</a>
+                                </li>
+                            </ul>
+                            <div class="card-body tab-content ">
+                                <div class="tab-pane active" id="first">
+                                    <div class="row p-3">
+                                        <div class="col-lg-2 col-sm-1">
+
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2">
+                                            First Name
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2">
+                                            : Adrian
+                                        </div>
+                                    </div>
+                                    <div class="row p-3">
+                                        <div class="col-lg-2 col-sm-6">
+
+                                        </div>
+                                        <div class="col-lg-2 col-sm-4">
+                                            Last Name
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2">
+                                            : Demian
+                                        </div>
+                                    </div>
+                                    <div class="row p-3">
+                                        <div class="col-2">
+
+                                        </div>
+                                        <div class="col-2">
+                                            Phone Number
+                                        </div>
+                                        <div class="col-2">
+                                            : 9859877562
+                                        </div>
+                                    </div>
+                                    <div class="row p-3">
+                                        <div class="col-2">
+
+                                        </div>
+                                        <div class="col-2">
+                                            Email
+                                        </div>
+                                        <div class="col-2">
+                                            : Adrian@gmail.com
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="second">
+                                    <div class="row p-3">
+                                        <div class="col-2">
+
+                                        </div>
+                                        <div class="col-2">
+                                            Qualification
+                                        </div>
+                                        <div class="col-2">
+                                            : BSC
+                                        </div>
+                                    </div>
+                                    <div class="row p-3">
+                                        <div class="col-2">
+
+                                        </div>
+                                        <div class="col-2">
+                                            Experince
+                                        </div>
+                                        <div class="col-2">
+                                            : 2 year
+                                        </div>
+                                    </div>
+                                    <div class="row p-3">
+                                        <div class="col-2">
+
+                                        </div>
+                                        <div class="col-2">
+                                            Specialized in
+                                        </div>
+                                        <div class="col-2">
+                                            : Maths
+                                        </div>
+                                    </div>
+                                    <div class="row p-3">
+                                        <div class="col-2">
+
+                                        </div>
+                                        <div class="col-2">
+                                            Achievments
+                                        </div>
+                                        <div class="col-2">
+                                            : aad vdfsw dff
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="third">
+                                    <div class="row p-3">
+                                        <div class="col-2">
+
+                                        </div>
+                                        <div class="col-2">
+                                            Address
+                                        </div>
+                                        <div class="col-2">
+                                            : fgewkjhg uyerhgnyrgh
+                                        </div>
+                                    </div>
+                                    <div class="row p-3">
+                                        <div class="col-2">
+
+                                        </div>
+                                        <div class="col-2">
+                                            City
+                                        </div>
+                                        <div class="col-2">
+                                            : DSf
+                                        </div>
+                                    </div>
+                                    <div class="row p-3">
+                                        <div class="col-2">
+
+                                        </div>
+                                        <div class="col-2">
+                                            State
+                                        </div>
+                                        <div class="col-2">
+                                            : FD
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
