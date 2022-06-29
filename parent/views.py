@@ -12,3 +12,6 @@ def index(request):
 
 def addstudent(request):
     return render(request,"parent/student/addstudent.html")
+
+def parentProfile(request):
+    return render(request,"parent/parent-profile.html")

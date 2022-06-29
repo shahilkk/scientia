@@ -4,7 +4,7 @@
 
   <!-- Logo -->
   <div class="logo-sn ms-d-block-lg">
-    <a class="pl-0 ml-0 text-center" href="index-2.html"><img src="{% static 'parent/img/logo/weeducate-4.png' %}"
+    <a class="pl-0 ml-0 text-center" href="{% url 'parent:index' %}"><img src="{% static 'parent/img/logo/weeducate-4.png' %}"
         alt="logo"> </a>
   </div>
 
@@ -12,12 +12,12 @@
   <ul class="accordion ms-main-aside fs-14" id="side-nav-accordion">
     <!-- Dashboard -->
     <li class="menu-item">
-      <a href="#" class="has-chevron" data-toggle="collapse" data-target="#dashboard" aria-expanded="false"
+      <a href="{% url 'parent:index' %}" class="has-chevron" data-toggle="collapse" data-target="#dashboard" aria-expanded="false"
         aria-controls="dashboard">
         <span><i class="material-icons fs-16">dashboard</i>Dashboard </span>
       </a>
       <ul id="dashboard" class="collapse" aria-labelledby="dashboard" data-parent="#side-nav-accordion">
-        <li> <a href="index-2.html">Weeducate</a> </li>
+        <li> <a href="{% url 'parent:index' %}">Weeducate</a> </li>
 
       </ul>
     </li>
@@ -43,7 +43,8 @@
     <!-------------------------- /Proessors End ---------------------->
 
     <!---------------------------Courses Start------------------------->
-    <!-- <li class="menu-item">
+    
+      <li class="menu-item">
       <a href="#" class="has-chevron" data-toggle="collapse" data-target="#courses" aria-expanded="false"
         aria-controls="dashboard">
         <span><i class="fa fa-graduation-cap fs-16"></i>Courses</span>
@@ -53,7 +54,8 @@
         <li> <a href="pages/courses/addcourses.html">Add Courses</a> </li>
         <li> <a href="pages/courses/aboutcourses.html">About Courses</a> </li>
       </ul>
-    </li> -->
+    </li>
+    
     <!--------------------------- /Courses End------------------------->
 
     <!--Student Start-->
@@ -63,7 +65,7 @@
         <span><i class="fa fa-users fs-16"></i>Student</span>
       </a>
       <ul id="student" class="collapse" aria-labelledby="courses" data-parent="#side-nav-accordion">
-        <li> <a href="pages/student/studentadd.html">Student Add</a> </li>
+        <li> <a href="{% url 'parent:addstudent' %}">Student Add</a> </li>
         <li> <a href="pages/student/studenttable.html">Student Table</a> </li>
       </ul>
     </li>
