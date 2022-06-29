@@ -42,3 +42,6 @@ def students_list(request):
 #admin details
 def profile(request):
     return render(request,'admin/profile.html')
+
+def schedule(request):
+    return render(request,'admin/schedule.html')

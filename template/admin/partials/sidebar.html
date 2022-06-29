@@ -16,6 +16,9 @@
                     <li><a href="">Dashboard Dark</a></li>
                     <li><a href="">Message</a></li>
                     <li><a href="{% url 'admins:profile' %}">Profile</a></li>
+                    <li> <a href="{% url 'admins:schedule' %}">
+                        Schedule
+                    </a></li>
                 </ul>
 
             </li>
@@ -66,12 +69,11 @@
                     <span class="nav-text">Fee</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="instructor-dashboard.html">Dashboard</a></li>
-                    <li><a href="instructor-courses.html">Student List</a></li>
-                    <li><a href="instructor-schedule.html">Attendance</a></li>
-
+                    <li><a href="{% url 'admins:studentdashboard' %}">Fees</a></li>
+                    <li><a href="{% url 'admins:studentslist' %}">Fee updation</a></li>
                 </ul>
             </li>
+            
         </ul>
     </div>
 </div>

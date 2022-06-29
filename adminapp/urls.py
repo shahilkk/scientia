@@ -23,6 +23,7 @@ urlpatterns = [
 
     #admin
     path('profile',views.profile,name='profile'),
+    path('schedule',views.schedule,name='schedule'),
 
 
 ]
