@@ -5,6 +5,9 @@ from .models import *
 def index(request):
     return render(request,"website/index.html")
 
+def base(request):
+    return render(request,"website/partials/base.html")
+
 def login(request):
     return render(request,"website/login.html")
 
