@@ -15,7 +15,8 @@
 
     <div class="row page-titles">
         <ol class="breadcrumb">
-            <li class=" active"><a href="{% url 'admins:home' %}">Table / </a></li>
+            <li class=" active"><a href="{% url 'admins:home' %}">Dashboard / </a></li>
+            <li class=" active"><a href="{% url 'admins:instructordashboard' %}">Instructor / </a></li>
             <li class="breadcrumb-item"><a href="javascript:void(0)"> Instructors List</a></li>
         </ol>
     </div>
@@ -26,6 +27,7 @@
         
         <div class="col-12">
             <div class="card">
+                
                 <div class="card-body">
                     <div class="table-responsive">
                         <table id="example3" class="display" style="min-width: 845px">
@@ -58,9 +60,10 @@
                                     </td>
                                     <td>
                                         <div class="d-flex">
-                                            <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                            <a href="{% url 'admins:viewinstructor' %}" class="btn btn-info shadow btn-s sharp me-1 badge light badge-info"><i
                                                     class="fa fa-eye"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                            
+                                            <a href="#" class="btn btn-danger shadow btn-s sharp badge light badge-danger"><i
                                                     class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
@@ -81,9 +84,10 @@
                                     </td>
                                     <td>
                                         <div class="d-flex">
-                                            <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                            <a href="#" class="btn btn-info shadow btn-s sharp me-1 badge light badge-info"><i
                                                     class="fa fa-eye"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                            
+                                            <a href="#" class="btn btn-danger shadow btn-s sharp badge light badge-danger"><i
                                                     class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
@@ -104,9 +108,10 @@
                                     </td>
                                     <td>
                                         <div class="d-flex">
-                                            <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                            <a href="#" class="btn btn-info shadow btn-s sharp me-1 badge light badge-info"><i
                                                     class="fa fa-eye"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+
+                                            <a href="#" class="btn btn-danger shadow btn-s sharp badge light badge-danger"><i
                                                     class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
@@ -127,9 +132,10 @@
                                     </td>
                                     <td>
                                         <div class="d-flex">
-                                            <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                            <a href="#" class="btn btn-info shadow btn-s sharp me-1 badge light badge-info"><i
                                                     class="fa fa-eye"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                            
+                                            <a href="#" class="btn btn-danger shadow btn-s sharp badge light badge-danger"><i
                                                     class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
@@ -150,9 +156,10 @@
                                     </td>
                                     <td>
                                         <div class="d-flex">
-                                            <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                            <a href="#" class="btn btn-info shadow btn-s sharp me-1 badge light badge-info"><i
                                                     class="fa fa-eye"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                            
+                                            <a href="#" class="btn btn-danger shadow btn-s sharp badge light badge-danger"><i
                                                     class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
@@ -173,9 +180,10 @@
                                     </td>
                                     <td>
                                         <div class="d-flex">
-                                            <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                            <a href="#" class="btn btn-info shadow btn-s sharp me-1 badge light badge-info"><i
                                                     class="fa fa-eye"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                            
+                                            <a href="#" class="btn btn-danger shadow btn-s sharp badge light badge-danger"><i
                                                     class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
@@ -195,9 +203,10 @@
                                     </td>
                                     <td>
                                         <div class="d-flex">
-                                            <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                            <a href="#" class="btn btn-info shadow btn-s sharp me-1 badge light badge-info"><i
                                                     class="fa fa-eye"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                            
+                                            <a href="#" class="btn btn-danger shadow btn-s sharp badge light badge-danger"><i
                                                     class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
@@ -218,9 +227,10 @@
                                     </td>
                                     <td>
                                         <div class="d-flex">
-                                            <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                            <a href="#" class="btn btn-info shadow btn-s sharp me-1 badge light badge-info"><i
                                                     class="fa fa-eye"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                            
+                                            <a href="#" class="btn btn-danger shadow btn-s sharp badge light badge-danger"><i
                                                     class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
@@ -241,9 +251,10 @@
                                     </td>
                                     <td>
                                         <div class="d-flex">
-                                            <a href="#" class="btn btn-info shadow btn-xs sharp me-1"><i
+                                            <a href="#" class="btn btn-info shadow btn-s sharp me-1 badge light badge-info"><i
                                                     class="fa fa-eye"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                            
+                                            <a href="#" class="btn btn-danger shadow btn-s sharp badge light badge-danger"><i
                                                     class="fa fa-trash"></i></a>
                                         </div>
                                     </td>

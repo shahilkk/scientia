@@ -30,6 +30,9 @@ def add_instructor(request):
 def instructors_list(request):
     return render(request,'admin/instructors_list.html')
 
+def view_instructor(request):
+    return render(request,'admin/view_instructor.html')
+
 
 # Student and related
 def student_dashboard(request):
