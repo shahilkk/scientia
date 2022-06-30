@@ -2,12 +2,15 @@
 {% load static %}
 {% block content %}
 
-    <link rel="shortcut icon" type="image/png" href="{% static 'admin/images/favicon.png' %}" />
-    <!-- Datatable -->
-    <link href="{% static 'admin/vendor/datatables/css/jquery.dataTables.min.css' %}" rel="stylesheet">
-    <!-- Custom Stylesheet -->
-    <link href="{% static 'admin/vendor/jquery-nice-select/css/nice-select.css' %}" rel="stylesheet">
-    <link href="{% static 'admin/css/style.css' %}" rel="stylesheet">
+<style>
+
+</style>
+
+<!-- Datatable -->
+<link href="{% static 'admin/vendor/datatables/css/jquery.dataTables.min.css' %}" rel="stylesheet">
+<!-- Custom Stylesheet -->
+<link href="{% static 'admin/vendor/jquery-nice-select/css/nice-select.css' %}" rel="stylesheet">
+<link href="{% static 'admin/css/style.css' %}" rel="stylesheet">
 
 <div class="container-fluid">
     <div class="row page-titles">
@@ -17,257 +20,156 @@
         </ol>
     </div>
 
+    <div id="filter_inputs" class="card filter-card " style="display: block;">
+        <div class="card-body pb-3">
+            <form action="">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Course:</label>
+                            <select class="select form-control">
+                                <option>Select Status</option>
+                                <option value="Draft">Draft</option>
+                                <option value="Sent">Sent</option>
+                                <option value="Viewed">Viewed</option>
+                                <option value="Expired">Expired</option>
+                                <option value="Accepted">Accepted</option>
+                                <option value="Rejected">Rejected</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Date:</label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- <form action="#" class="">
+        <div class="d-lg-flex">
+            <div class="search-form mb-3 mr-3-lg search-form--light">
+                <input type="text" class="form-control" placeholder="Search courses" id="searchSample02">
+                <button class="btn" type="button"><i class="material-icons">search</i></button>
+            </div>
+
+            <div class="form-inline  mb-3 ml-auto">
+                <div class="form-group mr-3">
+                    <label for="custom-select" class="form-label mr-1">Category</label>
+                    <select id="custom-select" class="form-control custom-select" style="width: 200px;">
+                        <option selected>All categories</option>
+                        <option value="1">Vue.js</option>
+                        <option value="2">Node.js</option>
+                        <option value="3">GitHub</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="published01" class="form-label mr-1">Status</label>
+                    <select id="published01" class="form-control custom-select" style="width: 200px;">
+                        <option selected>All</option>
+                        <option value="1">In Progress</option>
+                        <option value="3">New Releases</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </form> -->
+
 
     <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title">Profile Datatable</h4>
-                </div>
-                <div class="card-body">
+        <div class="col-xl-12">
+            <div class="card students-list">
+                
+                <div class="card-body py-2">
                     <div class="table-responsive">
-                        <table id="example3" class="display" style="min-width: 845px">
-                            <thead>
+                        <table id="example3" class="display" style="min-width: 845px">                            <thead>
                                 <tr>
-                                    <th></th>
                                     <th>Name</th>
-                                    <th>Department</th>
-                                    <th>Gender</th>
-                                    <th>Education</th>
-                                    <th>Mobile</th>
+                                    <th>Student ID</th>
+                                    <th>Courses</th>
+                                    <th>Join Date</th>
+                                    <th>Parent</th>
+                                    <th>Phone</th>
                                     <th>Email</th>
-                                    <th>Joining Date</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><img class="rounded-circle" width="35"
-                                            src="{% static 'admin/images/profile/small/pic1.jpg' %}" alt=""></td>
-                                    <td>Tiger Nixon</td>
-                                    <td>Architect</td>
-                                    <td>Male</td>
-                                    <td>M.COM., P.H.D.</td>
-                                    <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
-                                    <td><a href="javascript:void(0);"><strong><span class="__cf_email__"
-                                                    data-cfemail="10797e767f507568717d607c753e737f7d">[email&#160;protected]</span></strong></a>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                             <img src="{% static 'admin/images/courses/pic3.jpg' %}" alt="">
+                                            <h4 class="mb-0 fs-16 font-w500">Karen Hope</h4>
+                                            
+                                        </div>
                                     </td>
-                                    <td>2011/04/25</td>
+                                    <td>1234567890</td>
+                                    <td>UI Design Courses</td>
+                                    <td>January 2, 2020</td>
+                                    <td>John</td>
+                                    <td>58639482</td>
+                                    <td>john@gmail.com</td>
                                     <td>
                                         <div class="d-flex">
-                                            <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
-                                                    class="fas fa-pencil-alt"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                            <a href="#" class="btn btn-info shadow btn-s sharp me-1 badge  light badge-info"><i
+                                                    class="fa fa-eye"></i></a>
+                                            <a href="#" class="btn btn-success shadow btn-s sharp me-1 badge  light badge-success"><i
+                                                    class="fa fa-edit"></i></a>        
+                                            <a href="#" class="btn btn-danger shadow btn-s sharp badge  light badge-danger"><i
                                                     class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><img class="rounded-circle" width="35"
-                                            src="{% static 'admin/images/profile/small/pic2.jpg' %}" alt=""></td>
-                                    <td>Garrett Winters</td>
-                                    <td>Accountant</td>
-                                    <td>Female</td>
-                                    <td>M.COM., P.H.D.</td>
-                                    <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
-                                    <td><a href="javascript:void(0);"><strong><span class="__cf_email__"
-                                                    data-cfemail="e38a8d858ca3869b828e938f86cd808c8e">[email&#160;protected]</span></strong></a>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="{% static 'admin/images/courses/pic2.jpg' %}" alt="">
+                                            <h4 class="mb-0 fs-16 font-w500">Karen Hope</h4>
+                                            
+                                        </div>
                                     </td>
-                                    <td>2011/07/25</td>
+                                    <td>1234567890</td>
+                                    <td>UI Design Courses</td>
+                                    <td>march 31, 2022</td>
+                                    <td>John</td>
+                                    <td>58639482</td>
+                                    <td>john@gmail.com</td>
                                     <td>
                                         <div class="d-flex">
-                                            <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
-                                                    class="fas fa-pencil-alt"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                            <a href="#" class="btn btn-info shadow btn-s sharp me-1 badge  light badge-info"><i
+                                                    class="fa fa-eye"></i></a>
+                                            <a href="#" class="btn btn-success shadow btn-s sharp me-1 badge  light badge-success"><i
+                                                    class="fa fa-edit"></i></a>        
+                                            <a href="#" class="btn btn-danger shadow btn-s sharp badge  light badge-danger"><i
                                                     class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><img class="rounded-circle" width="35"
-                                            src="{% static 'admin/images/profile/small/pic3.jpg' %}" alt=""></td>
-                                    <td>Ashton Cox</td>
-                                    <td>Junior Technical</td>
-                                    <td>Male</td>
-                                    <td>B.COM., M.COM.</td>
-                                    <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
-                                    <td><a href="javascript:void(0);"><strong><span class="__cf_email__"
-                                                    data-cfemail="d8b1b6beb798bda0b9b5a8b4bdf6bbb7b5">[email&#160;protected]</span></strong></a>
-                                    </td>
-                                    <td>2009/01/12</td>
                                     <td>
-                                        <div class="d-flex">
-                                            <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
-                                                    class="fas fa-pencil-alt"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
-                                                    class="fa fa-trash"></i></a>
+                                        <div class="d-flex align-items-center">
+                                            <img src="{% static 'admin/images/courses/pic4.jpg' %}" alt="">
+                                            <h4 class="mb-0 fs-16 font-w500">Karen Hope</h4>
+                                            
                                         </div>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td><img class="rounded-circle" width="35"
-                                            src="{% static 'admin/images/profile/small/pic4.jpg' %}" alt=""></td>
-                                    <td>Cedric Kelly</td>
-                                    <td>Developer</td>
-                                    <td>Male</td>
-                                    <td>B.COM., M.COM.</td>
-                                    <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
-                                    <td><a href="javascript:void(0);"><strong><span class="__cf_email__"
-                                                    data-cfemail="3d54535b527d58455c504d5158135e5250">[email&#160;protected]</span></strong></a>
-                                    </td>
-                                    <td>2012/03/29</td>
+                                    <td>1234567890</td>
+                                    <td>UI Design Courses</td>
+                                    <td>January 2, 2020</td>
+                                    <td>John</td>
+                                    <td>58639482</td>
+                                    <td>john@gmail.com</td>
                                     <td>
                                         <div class="d-flex">
-                                            <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
-                                                    class="fas fa-pencil-alt"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
-                                                    class="fa fa-trash"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img class="rounded-circle" width="35"
-                                            src="{% static 'admin/images/profile/small/pic5.jpg' %}" alt=""></td>
-                                    <td>Airi Satou</td>
-                                    <td>Accountant</td>
-                                    <td>Female</td>
-                                    <td>B.A, B.C.A</td>
-                                    <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
-                                    <td><a href="javascript:void(0);"><strong><span class="__cf_email__"
-                                                    data-cfemail="5d34333b321d38253c302d3138733e3230">[email&#160;protected]</span></strong></a>
-                                    </td>
-                                    <td>2008/11/28</td>
-                                    <td>
-                                        <div class="d-flex">
-                                            <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
-                                                    class="fas fa-pencil-alt"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
-                                                    class="fa fa-trash"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img class="rounded-circle" width="35"
-                                            src="{% static 'admin/images/profile/small/pic6.jpg' %}" alt=""></td>
-                                    <td>Brielle Williamson</td>
-                                    <td>Specialist</td>
-                                    <td>Male</td>
-                                    <td>B.COM., M.COM.</td>
-                                    <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
-                                    <td><a href="javascript:void(0);"><strong><span class="__cf_email__"
-                                                    data-cfemail="650c0b030a25001d04081509004b060a08">[email&#160;protected]</span></strong></a>
-                                    </td>
-                                    <td>2012/12/02</td>
-                                    <td>
-                                        <div class="d-flex">
-                                            <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
-                                                    class="fas fa-pencil-alt"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
-                                                    class="fa fa-trash"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img class="rounded-circle" width="35"
-                                            src="{% static 'admin/images/profile/small/pic7.jpg' %}" alt=""></td>
-                                    <td>Herrod Chandler</td>
-                                    <td>Sales Assistant</td>
-                                    <td>Female</td>
-                                    <td>B.A, B.C.A</td>
-                                    <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
-                                    <td><a href="javascript:void(0);"><strong><span class="__cf_email__"
-                                                    data-cfemail="f29b9c949db2978a939f829e97dc919d9f">[email&#160;protected]</span></strong></a>
-                                    </td>
-                                    <td>2012/08/06</td>
-                                    <td>
-                                        <div class="d-flex">
-                                            <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
-                                                    class="fas fa-pencil-alt"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
-                                                    class="fa fa-trash"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img class="rounded-circle" width="35"
-                                            src="{% static 'admin/images/profile/small/pic8.jpg' %}" alt=""></td>
-                                    <td>Rhona Davidson</td>
-                                    <td>Integration</td>
-                                    <td>Male</td>
-                                    <td>B.TACH, M.TACH</td>
-                                    <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
-                                    <td><a href="javascript:void(0);"><strong><span class="__cf_email__"
-                                                    data-cfemail="751c1b131a35100d14180519105b161a18">[email&#160;protected]</span></strong></a>
-                                    </td>
-                                    <td>2010/10/14</td>
-                                    <td>
-                                        <div class="d-flex">
-                                            <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
-                                                    class="fas fa-pencil-alt"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
-                                                    class="fa fa-trash"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img class="rounded-circle" width="35"
-                                            src="{% static 'admin/images/profile/small/pic9.jpg' %}" alt=""></td>
-                                    <td>Colleen Hurst</td>
-                                    <td>Javascript Developer</td>
-                                    <td>Female</td>
-                                    <td>B.A, B.C.A</td>
-                                    <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
-                                    <td><a href="javascript:void(0);"><strong><span class="__cf_email__"
-                                                    data-cfemail="7910171f16391c01181409151c571a1614">[email&#160;protected]</span></strong></a>
-                                    </td>
-                                    <td>2009/09/15</td>
-                                    <td>
-                                        <div class="d-flex">
-                                            <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
-                                                    class="fas fa-pencil-alt"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
-                                                    class="fa fa-trash"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img class="rounded-circle" width="35"
-                                            src="{% static 'admin/images/profile/small/pic10.jpg' %}" alt=""></td>
-                                    <td>Sonya Frost</td>
-                                    <td>Software Engineer</td>
-                                    <td>Male</td>
-                                    <td>B.COM., M.COM.</td>
-                                    <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
-                                    <td><a href="javascript:void(0);"><strong><span class="__cf_email__"
-                                                    data-cfemail="cba2a5ada48baeb3aaa6bba7aee5a8a4a6">[email&#160;protected]</span></strong></a>
-                                    </td>
-                                    <td>2008/12/13</td>
-                                    <td>
-                                        <div class="d-flex">
-                                            <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
-                                                    class="fas fa-pencil-alt"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
-                                                    class="fa fa-trash"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img class="rounded-circle" width="35"
-                                            src="{% static 'admin/images/profile/small/pic1.jpg' %}" alt=""></td>
-                                    <td>Jena Gaines</td>
-                                    <td>Office Manager</td>
-                                    <td>Female</td>
-                                    <td>B.TACH, M.TACH</td>
-                                    <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
-                                    <td><a href="javascript:void(0);"><strong><span class="__cf_email__"
-                                                    data-cfemail="8de4e3ebe2cde8f5ece0fde1e8a3eee2e0">[email&#160;protected]</span></strong></a>
-                                    </td>
-                                    <td>2008/12/19</td>
-                                    <td>
-                                        <div class="d-flex">
-                                            <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
-                                                    class="fas fa-pencil-alt"></i></a>
-                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                            <a href="#" class="btn btn-info shadow btn-s sharp me-1 badge  light badge-info"><i
+                                                    class="fa fa-eye"></i></a>
+                                            <a href="#" class="btn btn-success shadow btn-s sharp me-1 badge  light badge-success"><i
+                                                    class="fa fa-edit"></i></a>        
+                                            <a href="#" class="btn btn-danger shadow btn-s sharp badge  light badge-danger"><i
                                                     class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
@@ -284,22 +186,16 @@
 
 {% block js %}
 
+<!-- Required vendors -->
 <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="{% static 'admin/vendor/global/global.min.js' %}"></script>
-    <script src="{% static 'admin/vendor/chart.js/Chart.bundle.min.js' %}"></script>
-    <!-- Apex Chart -->
-    <script src="{% static 'admin/vendor/apexchart/apexchart.js' %}"></script>
+<script src="{% static 'admin/vendor/global/global.min.js' %}"></script>
+<script src="{% static 'admin/vendor/chart.js' %}/Chart.bundle.min.js' %}"></script>
+<!-- Apex Chart -->
+<!-- <script src="{% static 'admin/vendor/apexchart/apexchart.js' %}"></script> -->
 
-    <!-- Datatable -->
-    <script src="{% static 'admin/vendor/datatables/js/jquery.dataTables.min.js' %}"></script>
-    <script src="js/plugins-init/datatables.init.js' %}"></script>
-
-    <script src="{% static 'admin/vendor/jquery-nice-select/js/jquery.nice-select.min.js' %}"></script>
-
-    <script src="{% static 'admin/js/custom.js' %}"></script>
-    <script src="{% static 'admin/js/dlabnav-init.js' %}"></script>
-    <script src="{% static 'admin/js/demo.js' %}"></script>
-    <script src="{% static 'admin/js/styleSwitcher.js' %}"></script>
+<!-- Datatable -->
+<script src="{% static 'admin/vendor/datatables/js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'admin/js/plugins-init/datatables.init.js' %}"></script>
 
 {% endblock %}
 
