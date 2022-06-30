@@ -4,7 +4,10 @@
                 <div class="collection side-multilv">
                         <ul class="collapsible expandable">
                                 <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                                href="{% url 'website:index' %}">home</a></li>
+                                        href="{% url 'website:index' %}">home</a></li>
+                                <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
+                                        href="{% url 'website:index' %}">Popular Course</a></li>
+                               
                                 <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
                                                 href="{% url 'website:contact' %}">Contact Us</a></li>
 
@@ -35,16 +38,20 @@
                                                                 alt="logo">E-Learn</span></a>
                                 </div>
                                 <div class="scrollactive-nav scrollnav show-lg-up multi-menu">
+                                     
                                         <ul class="main-menu">
                                                 <li><a class="btn btn-flat anchor-link waves-effect"
-                                                                href="{% url 'website:index' %}">Home</a>
+                                                        href="{% url 'website:index' %}">Home</a>
                                                 </li>
+                                                <li><a class="btn btn-flat anchor-link waves-effect" href="{% url 'website:course' %}">popular
+                                                    course</a></li>
+                                                
                                                 <li><a class="btn btn-flat anchor-link waves-effect"
-                                                                href="{% url 'website:contact' %}">Contact
-                                                                Us</a>
+                                                        href="{% url 'website:contact' %}">Contact
+                                                        Us</a>
                                                 </li>
-
-                                        </ul>
+    
+                                            </ul>
                                 </div>
                                 <nav class="user-menu"><a class="btn btn-flat waves-effect show-sm-up"
                                                 href="{% url 'website:login' %}">Login</a>

@@ -5,8 +5,17 @@ from django.shortcuts import render
 def dashboard(request):
     return render(request,'teacher/home.html')
 
+def profile(request):
+    return render(request,'teacher/Profile.html')
+
+def edit_account(request):
+    return render(request,'teacher/Edit account.html')
+
 def courses(request):
     return render(request,'teacher/Courses.html')
+
+def edit_courses(request):
+    return render(request,'teacher/Edit Courses.html')
 
 def instructor_course(request):
     return render(request,'teacher/instructor-courses.html')
@@ -23,5 +32,14 @@ def quizz(request):
 def add_quizz(request):
     return render(request,'teacher/Add Quiz.html')
 
+def review_quizz(request):
+    return render(request,'teacher/Review quiz.html')
+
 def attendence_Report(request):
-    return render(request,'teacher/Student reports.html')
+    return render(request,'teacher/Attendence reports.html')
+
+def dailyExam_Report(request):
+    return render(request,'teacher/DailyExam reports.html')
+
+def finalExam_Report(request):
+    return render(request,'teacher/FinalExam Report.html')

@@ -4974,7 +4974,7 @@ a.ms-g-plus,
   position: relative;
   display: flex;
   align-items: flex-end;
-  background-image: url('https://via.placeholder.com/1920x400');
+  background-image: url('');
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -6843,3 +6843,8 @@ body:not(.ms-settings-open) .ms-settings-toggle:hover{
     color:#ffffff;
     
 }
+
+.fa-brush{
+  color:red
+}
+

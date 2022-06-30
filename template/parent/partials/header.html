@@ -8,7 +8,8 @@
   </div>
 
   <div class="logo-sn logo-sm ms-d-block-sm">
-    <a class="pl-0 ml-0 text-center navbar-brand mr-0" href="index-2.html"><img src="{% static 'parent/img/logo/weeducate-4.png' %}" alt="logo"> </a>
+    <a class="pl-0 ml-0 text-center navbar-brand mr-0" href="{% url 'parent:index'  %}">
+      <img src="{% static 'parent/img/logo/weeducate-4.png' %}" alt="logo"> </a>
   </div>
 
   <ul class="ms-nav-list ms-inline mb-0" id="ms-nav-options">
@@ -102,7 +103,7 @@
       </ul>
     </li>
     <li class="ms-nav-item">
-      <a href="#" class="text-disabled ms-toggler" data-target="#ms-recent-activity" data-toggle="slideRight"><i class="flaticon-menu"></i></a>
+      <a href="#" class="text-disabled ms-toggler" data-target="#ms-recent-activity" data-toggle="slideRight"><i class="fa-thin fa-braille fa-2x fa"></i></a>
     </li>
     <li class="ms-nav-item ms-nav-user dropdown">
       <a href="#"  id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="ms-user-img ms-img-round float-right" src="{% static 'parent/img/we-educate/new-student-5.jpg' %}" alt="people"> </a>
@@ -112,7 +113,7 @@
         </li>
         <li class="dropdown-divider"></li>
         <li class="ms-dropdown-list">
-          <a class="media fs-14 p-2" href="pages/prebuilt-pages/user-profile.html"> <span><i class="flaticon-user mr-2"></i> Profile</span> </a>
+          <a class="media fs-14 p-2" href="{% url 'parent:parent-profile' %}"> <span><i class="flaticon-user mr-2"></i> Profile</span> </a>
           <a class="media fs-14 p-2" href="pages/apps/email.html"> <span><i class="flaticon-mail mr-2"></i> Inbox</span> <span class="badge badge-pill badge-info">3</span> </a>
           <a class="media fs-14 p-2" href="pages/prebuilt-pages/user-profile.html"> <span><i class="flaticon-gear mr-2"></i> Account Settings</span> </a>
         </li>
