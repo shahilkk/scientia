@@ -20,6 +20,7 @@ urlpatterns = [
 
     path('Add videos/',views.add_videos,name="Add_videos"),
     path('Add lessons/',views.add_lessons,name="Add_lessons"),
+    path('Extra lesson add/',views.extra_lessons,name="Extra lesson add"),
 
     path('Attendence Report/',views.attendence_Report,name="Attendence Report"),
     path('Daily Exam Report/',views.dailyExam_Report,name="Daily Exam Report"),
