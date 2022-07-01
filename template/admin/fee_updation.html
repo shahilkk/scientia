@@ -1,0 +1,228 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Datatable -->
+<link href="{% static 'admin/vendor/datatables/css/jquery.dataTables.min.css' %}" rel="stylesheet">
+<!-- Custom Stylesheet -->
+<link href="{% static 'admin/vendor/jquery-nice-select/css/nice-select.css' %}" rel="stylesheet">
+<link href="{% static 'admin/css/style.css' %}" rel="stylesheet">
+
+<div class="container-fluid">
+    <div class="row page-titles">
+        <ol class="breadcrumb">
+            <li class=" active"><a href="{% url 'admins:home' %}">Dashboard /</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0)"> Fee Updation</a></li>
+        </ol>
+    </div>
+    
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-body">
+                <!-- Nav tabs -->
+                <div class="default-tab">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#home"> All Student</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#profile"></i> Paid</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#contact"> Pending</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel">
+                            <div class="pt-4">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table id="example4" class="display" style="min-width: 845px">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Student Id</th>
+                                                            <th>Student Name</th>
+                                                            <th>Status </th>
+                                                            <th>Due Date</th>
+                                                            <th>Amount</th>
+                                                            <th class="">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>01</td>
+                                                            <td>Tiger Nixon</td>
+                                                            <td><span class="badge light badge-success">Paid</span></td>
+                                                            <td>2011/04/25</td>
+                                                            <td><strong>120$</strong></td>
+                                                            <td class="text-end">
+                                                                <div class="d-flex">
+                                                                    <a href="{% url 'admins:viewinstructor' %}" class="btn btn-info shadow btn-s sharp me-1 badge light badge-info"><i
+                                                                            class="fa fa-eye"></i> view</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>02</td>
+                                                            <td>Garrett Winters</td>
+                                                            <td><span class="badge light badge-warning">Panding</span></td>
+                                                            <td>2011/07/25</td>
+                                                            <td><strong>120$</strong></td>
+                                                            <td class="text-end">
+                                                                <div class="d-flex">
+                                                                    <a href="{% url 'admins:viewinstructor' %}" class="btn btn-info shadow btn-s sharp me-1 badge light badge-info"><i
+                                                                            class="fa fa-eye"></i> view</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>03</td>
+                                                            <td>Ashton Cox</td>
+                                                            <td><span class="badge light badge-danger">over due</span></td>
+                                                            <td>2009/01/12</td>
+                                                            <td><strong>120$</strong></td>
+                                                            <td class="text-end">
+                                                                <div class="d-flex">
+                                                                    <a href="{% url 'admins:viewinstructor' %}" class="btn btn-info shadow btn-s sharp me-1 badge light badge-info"><i
+                                                                            class="fa fa-eye"></i> view</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>04</td>
+                                                            <td>Cedric Kelly</td>
+                                                            <td><span class="badge light badge-warning">Panding</span></td>
+                                                            <td>2012/03/29</td>
+                                                            <td><strong>120$</strong></td>
+                                                            <td class="text-end">
+                                                                <div class="d-flex">
+                                                                    <a href="{% url 'admins:viewinstructor' %}" class="btn btn-info shadow btn-s sharp me-1 badge light badge-info"><i
+                                                                            class="fa fa-eye"></i> view</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="profile">
+                            <div class="pt-4">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table id="example4" class="display" style="min-width: 845px">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Student Id</th>
+                                                            <th>Student Name</th>
+                                                            <th>Due Date</th>
+                                                            <th>Paid Date</th>
+                                                            <th>Amount</th>
+                                                            <th class="">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>01</td>
+                                                            <td>Tiger Nixon</td>
+                                                            <td>march 25, 2022</td>
+                                                            <td>2011/04/25</td>
+                                                            <td><strong>120$</strong></td>
+                                                            <td class="text-end">
+                                                                <div class="d-flex">
+                                                                    <a href="{% url 'admins:viewinstructor' %}" class="btn btn-info shadow btn-s sharp me-1 badge light badge-info"><i
+                                                                            class="fa fa-eye"></i> view</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>02</td>
+                                                            <td>Garrett Winters</td>
+                                                            <td>march 25, 2022</td>
+                                                            <td>2011/04/25</td>
+                                                            <td><strong>120$</strong></td>
+                                                            <td class="text-end">
+                                                                <div class="d-flex">
+                                                                    <a href="{% url 'admins:viewinstructor' %}" class="btn btn-info shadow btn-s sharp me-1 badge light badge-info"><i
+                                                                            class="fa fa-eye"></i> view</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="contact">
+                            <div class="pt-4">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table id="example4" class="display" style="min-width: 845px">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Student Id</th>
+                                                            <th>Student Name</th>
+                                                            <th>Due Date</th>
+                                                            <th>Amount</th>
+                                                            <th class="">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>01</td>
+                                                            <td>Tiger Nixon</td>
+                                                            <td>march 25, 2022</td>
+                                                            <td><strong>120$</strong></td>
+                                                            <td class="text-end">
+                                                                <div class="d-flex">
+                                                                    <a href="{% url 'admins:viewinstructor' %}" class="btn btn-info shadow btn-s sharp me-2 badge light badge-info"><i
+                                                                            class="fa fa-eye"></i> view</a>
+                                                                    <a href="" class="btn btn-danger shadow btn-s sharp me-1 badge light badge-danger me-3"><i
+                                                                            class="fa fa-undo"></i> Send</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block js %}
+<!-- Required vendors -->
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="{% static 'admin/vendor/global/global.min.js' %}"></script>
+<script src="{% static 'admin/vendor/chart.js' %}/Chart.bundle.min.js' %}"></script>
+<!-- Apex Chart -->
+<!-- <script src="{% static 'admin/vendor/apexchart/apexchart.js' %}"></script> -->
+
+<!-- Datatable -->
+<script src="{% static 'admin/vendor/datatables/js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'admin/js/plugins-init/datatables.init.js' %}"></script>
+{% endblock %}
+
+
+{% endblock %}

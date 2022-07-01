@@ -42,6 +42,16 @@ def students_list(request):
     return render(request,'admin/student_list.html')
 
 
+
+#fee and related
+def fee_adding(request):
+    return render(request,'admin/fee_adding.html')
+
+def fee_updation(request):
+    return render(request,'admin/fee_updation.html')
+
+
+
 #admin details
 def profile(request):
     return render(request,'admin/profile.html')
