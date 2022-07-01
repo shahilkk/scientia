@@ -11,7 +11,7 @@
         <div class="ms-card-body media">
           <div class="media-body">
             <h6>Add Your Chlid</h6>
-            <a href="{% url 'parent:addstudent' %}"><p class="ms-card-change"> <i class="material-icons">add</i>ADD</p> </a>
+            <a href="{% url 'parent:all-courses' %}"><p class="ms-card-change"> <i class="material-icons">add</i>ADD</p> </a>
             <p class="fs-12">You can Add your child here</p>
           </div>
         </div>
@@ -22,9 +22,10 @@
       <div class="ms-card card-gradient-secondary ms-widget ms-infographics-widget">
         <div class="ms-card-body media">
           <div class="media-body">
-            <h6>Total Fees</h6>
-            <p class="ms-card-change"> $30,950</p>
-            <p class="fs-12">22% increase</p>
+            <h6>View courses</h6>
+            <a href="{% url 'parent:addstudent' %}"><p class="ms-card-change"> <i class="material-icons"></i>View Course</p> </a>
+            
+            <p class="fs-12">You can see courses here</p>
           </div>
         </div>
         <i class="fas fa-dollar-sign"></i>
@@ -34,9 +35,10 @@
       <div class="ms-card card-gradient-warning ms-widget ms-infographics-widget">
         <div class="ms-card-body media">
           <div class="media-body">
-            <h6>Total Student</h6>
-            <p class="ms-card-change"> <i class="material-icons">arrow_upward</i> 4567</p>
-            <p class="fs-12">78% increase</p>
+            <h6>MarK Details</h6>
+            <a href="{% url 'parent:addstudent' %}">
+            <p class="ms-card-change"> <i class="material-icons">arrow_upward</i>Progress</p></a>
+            <p class="fs-12">See Your child's Progress</p>
           </div>
         </div>
         <i class="fa fa-users "></i>
@@ -57,314 +59,13 @@
   </div>
 
   <div class="row">
-    <div class="col-xl-6 col-md-12 ">
-      <div class="ms-panel ">
-        <div class="ms-panel-header">
-          <h6> Universties Toppers</h6>
-          <a class=" fa fa-chevron-down float-right" data-toggle="collapse" data-target="#topper"
-            aria-expanded="false" aria-controls="popups"> </a>
-        </div>
-        <div class="ms-panel-body" id="topper">
-          <div class="table-responsive">
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">Name</th>
-                  <th scope="col">Rank</th>
-                  <th scope="col">Persentage</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="ms-table-f-w"> <img src="{% static 'parent/img/we-educate/topper-1.jpg' %}"
-                      alt="people"> Chihoo Hwang </td>
-                  <td>1</td>
-                  <td>99.9%</td>
-                </tr>
-                <tr>
-                  <td class="ms-table-f-w"> <img src="{% static 'parent/img/we-educate/topper-2.jpg' %}"
-                      alt="people"> Ajay Suryavanash </td>
-                  <td>2</td>
-                  <td>98%</td>
-                </tr>
-                <tr>
-                  <td class="ms-table-f-w"> <img src="{% static 'parent/img/we-educate/topper-3.jpg' %}"
-                      alt="people"> Johnson </td>
-                  <td>3</td>
-                  <td>97%</td>
-                </tr>
-                <tr>
-                  <td class="ms-table-f-w"> <img src="{% static 'parent/img/we-educate/topper-5.jpg' %}"
-                      alt="people"> John Doe </td>
-                  <td>5</td>
-                  <td>93%</td>
-                </tr>
-                <tr>
-                  <td class="ms-table-f-w"> <img src="{% static 'parent/img/we-educate/topper-6.jpg' %}"
-                      alt="people"> John Doe </td>
-                  <td>6</td>
-                  <td>92%</td>
-                </tr>
-                <tr>
-                  <td class="ms-table-f-w"> <img src="{% static 'parent/img/we-educate/topper-2.jpg' %}"
-                      alt="people"> John Doe<br> </td>
-                  <td>7</td>
-                  <td>91%</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
+ 
 
     <div class="col-xl-6 col-md-12 ">
-
       <div class="ms-panel">
-
-        <div class="ms-panel-header ">
-          <h6>Student Monthly progress</h6>
-          <a class=" fa fa-chevron-down float-right" data-toggle="collapse" data-target="#graph"
-            aria-expanded="false" aria-controls="popups"> </a>
-        </div>
-
-        <div class="ms-panel-body " id="graph">
-          <canvas id="bar-chart"></canvas>
-        </div>
-
-
-      </div>
-
-    </div>
-    <!-- <div class="col-xl-6 col-md-12">
-      <div class="ms-panel pb-8">
-        <div class="ms-panel-header">
-          <h6>Course Table</h6>
-          <a class=" fa fa-chevron-down float-right" data-toggle="collapse" data-target="#course"
-            aria-expanded="false" aria-controls="popups"> </a>
-        </div>
-        <div class="ms-panel-body" id="course">
-          <div class="table-responsive">
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-
-                  <th scope="col">#</th>
-                  <th scope="col">Courses</th>
-                  <th scope="col">Professors</th>
-                  <th scope="col">Fees</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Java</td>
-                  <td>John Kery</td>
-                  <td>130$</td>
-
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Php</td>
-                  <td>Johnson</td>
-                  <td>140$</td>
-
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Anguler</td>
-                  <td>Kevin Owens</td>
-                  <td>120$</td>
-
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>React JS</td>
-                  <td>Kety Perey</td>
-                  <td>170$</td>
-
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>.Net</td>
-                  <td>Kevin shai</td>
-                  <td>110$</td>
-
-                </tr>
-                <tr>
-                  <th scope="row">6</th>
-                  <td>Javascript</td>
-                  <td>John Kesy</td>
-                  <td>90$</td>
-
-                </tr>
-                <tr>
-                  <th scope="row">7</th>
-                  <td>Kotline</td>
-                  <td>Alura</td>
-                  <td>180$</td>
-
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-
-
-  </div>
-
-
-  <div class="row">
-    <div class="col-xl-6 col-md-12 ">
-
-      <div class="ms-panel">
-
-        <div class="ms-panel-header ">
-          <h6>University Results</h6>
-          <a class=" fa fa-chevron-down float-right" data-toggle="collapse" data-target="#graph"
-            aria-expanded="false" aria-controls="popups"> </a>
-        </div>
-
-        <div class="ms-panel-body " id="graph">
-          <canvas id="bar-chart"></canvas>
-        </div>
-
-
-      </div>
-
-    </div>
-    <div class="col-xl-6 col-md-12">
-      <div class="ms-panel  height-84 ">
-        <div class="ms-panel-header">
-          <h6>Excellent Toppers</h6>
-        </div>
-        <div class="ms-panel-body">
-          <div class="table-responsive">
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">Name</th>
-                  <th scope="col">Rank</th>
-                  <th scope="col">Persentage</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="ms-table-f-w"> Chihoo Hwang </td>
-                  <td>1</td>
-                  <td>99.9%</td>
-                </tr>
-                <tr>
-                  <td class="ms-table-f-w"> Ajay Suryavanash </td>
-                  <td>2</td>
-                  <td>98%</td>
-                </tr>
-                <tr>
-                  <td class="ms-table-f-w"> Johnson </td>
-                  <td>3</td>
-                  <td>97%</td>
-                </tr>
-
-                <tr>
-                  <td class="ms-table-f-w"> Kalvish </td>
-                  <td>4</td>
-                  <td>96%</td>
-                </tr>
-
-
-              </tbody>
-            </table>
-          </div>
-        </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-xl-12 col-md-12 ">
-      <div class="ms-panel ">
-        <div class="ms-panel-header">
-          <h6>New Student List</h6>
-          <a class=" fa fa-chevron-down float-right" data-toggle="collapse" data-target="#list"
-            aria-expanded="false" aria-controls="popups"> </a>
-        </div>
-        <div class="ms-panel-body" id="list">
-          <div class="table-responsive">
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">Name</th>
-                  <th scope="col">Head Of Departements</th>
-                  <th scope="col">Date of Admit</th>
-                  <th scope="col">fees</th>
-                  <th scope="col">Branch</th>
-
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="ms-table-f-w"> <img src="{% static 'parent/img/we-educate/topper-1.jpg' %}"
-                      alt="people"> Chihoo Hwang </td>
-                  <td>Joan</td>
-                  <td>27/5/2021</td>
-                  <td>paid</td>
-                  <td>Meachnical</td>
-                </tr>
-                <tr>
-                  <td class="ms-table-f-w"> <img src="{% static 'parent/img/we-educate/topper-3.jpg' %}"
-                      alt="people"> Ajay Suryavanash </td>
-                  <td>Moxely</td>
-                  <td>11/6/2021</td>
-                  <td>Unpaid</td>
-                  <td>Electrical</td>
-                </tr>
-                <tr>
-                  <td class="ms-table-f-w"> <img src="{% static 'parent/img/we-educate/topper-5.jpg' %}"
-                      alt="people"> Johny martin </td>
-                  <td>Rich Flair</td>
-                  <td>26/5/2021</td>
-                  <td>paid</td>
-                  <td>Computer</td>
-                </tr>
-                <tr>
-                  <td class="ms-table-f-w"> <img src="{% static 'parent/img/we-educate/topper-6.jpg' %}"
-                      alt="people"> Noxin Lee </td>
-                  <td>Tony</td>
-                  <td>20/7/2021</td>
-                  <td>unpaid</td>
-                  <td>Civil</td>
-                </tr>
-                <tr>
-                  <td class="ms-table-f-w"> <img src="{% static 'parent/img/we-educate/topper-2.jpg' %}"
-                      alt="people">Jackey</td>
-                  <td>Bilgates</td>
-                  <td>11/4/2021</td>
-                  <td>paid</td>
-                  <td>Computer</td>
-                </tr>
-                <tr>
-                  <td class="ms-table-f-w"> <img src="{% static 'parent/img/we-educate/topper-5.jpg' %}"
-                      alt="people">Rocky </td>
-                  <td>Stephan</td>
-                  <td>24/6/2021</td>
-                  <td>unpaid</td>
-                  <td>Electronics</td>
-                </tr>
-
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-
-
 </div>
 
 

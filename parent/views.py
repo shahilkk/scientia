@@ -15,3 +15,9 @@ def addstudent(request):
 
 def parentProfile(request):
     return render(request,"parent/parent-profile.html")
+
+def allCourses(request):
+    return render(request,"parent/allcourses.html")
+
+def aboutCourse(request):
+    return render(request,"parent/aboutcourse.html")

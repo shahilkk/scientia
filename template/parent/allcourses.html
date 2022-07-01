@@ -1,0 +1,539 @@
+{% extends 'parent/partials/base.html' %}
+{% load static %}
+{% block content %}
+<div class="ms-content-wrapper">
+    <div class="row">
+
+        <div class="col-md-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb pl-0">
+                    <li class="breadcrumb-item"><a href="#"><i class="material-icons">home</i> Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Courses</li>
+                    <li class="breadcrumb-item active" aria-current="page">All Courses</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+
+            <div class="ms-card">
+                <div class="ms-card-body">
+                    <div class="media fs-14">
+                        <div class="mr-2 align-self-center">
+                            <img src="{% static 'parent/img/profile/topper-3.jpg' %}" class="ms-img-round "
+                                alt="people">
+                        </div>
+                        <div class="media-body">
+                            <h6>John Lorey </h6>
+                            <div class="dropdown float-right">
+                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="ms-dropdown-list">
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Comment</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Share</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Favorite</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="fs-12 my-1 text-disabled">Professor</p>
+                        </div>
+
+                    </div>
+                    <h6>10th Level Class</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc velit, dictum eget nulla
+                        a, sollicitudin rhoncus orci. Vivamus nec commodo turpis.</p>
+                </div>
+                <div class="ms-card-img">
+                    <a href="{% url 'parent:addstudent' %}">
+                    <img src="{% static 'parent/img/courses/net-course.jpg' %}" alt="card_img" class="w-100">
+                </a>
+                </div>
+                <div class="ms-card-footer text-disabled d-flex">
+                    <div class="ms-card-options">
+                        <a href="{% url 'parent:aboutcourse' %}">
+                        <i class="material-icons">favorite</i> See Details
+                        </a>
+                    </div>
+                    <div class="ms-card-options">
+                        <a href="{% url 'parent:addstudent' %}">
+                        <i class="material-icons">comment</i> Select
+                     </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="ms-card">
+                <div class="ms-card-body">
+                    <div class="media fs-14">
+                        <div class="mr-2 align-self-center">
+
+                            <img src="{% static 'parent/img/profile/topper-5.jpg' %}" class="ms-img-round "
+                                alt="people">
+
+                        </div>
+                        <div class="media-body">
+                            <h6>Kevin Owen </h6>
+                            <div class="dropdown float-right">
+                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="ms-dropdown-list">
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Comment</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Share</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Favorite</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="fs-12 my-1 text-disabled">Professor</p>
+                        </div>
+
+                    </div>
+                    <h6>9th Level Class</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc velit, dictum eget nulla
+                        a, sollicitudin rhoncus orci. Vivamus nec commodo turpis.</p>
+                </div>
+                <div class="ms-card-img">
+                    <a href="{% url 'parent:addstudent' %}">
+                    <img src="{% static 'parent/img/courses/react-course.jpg' %}" alt="card_img" class="w-100">
+                </a>
+                </div>
+                <div class="ms-card-footer text-disabled d-flex">
+                    <div class="ms-card-options">
+                        <i class="material-icons">favorite</i> See Details
+                    </div>
+                    <div class="ms-card-options">
+                        <i class="material-icons">comment</i> Select 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="ms-card">
+                <div class="ms-card-body">
+                    <div class="media fs-14">
+                        <div class="mr-2 align-self-center">
+                            <img src="{% static 'parent/img/profile/topper-6.jpg' %}" class="ms-img-round" alt="people">
+                        </div>
+                        <div class="media-body">
+                            <h6>Peterson </h6>
+                            <div class="dropdown float-right">
+                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="ms-dropdown-list">
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Comment</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Share</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Favorite</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="fs-12 my-1 text-disabled">Professor</p>
+                        </div>
+
+                    </div>
+                    <h6>8th Level Class</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc velit, dictum eget nulla
+                        a, sollicitudin rhoncus orci. Vivamus nec commodo turpis.</p>
+                </div>
+                <div class="ms-card-img">
+                    <a href="{% url 'parent:addstudent' %}">
+                    <img src="{% static 'parent/img/courses/java-course.jpg' %}" alt="card_img" class="w-100">
+                </a>
+                </div>
+                <div class="ms-card-footer text-disabled d-flex">
+                    <div class="ms-card-options">
+                        <i class="material-icons">favorite</i> See Details
+                    </div>
+                    <div class="ms-card-options">
+                        <i class="material-icons">comment</i> Select 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="ms-card">
+                <div class="ms-card-body">
+                    <div class="media fs-14">
+                        <div class="mr-2 align-self-center">
+                            <img src="{% static 'parent/img/profile/topper-1.jpg' %}" class="ms-img-round" alt="people">
+                        </div>
+                        <div class="media-body">
+                            <h6>Alura Johnson </h6>
+                            <div class="dropdown float-right">
+                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="ms-dropdown-list">
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Comment</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Share</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Favorite</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="fs-12 my-1 text-disabled">Professor</p>
+                        </div>
+
+                    </div>
+                    <h6>7th Level Class</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc velit, dictum eget nulla
+                        a, sollicitudin rhoncus orci. Vivamus nec commodo turpis.</p>
+                </div>
+                <div class="ms-card-img">
+                    <a href="{% url 'parent:addstudent' %}">
+                    <img src="{% static 'parent/img/courses/php-course.jpg' %}" alt="card_img" class="w-100">
+                </a>
+                </div>
+                <div class="ms-card-footer text-disabled d-flex">
+                    <div class="ms-card-options">
+                        <i class="material-icons">favorite</i> See Details
+                    </div>
+                    <div class="ms-card-options">
+                        <i class="material-icons">comment</i> Select 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="ms-card">
+                <div class="ms-card-body">
+                    <div class="media fs-14">
+                        <div class="mr-2 align-self-center">
+                            <img src="{% static 'parent/img/profile/topper-6.jpg' %}" class="ms-img-round" alt="people">
+                        </div>
+                        <div class="media-body">
+                            <h6>Ronaldo </h6>
+                            <div class="dropdown float-right">
+                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="ms-dropdown-list">
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Comment</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Share</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Favorite</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="fs-12 my-1 text-disabled">Professor</p>
+                        </div>
+
+                    </div>
+                    <h6>6th Level Class</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc velit, dictum eget nulla
+                        a, sollicitudin rhoncus orci. Vivamus nec commodo turpis.</p>
+                </div>
+                <div class="ms-card-img">
+                    <a href="{% url 'parent:addstudent' %}">
+                    <img src="{% static 'parent/img/courses/java-course.jpg' %}" alt="card_img" class="w-100">
+                </a>
+                </div>
+                <div class="ms-card-footer text-disabled d-flex">
+                    <div class="ms-card-options">
+                        <i class="material-icons">favorite</i> See Details
+                    </div>
+                    <div class="ms-card-options">
+                        <i class="material-icons">comment</i> Select 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="ms-card">
+                <div class="ms-card-body">
+                    <div class="media fs-14">
+                        <div class="mr-2 align-self-center">
+                            <img src="{% static 'parent/img/profile/topper-5.jpg' %}" class="ms-img-round" alt="people">
+                        </div>
+                        <div class="media-body">
+                            <h6>John Kery </h6>
+                            <div class="dropdown float-right">
+                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="ms-dropdown-list">
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Comment</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Share</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Favorite</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="fs-12 my-1 text-disabled">Professor</p>
+                        </div>
+
+                    </div>
+                    <h6>5th Level Class</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc velit, dictum eget nulla
+                        a, sollicitudin rhoncus orci. Vivamus nec commodo turpis.</p>
+                </div>
+                <div class="ms-card-img">
+                    <a href="{% url 'parent:addstudent' %}">
+                    <img src="{% static 'parent/img/courses/mysql-course.jpg' %}" alt="card_img" class="w-100">
+                </a>
+                </div>
+                <div class="ms-card-footer text-disabled d-flex">
+                    <div class="ms-card-options">
+                        <i class="material-icons">favorite</i> See Details
+                    </div>
+                    <div class="ms-card-options">
+                        <i class="material-icons">comment</i> Select 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="ms-card">
+                <div class="ms-card-body">
+                    <div class="media fs-14">
+                        <div class="mr-2 align-self-center">
+                            <img src="{% static 'parent/img/profile/topper-4.jpg' %}" class="ms-img-round" alt="people">
+                        </div>
+                        <div class="media-body">
+                            <h6>John Lowerence </h6>
+                            <div class="dropdown float-right">
+                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="ms-dropdown-list">
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Comment</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Share</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Favorite</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="fs-12 my-1 text-disabled">Professor</p>
+                        </div>
+
+                    </div>
+                    <h6>4th Level Class</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc velit, dictum eget nulla
+                        a, sollicitudin rhoncus orci. Vivamus nec commodo turpis.</p>
+                </div>
+                <div class="ms-card-img">
+                    <a href="{% url 'parent:addstudent' %}">
+                    <img src="{% static 'parent/img/courses/kotlin-course.jpg' %}" alt="card_img" class="w-100">
+                </a>
+                </div>
+                <div class="ms-card-footer text-disabled d-flex">
+                    <div class="ms-card-options">
+                        <i class="material-icons">favorite</i> See Details
+                    </div>
+                    <div class="ms-card-options">
+                        <i class="material-icons">comment</i> Select 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="ms-card">
+                <div class="ms-card-body">
+                    <div class="media fs-14">
+                        <div class="mr-2 align-self-center">
+                            <img src="{% static 'parent/img/profile/topper-2.jpg' %}" class="ms-img-round" alt="people">
+                        </div>
+                        <div class="media-body">
+                            <h6>John Doe </h6>
+                            <div class="dropdown float-right">
+                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="ms-dropdown-list">
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Comment</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Share</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Favorite</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="fs-12 my-1 text-disabled">Professor</p>
+                        </div>
+
+                    </div>
+                    <h6>3th Level Class</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc velit, dictum eget nulla
+                        a, sollicitudin rhoncus orci. Vivamus nec commodo turpis.</p>
+                </div>
+                <div class="ms-card-img">
+                    <img src="{% static 'parent/img/courses/wordpress-course.jpg' %}" alt="card_img" class="w-100">
+                </div>
+                <div class="ms-card-footer text-disabled d-flex">
+                    <div class="ms-card-options">
+                        <i class="material-icons">favorite</i> 982
+                    </div>
+                    <div class="ms-card-options">
+                        <i class="material-icons">comment</i> 785
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="ms-card">
+                <div class="ms-card-body">
+                    <div class="media fs-14">
+                        <div class="mr-2 align-self-center">
+                            <img src="{% static 'parent/img/profile/topper-5.jpg' %}" class="ms-img-round" alt="people">
+                        </div>
+                        <div class="media-body">
+                            <h6>John Moxely </h6>
+                            <div class="dropdown float-right">
+                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="ms-dropdown-list">
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Comment</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Share</span>
+                                            </div>
+                                        </a>
+                                        <a class="media p-2" href="#">
+                                            <div class="media-body">
+                                                <span>Favorite</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="fs-12 my-1 text-disabled">Professor</p>
+                        </div>
+
+                    </div>
+                    <h6>2th Level Class</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc velit, dictum eget nulla
+                        a, sollicitudin rhoncus orci. Vivamus nec commodo turpis.</p>
+                </div>
+                <div class="ms-card-img">
+                    <a href="{% url 'parent:addstudent' %}">
+                    <img src="{% static 'parent/img/courses/kotlin-course.jpg' %}" alt="card_img" class="w-100">
+                </a>
+                </div>
+                <div class="ms-card-footer text-disabled d-flex">
+                    <div class="ms-card-options">
+                        <i class="material-icons">favorite</i> See Details
+                    </div>
+                    <div class="ms-card-options">
+                        <i class="material-icons">comment</i> Select 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+{% endblock %}
