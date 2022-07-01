@@ -21,3 +21,6 @@ def allCourses(request):
 
 def aboutCourse(request):
     return render(request,"parent/aboutcourse.html")
+
+def holiday(request):
+    return render(request,"parent/holiday.html")

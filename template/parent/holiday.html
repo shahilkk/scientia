@@ -1,0 +1,49 @@
+{% extends 'parent/partials/base.html' %}
+{% load static %}
+{% block content %}
+<div class="ms-content-wrapper">
+  <div class="row">
+
+    <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb pl-0">
+          <li class="breadcrumb-item"><a href="#"><i class="material-icons">home</i> Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Holiday</li>
+           
+        </ol>
+      </nav>
+    </div>
+    </div>
+    
+     <div class="col-xl-12">
+    <div class="ms-panel">
+        <div class="ms-panel-header">
+          <h6>Holiday List</h6>
+        </div>
+        <div class="ms-panel-body">
+         
+          <div class="table-responsive">
+            <table id="data-table-9" class="table table-hover w-100"></table>
+          </div>
+        </div>
+      </div>
+      </div>
+
+  
+  </div>
+  
+<!-- calendar modal -->
+<div id="modal-view-event" class="modal modal-top fade calendar-modal">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-body">
+      <h4 class="modal-title"><span class="event-icon"></span><span class="event-title"></span></h4>
+      <div class="event-body"></div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
