@@ -30,6 +30,20 @@
     <link type="text/css" href="{% static 'teacher/css/vendor-ion-rangeslider.css' %}" rel="stylesheet">
     <link type="text/css" href="{% static 'teacher/css/vendor-ion-rangeslider.rtl.css' %}" rel="stylesheet">
 
+    <!-- Quill Theme -->
+    <link type="text/css" href=" {% static 'teacher/css/quill.css' %} " rel="stylesheet">
+
+    <!-- Nestable -->
+    <link rel="stylesheet" href=" {% static 'teacher/css/nestable.css' %} ">
+
+
+    <!-- Vendor Dropzone CSS -->
+    <link rel="stylesheet" href=" {% static 'teacher/vendor/dropzone.min.css' %} ">
+    <link rel="stylesheet" href=" {% static 'teacher/css/dropzone.css' %} ">
+
+    <!-- Vendor FancyTree CSS -->
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href=" {% static 'teacher/css/fancytree.css' %} ">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115115077-3"></script>
@@ -46,9 +60,9 @@
 
     <!-- Facebook Pixel Code -->
     <script>
-        ! function(f, b, e, v, n, t, s) {
+        ! function (f, b, e, v, n, t, s) {
             if (f.fbq) return;
-            n = f.fbq = function() {
+            n = f.fbq = function () {
                 n.callMethod ?
                     n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
@@ -67,7 +81,9 @@
         fbq('init', '257843818545228');
         fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=257843818545228&amp;ev=PageView&amp;noscript=1" /></noscript>
+
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=257843818545228&amp;ev=PageView&amp;noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
 
 
@@ -90,8 +106,8 @@
 
         <!-- Header -->
 
-       
-    {% include 'teacher/partial/header.html' %}
+
+        {% include 'teacher/partial/header.html' %}
 
 
 
@@ -123,6 +139,7 @@
     </div>
     <!-- // END header-layout -->
 
+    {% include 'teacher/partial/rightbar.html' %}
 
 
     <!-- App Settings FAB -->
@@ -134,6 +151,14 @@
       'mini': 'mini-instructor-dashboard.html'
     }"></app-settings>
     </div>
+
+
+
+
+
+
+
+
 
     <!-- jQuery -->
     <script src="{% static 'teacher/vendor/jquery.min.js' %}"></script>
@@ -183,6 +208,19 @@
 
     <!-- Chart.js Samples -->
     <script src="{% static 'teacher/js/page.instructor-dashboard.js' %}"></script>
+
+
+    <!-- Highlight.js -->
+    <script src=" {% static 'teacher/js/hljs.js' %} "></script>
+
+    <!-- Nestable -->
+    <script src=" {% static 'teacher/vendor/jquery.nestable.js' %} "></script>
+    <script src=" {% static 'teacher/js/nestable.js' %} "></script>
+
+    <!-- Quill -->
+    <script src=" {% static 'teacher/vendor/quill.min.js' %} "></script>
+    <script src=" {% static 'teacher/js/quill.js' %} "></script>
+
 
 </body>
 

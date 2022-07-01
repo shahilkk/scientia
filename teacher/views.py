@@ -26,6 +26,9 @@ def add_videos(request):
 def add_lessons(request):
     return render(request,'teacher/Add lessons.html')
 
+def extra_lessons(request):
+    return render(request,'teacher/Extra lessons.html')
+
 def quizz(request):
     return render(request,'teacher/Quiz.html')
 
