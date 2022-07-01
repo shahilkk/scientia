@@ -4,35 +4,92 @@
 {% block content %}
 
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>AKKHOR | Add Book</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <!-- Normalize CSS -->
-    <link rel="stylesheet" href="{% static 'teacher/book/css/normalize.css' %} ">
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="{% static 'teacher/book/css/main.css' %} ">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{% static 'teacher/book/css/bootstrap.min.css' %} ">
-    <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="{% static 'teacher/book/css/all.min.css' %} ">
-    <!-- Flaticon CSS -->
-    <link rel="stylesheet" href="{% static 'teacher/book/fonts/flaticon.css' %} ">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="{% static 'teacher/book/css/animate.min.css' %} ">
-    <!-- Select 2 CSS -->
-    <link rel="stylesheet" href="{% static 'teacher/book/css/select2.min.css' %} ">
-    <!-- Date Picker CSS -->
-    <link rel="stylesheet" href="{% static 'teacher/book/css/datepicker.min.css' %} ">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'teacher/book/style.css' %} ">
-    <!-- Modernize js -->
-    <script src="{% static 'teacher/book/js/modernizr-3.6.0.min.js' %} "></script>
-</head>
+<link rel="stylesheet" href="css/select2.min.css">
+
+<style>
+    .new-added-form .form-group {
+  position: relative;
+  margin-bottom: 2.3rem;
+}
+.new-added-form .form-group:last-child {
+  margin-bottom: 0;
+}
+.new-added-form .form-group label {
+  margin-bottom: 12px;
+  display: block;
+}
+.new-added-form .form-group .form-control {
+  background-color: #f0f1f3;
+  height: 50px;
+}
+.new-added-form .form-group i {
+  position: absolute;
+  top: 56px;
+  right: 34px;
+  font-size: 15px;
+  color: #000;
+}
+.new-added-form .form-group .textarea {
+  height: auto;
+}
+.new-added-form .form-group .form-control-file {
+  display: inline-block;
+  width: auto;
+}
+.new-added-form .form-group .form-control-file:focus {
+  outline: none;
+}
+.new-added-form .form-group .btn-fill-lg {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.new-added-form .form-group .btn-fill-lg:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.select2-container .select2-selection--single {
+  background-color: #f0f1f3;
+  border-color: #f0f1f3;
+  height: 50px;
+}
+.select2-container .select2-selection--single:focus {
+  outline: none;
+}
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single {
+  border: 1px solid #aaaaaa;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  line-height: 50px;
+  color: #b4b4b4;
+  padding-left: 20px;
+  padding-right: 30px;
+  font-size: 15px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 50px;
+  top: 0;
+  right: 15px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #000 transparent transparent transparent;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent #000 transparent;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field:focus {
+  outline: none;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #71bfe4;
+}
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background-color: #444;
+  color: #fff;
+}
+.select2-results__option {
+  font-size: 15px;
+}
+</style>
 <div class="container">
     <div class="dashboard-content-one my-4">
         <!-- Breadcubs Area Start Here -->
@@ -106,22 +163,26 @@
     </div>
 </div>
 
-    <!-- jquery-->
-    <script src=" {% static 'teacher/book/js/jquery-3.3.1.min.js' %} "></script>
-    <!-- Plugins js -->
-    <script src=" {% static 'teacher/book/js/plugins.js' %} "></script>
-    <!-- Popper js -->
-    <script src=" {% static 'teacher/book/js/popper.min.js' %} "></script>
-    <!-- Bootstrap js -->
-    <script src=" {% static 'teacher/book/js/bootstrap.min.js' %} "></script>
-    <!-- Select 2 Js -->
-    <script src=" {% static 'teacher/book/js/select2.min.js' %} "></script>
-    <!-- Date Picker Js -->
-    <script src=" {% static 'teacher/book/js/datepicker.min.js' %} "></script>
-    <!-- Smoothscroll Js -->
-    <script src=" {% static 'teacher/book/js/jquery.smoothscroll.min.html' %} "></script>
-    <!-- Scroll Up Js -->
-    <script src=" {% static 'teacher/book/js/jquery.scrollUp.min.js' %} "></script>
-    <!-- Custom Js -->
-    <script src=" {% static 'teacher/book/js/main.js' %} "></script>
+<script>
+        $(".checkAll").on("click", function () {
+      $(this).parents('.table').find('input:checkbox').prop('checked', this.checked);
+    });
+
+    /*-------------------------------------
+          Tooltip init
+      -------------------------------------*/
+    $('[data-toggle="tooltip"]').tooltip();
+
+    /*-------------------------------------
+          Select 2 Init
+      -------------------------------------*/
+    if ($.fn.select2 !== undefined) {
+      $('.select2').select2({
+        width: '100%'
+      });
+    }
+</script>
+
+<script src="js/select2.min.js"></script>
+
     {% endblock %}
