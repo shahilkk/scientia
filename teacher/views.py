@@ -46,3 +46,23 @@ def dailyExam_Report(request):
 
 def finalExam_Report(request):
     return render(request,'teacher/FinalExam Report.html')
+
+
+def add_book(request):
+    return render(request,'teacher/Add Book.html')
+
+def book(request):
+    return render(request,'teacher/Book.html')
+
+
+def reference(request):
+    return render(request,'teacher/Reference.html')
+
+def add_reference(request):
+    return render(request,'teacher/Add Reference.html')
+
+def old_QP(request):
+    return render(request,'teacher/Old paper.html')
+
+def add_QP(request):
+    return render(request,'teacher/Add QP.html')

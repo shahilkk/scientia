@@ -27,4 +27,13 @@ urlpatterns = [
     path('Final Exam Report/',views.finalExam_Report,name="Final Exam Report"),
     
 
+    path('Add Book/',views.add_book,name="Add Book"),
+    path('Book/',views.book,name="Book"),
+
+    path('Reference/',views.reference,name="Reference"),
+    path('Add Reference/',views.add_reference,name="Add Reference"),
+
+    path('Question Paper/',views.old_QP,name="Question Paper"),
+    path('Add Question Paper/',views.add_QP,name="Add Question Paper")
+
 ]
