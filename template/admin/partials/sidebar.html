@@ -12,13 +12,11 @@
                     <span class="nav-text">Dashboard</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="{% url 'admins:home' %}">Dashboard Light</a></li>
-                    <li><a href="">Dashboard Dark</a></li>
-                    <li><a href="">Message</a></li>
+                    <li><a href="{% url 'admins:home' %}">Admin Dashboar
+                    <li><a href="{% url 'admins:instructordashboard' %}">Instructor Dashboard </a></li>                    
+                    <li><a href="{% url 'admins:studentdashboard' %}">Student Dashboard </a></li>
+                    <li><a href="{% url 'admins:schedule' %}">Schedule</a></li>
                     <li><a href="{% url 'admins:profile' %}">Profile</a></li>
-                    <li> <a href="{% url 'admins:schedule' %}">
-                        Schedule
-                    </a></li>
                 </ul>
 
             </li>
@@ -70,7 +68,8 @@
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="{% url 'admins:studentdashboard' %}">Fees</a></li>
-                    <li><a href="{% url 'admins:studentslist' %}">Fee updation</a></li>
+                    <li><a href="{% url 'admins:feeadding' %}">Fees Adding</a></li>
+                    <li><a href="{% url 'admins:feeupdation' %}">Fee updation</a></li>
                 </ul>
             </li>
             

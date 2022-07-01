@@ -23,6 +23,11 @@ urlpatterns = [
     path('studentdashboard',views.student_dashboard,name='studentdashboard'),
     path('studentslist',views.students_list,name='studentslist'),
 
+    #Fee
+    path('feeadding',views.fee_adding,name='feeadding'),
+    path('feeupdation',views.fee_updation,name='feeupdation'),
+
+
     #admin
     path('profile',views.profile,name='profile'),
     path('schedule',views.schedule,name='schedule'),
