@@ -22,5 +22,11 @@ def allCourses(request):
 def aboutCourse(request):
     return render(request,"parent/aboutcourse.html")
 
+def fee(request):
+    return render(request,"parent/fee/pendingfee.html")
+
+def feeDetails(request):
+    return render(request,"parent/fee/feeDetails.html")
+
 def holiday(request):
     return render(request,"parent/holiday.html")

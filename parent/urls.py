@@ -11,5 +11,8 @@ urlpatterns = [
     path('all-courses',views.allCourses,name='all-courses'),
     path('aboutcourse',views.aboutCourse,name='aboutcourse'),
     path('holiday',views.holiday,name='holiday'),
+    path('fee',views.fee,name='fee'),
+    path('feeDetails',views.feeDetails,name='feeDetails'),
+    
 ]
 

@@ -505,7 +505,7 @@ a{
   font-size: 14px;
 }
 a:hover, a:active, a:focus {
-  color: #fbb022;
+  color: #00838f;
   text-decoration: none;
 }
 code{
@@ -1240,7 +1240,7 @@ ul.ms-activity-log > li:hover .icon{
 .ms-quick-bar-item a:not(.active):hover i,
 .ms-quick-bar .ms-quick-bar-list:not(.ms-qa-configure-mode) + .ms-configure-qa a:hover i,
 .ms-quick-bar .ms-quick-bar-list:not(.ms-qa-configure-mode) + .ms-configure-qa a:hover span{
-  color: #fbb022;
+  color: #00838f;
 }
 .ms-quick-bar-item .ms-quick-bar-label,
 .ms-configure-qa .ms-quick-bar-label{
@@ -3098,8 +3098,8 @@ input:checked + .ms-switch-slider.ms-switch-dark{
 }
 .ms-btn-icon-outline.btn-warning,
 .btn-outline-warning{
-  color: #fda600;
-  border-color: #fda600;
+  color: #00838f;
+  border-color: #00838f;
 }
 .ms-btn-icon-outline.btn-danger,
 .btn-outline-danger{
@@ -3331,8 +3331,8 @@ a .badge[class*='badge-outline-']{
 .page-item.active .page-link,
 .pagination-light .page-item.active .page-link{
   color: #fff;
-  background-color: #fbb022;
-  border-color: #fbb022;
+  background-color: #00838f;
+  border-color: #00838f;
   z-index: 0;
 }
 .page-item.active-circle .page-link,
@@ -4508,26 +4508,27 @@ div#driver-popover-item .driver-popover-footer .driver-close-btn:hover{
 }
 
 /* Basic Tables */
+
 .thead-primary thead{
-  background-color: #fbb022;
+  background-color: #00838f;
 }
 .thead-secondary thead{
-  background-color: #445cc8;
+  background-color: #00838f;
 }
 .thead-success thead{
-  background-color: #5cb85c;
+  background-color: #00838f;
 }
 .thead-info thead{
-  background-color: #5bc0de;
+  background-color: #00838f;
 }
 .thead-warning thead{
-  background-color: #f0ad4e;
+  background-color: #00838f;
 }
 .thead-danger thead{
-  background-color: #d9534f;
+  background-color: #00838f;
 }
 .thead-dark thead{
-  background-color: #34334a;
+  background-color: #00838f;
 }
 .thead-light thead{
   background-color: rgb(244,244,244);
@@ -6854,4 +6855,16 @@ body:not(.ms-settings-open) .ms-settings-toggle:hover{
 .ms-card{
   background-color: #00838f1c;
   padding: 13px;
+}
+
+/* profile page */
+
+.fa-pen-to-square{
+  right: 23px;
+  position: absolute;
+  display: block;
+  color: #00838f;
+  background-color: black;
+  padding: inherit;
+  border-radius: 20px;
 }
