@@ -43296,7 +43296,7 @@ nav.nav-menu .scrollactive-nav .btn {
 
 .testimonial-card .icon span {
     background: url(../images/education/quote.png) no-repeat transparent;
-    width: 37px;
+    /* width: 37px; */
     height: 37px;
     display: block;
     -webkit-transform: rotate(-45deg) translate(0, 20px);
@@ -48614,3 +48614,7 @@ nav.filter-head .nav-wrapper button {
     transform: scaleX(-1)
 }
 
+.text{
+    color: black;
+
+}

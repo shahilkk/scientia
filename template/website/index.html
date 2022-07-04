@@ -70,18 +70,19 @@
                             <div class="collection side-multilv">
                                 <ul class="collapsible expandable">
                                     <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                            href="{% url 'website:index' %}">home</a></li>
+                                            href="#banner">home</a></li>
+                                            <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
+                                                href="#about">About
+                                                Us</a></li>
                                     <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
                                             href="#popular">Popular Course</a></li>
-                                    <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                            href="#about">About
-                                            Us</a></li>
+                                    
                                     <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
                                             href="#mentor">Mentors</a></li>
                                     <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                                href="#blog-home">Updates</a></li>
+                                            href="#crash">Updates</a></li>
                                     <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
-                                                    href="#mentor">Contact Us</a></li>
+                                            href="{% url 'website:contact' %}">Contact Us</a></li>
 
                                 </ul>
 
@@ -112,20 +113,25 @@
                                     <div class="logo"><a href="{% url 'website:index' %}"><span
                                                 class="logo-main landscape medium"><img
                                                     src="{% static 'website/images/logo-education.png' %}"
-                                                    alt="logo">E-Learn</span></a>
+                                                    alt="logo">Scientia</span></a>
                                     </div>
                                     <div class="scrollactive-nav scrollnav show-lg-up multi-menu">
                                         <ul class="main-menu">
                                             <li><a class="btn btn-flat anchor-link waves-effect"
-                                                    href="{% url 'website:index' %}">Home</a>
+                                                    href="#banner">Home</a>
                                             </li>
-                                            <li><a class="btn btn-flat anchor-link waves-effect" href="#popular">popular
-                                                course</a></li>
-                                            <li><a class="btn btn-flat anchor-link waves-effect" href="#about">About
+                                            <!-- <li><a class="btn btn-flat anchor-link waves-effect"
+                                                href="#popular">popular
+                                                    course</a></li> -->
+                                                    <li><a class="btn btn-flat anchor-link waves-effect"
+                                                        href="#crash">Updates</a>
+                                                </li>
+                                            <li><a class="btn btn-flat anchor-link waves-effect" 
+                                                href="#about">About
                                                     Us</a></li>
-                                            <li><a class="btn btn-flat anchor-link waves-effect" href="#mentor">mentors</a></li>
+                                            
                                             <li><a class="btn btn-flat anchor-link waves-effect"
-                                                    href="#blog-home">Updates</a>
+                                                    href="#crash">Updates</a>
                                             </li>
                                             <li><a class="btn btn-flat anchor-link waves-effect"
                                                     href="{% url 'website:contact' %}">Contact
@@ -177,15 +183,7 @@
                                                                     class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿العربيّة</span>
                                                             </a>
                                                         </li>
-                                                        <li class="collection-item lang-list waves-effect avatar">
-                                                            <a data-lang="de" href="#">
-                                                                <div class="flag circle">
-                                                                    <i class="de"></i>
-                                                                </div>
-                                                                <span
-                                                                    class="content lang-opt text-truncate">Deutsch</span>
-                                                            </a>
-                                                        </li>
+                                                       
                                                         <li class="collection-item lang-list waves-effect avatar">
                                                             <a data-lang="en" href="#">
                                                                 <div class="flag circle">
@@ -195,33 +193,9 @@
                                                                     class="content lang-opt text-truncate">English</span>
                                                             </a>
                                                         </li>
-                                                        <li class="collection-item lang-list waves-effect avatar">
-                                                            <a data-lang="id" href="#">
-                                                                <div class="flag circle">
-                                                                    <i class="id"></i>
-                                                                </div>
-                                                                <span
-                                                                    class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿Bahasa
-                                                                    Indonesia</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="collection-item lang-list waves-effect avatar">
-                                                            <a data-lang="pt" href="#">
-                                                                <div class="flag circle">
-                                                                    <i class=" "></i>
-                                                                </div>
-                                                                <span
-                                                                    class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿Português</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="collection-item lang-list waves-effect avatar">
-                                                            <a data-lang="zh" href="#">
-                                                                <div class="flag circle">
-                                                                    <i class="zh"></i>
-                                                                </div>
-                                                                <span class="content lang-opt text-truncate">简体中文</span>
-                                                            </a>
-                                                        </li>
+                                                        
+                                                        
+                                                        
                                                     </ul>
                                                 </div>
                                             </div>
@@ -264,7 +238,8 @@
                                                                         Education Experience.</h5>
                                                                     <div class="btn-area"><a
                                                                             class="btn-flat waves-effect btn-large button primary-text"
-                                                                            href="#">see detail</a> <a
+                                                                            href="{% url 'website:course' %}">see
+                                                                            detail</a> <a
                                                                             class="btn waves-effect button btn-large primary"
                                                                             href="{% url 'website:register' %}">get
                                                                             started</a></div>
@@ -362,6 +337,280 @@
                                 </div>
                             </div>
                         </section><!-- ##### END BANNER #####-->
+
+                        <!-- ##### ABOUT #####-->
+                        
+                        <section class="space-top-short" id="about">
+                            <div class="root">
+                                <div class="container fixed-width">
+                                    <div class="row">
+                                        <div class="col-md-6 illu-wrap">
+                                            <div class="wow fadeInLeftShort" data-wow-offset="-100"
+                                                data-wow-delay="0.2s" data-wow-duration="0.6s">
+                                                <div class="illustration"><img class="img-2d3d"
+                                                        src="{% static 'website/images/index/about.png' %}"
+                                                        data-2d="https://res.cloudinary.com/skyrev/image/upload/v1613842285/skyrev/education/about_2d_2x_dcz2oh.png"
+                                                        data-3d="https://res.cloudinary.com/skyrev/image/upload/v1613842286/skyrev/education/about_3d_2x_rtx0nf.png"
+                                                        alt="about"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="text-md-start text-center">
+                                                <div class="title-main align-left">
+                                                    <h4 class="secondary"><span>About us</span></h4>
+                                                    <p class="desc use-text-subtitle2">Our mission is to diversify the
+                                                        tech industry through accessible education and apprenticeship,
+                                                        unlocking the door to opportunity and empowering people to
+                                                        achieve their dreams.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <!-- ##### END ABOUT #####-->
+
+
+                        <!-- ##### POPULAR #####-->
+                        <section class="space-top-short" id="popular">
+                            <div class="root">
+                                <div class="container carousel-header">
+                                    <div class="title-main align-left">
+                                        <h4 class="secondary"><span>Popular Course</span></h4>
+                                        <p class="desc use-text-subtitle2">Choose from many options of popular course at
+                                            a breakthrough price.</p>
+                                    </div><a class="btn-flat waves-effect primary-text view-all"
+                                        href="{% url 'website:course' %}">see all<i
+                                            class="material-icons icon">arrow_forward</i></a>
+                                </div>
+                                <div class="container">
+                                    <div class="floating-artwork">
+                                        <div class="slider-art">
+                                            <div class="deco">
+                                                <div class="figure show-md-up" id="art_course">
+                                                    <div class="wow fadeInRightShort" data-wow-offset="60"
+                                                        data-wow-delay="0.3s" data-wow-duration="0.5s"><img
+                                                            class="img-2d3d img-2d3d"
+                                                            src="{% static 'website/images/index/course.png' %}"
+                                                            data-2d="https://res.cloudinary.com/skyrev/image/upload/v1613842318/skyrev/education/popular_2d_2x_kr5ce3.png"
+                                                            data-3d="https://res.cloudinary.com/skyrev/image/upload/v1613842319/skyrev/education/popular_3d_2x_g58xtn.png"
+                                                            alt="popular course"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-wrap">
+                                    <div class="carousel">
+                                        <div class="slick-carousel catogary" id="course_carousel" data-length="6">
+                                            <div class="props item-props-first">
+                                                <div></div>
+                                            </div>
+                                            <a href="{% url 'website:course' %}">
+                                                <div class="item">
+                                                    <div class="card product-card portrait round">
+                                                        <!-- <a class="waves-effect hidden-link"
+                                                        href="{% url 'website:course-detail' %}">&nbsp;</a> -->
+
+                                                        <div class="figure">
+
+                                                            <div class="responsive-img"
+                                                                style="background-image:url({% static 'website/images/courses/1.jpeg' %});">
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="desc">
+                                                            <div class="text">
+                                                                <h6 class="title pb-2 text-truncate">Lower primary
+                                                                </h6>
+                                                                <p class="use-text-paragraph">Filled with practical,
+                                                                    step-by-step instructions and clear explanations for
+                                                                    the
+                                                                    most important and useful tasks.</p>
+                                                            </div>
+                                                            <div>
+                                                                <a class="btn btn-outlined primary button block waves-effect"
+                                                                    href="{% url 'website:course-detail' %}">see
+                                                                    detail</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </a>
+
+                                            <a href="{% url 'website:course' %}">
+                                                <div class="item">
+                                                    <div class="card product-card portrait round">
+                                                        <div class="figure">
+                                                            <div class="responsive-img"
+                                                                style="background-image:url({% static 'website/images/courses/5.jpeg' %});">
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <div class="text">
+                                                                <h6 class="title pb-2 text-truncate">Upper Primary</h6>
+                                                                <p class="use-text-paragraph">The famously irreverent
+                                                                    chef
+                                                                    also offers playful riffs on classics, reimagining
+                                                                    tuna-and-rice bowls.</p>
+                                                            </div>
+                                                            <div>
+                                                                <!-- <div class="property">
+                                                                <div class="rating"><i class="material-icons star-icon"
+                                                                        title="1">star</i><i
+                                                                        class="material-icons star-icon"
+                                                                        title="2">star</i><i
+                                                                        class="material-icons star-icon"
+                                                                        title="3">star</i><i
+                                                                        class="material-icons star-icon"
+                                                                        title="4">star</i><i
+                                                                        class="material-icons star-icon-disable"
+                                                                        title="1">star</i></div>
+                                                                <strong>$10</strong>
+                                                            </div> -->
+                                                                <a class="btn btn-outlined primary button block waves-effect"
+                                                                    href="{% url 'website:course' %}">see
+                                                                    detail</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </a>
+                                            <a href="{% url 'website:course' %}">
+                                                <div class="item">
+                                                    <div class="card product-card portrait round">
+                                                        <div class="figure">
+                                                            <div class="responsive-img"
+                                                                style="background-image:url({% static 'website/images/courses/10th.jpeg' %});">
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <div class="text">
+                                                                <h6 class="title pb-2 text-truncate">High School</h6>
+                                                                <p class="use-text-paragraph">Face the Music is the
+                                                                    shocking
+                                                                    inspirational story of one of rock’s most enduring
+                                                                    icons.</p>
+                                                            </div>
+                                                            <div>
+                                                                <!-- <div class="property">
+                                                                <div class="rating"><i class="material-icons star-icon"
+                                                                        title="1">star</i><i
+                                                                        class="material-icons star-icon"
+                                                                        title="2">star</i><i
+                                                                        class="material-icons star-icon"
+                                                                        title="3">star</i><i
+                                                                        class="material-icons star-icon"
+                                                                        title="4">star</i><i
+                                                                        class="material-icons star-icon"
+                                                                        title="5">star</i></div>
+                                                                <strong>$50</strong>
+                                                            </div> -->
+                                                                <a class="btn btn-outlined primary button block waves-effect"
+                                                                    href="{% url 'website:course' %}">see
+                                                                    detail</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="{% url 'website:course' %}">
+                                                <div class="item">
+                                                    <div class="card product-card portrait round">
+                                                        <div class="figure">
+                                                            <div class="responsive-img"
+                                                                style="background-image:url({% static 'website/images/courses/8.jpeg' %});">
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <div class="text">
+                                                                <h6 class="title pb-2 text-truncate">Higher Secondary
+                                                                </h6>
+                                                                <p class="use-text-paragraph">When people talk about the
+                                                                    future, they usually mean virtual reality.</p>
+                                                            </div>
+                                                            <div>
+                                                                <!-- <div class="property">
+                                                                <div class="rating"><i class="material-icons star-icon"
+                                                                        title="1">star</i><i
+                                                                        class="material-icons star-icon"
+                                                                        title="2">star</i><i
+                                                                        class="material-icons star-icon"
+                                                                        title="3">star</i><i
+                                                                        class="material-icons star-icon-disable"
+                                                                        title="1">star</i><i
+                                                                        class="material-icons star-icon-disable"
+                                                                        title="2">star</i></div>
+                                                                <strong>$25</strong>
+                                                            </div> -->
+                                                                <a class="btn btn-outlined primary button block waves-effect"
+                                                                    href="{% url 'website:course-detail' %}">see
+                                                                    detail</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </a>
+                                            <a href="{% url 'website:course' %}">
+                                                <div class="item">
+                                                    <div class="card product-card portrait round">
+                                                        <div class="figure">
+                                                            <div class="responsive-img"
+                                                                style="background-image:url({% static 'website/images/courses/3.jpeg' %});">
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <div class="text">
+                                                                <h6 class="title pb-2 text-truncate">Skill Development
+                                                                </h6>
+                                                                <p class="use-text-paragraph">Leaders and managers
+                                                                    throughout the sporting world face many ethical
+                                                                    challenges on a daily basis.</p>
+                                                            </div>
+                                                            <div>
+                                                                <!-- <div class="property">
+                                                                <div class="rating"><i class="material-icons star-icon"
+                                                                        title="1">star</i><i
+                                                                        class="material-icons star-icon"
+                                                                        title="2">star</i><i
+                                                                        class="material-icons star-icon"
+                                                                        title="3">star</i><i
+                                                                        class="material-icons star-icon"
+                                                                        title="4">star</i><i
+                                                                        class="material-icons star-icon"
+                                                                        title="5">star</i></div>
+                                                                <strong>$50</strong>
+                                                            </div> -->
+                                                                <a class="btn btn-outlined primary button block waves-effect"
+                                                                    href="{% url 'website:course' %}">see
+                                                                    detail</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+ 
+                                        </div>
+                                        <button class="btn-floating nav prev waves-effect" id="prev_project"
+                                            type="button">
+                                            <i class="fa-solid fa-arrow-left"></i>
+                                        </button>
+                                        <button class="btn-floating nav next waves-effect" id="next_project"
+                                            type="button">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+
+                        </section>
+                        <!-- ##### END EXPLORE #####-->
+                        
                         <!-- ##### FEATURE #####-->
                         <section class="space-top space-top-short-sm" id="feature">
                             <div class="root">
@@ -433,308 +682,8 @@
                                 </div>
                             </div>
                         </section><!-- ##### END FEATURE #####-->
-                        <!-- ##### POPULAR #####-->
-                        <section class="space-top-short" id="popular">
-                            <div class="root">
-                                <div class="container carousel-header">
-                                    <div class="title-main align-left">
-                                        <h4 class="secondary"><span>Popular Course</span></h4>
-                                        <p class="desc use-text-subtitle2">Choose from many options of popular course at
-                                            a breakthrough price.</p>
-                                    </div><a class="btn-flat waves-effect primary-text view-all"
-                                        href="{% url 'website:course' %}">see all<i
-                                            class="material-icons icon">arrow_forward</i></a>
-                                </div>
-                                <div class="container">
-                                    <div class="floating-artwork">
-                                        <div class="slider-art">
-                                            <div class="deco">
-                                                <div class="figure show-md-up" id="art_course">
-                                                    <div class="wow fadeInRightShort" data-wow-offset="60"
-                                                        data-wow-delay="0.3s" data-wow-duration="0.5s"><img
-                                                            class="img-2d3d img-2d3d"
-                                                            src="{% static 'website/images/index/course.png' %}"
-                                                            data-2d="https://res.cloudinary.com/skyrev/image/upload/v1613842318/skyrev/education/popular_2d_2x_kr5ce3.png"
-                                                            data-3d="https://res.cloudinary.com/skyrev/image/upload/v1613842319/skyrev/education/popular_3d_2x_g58xtn.png"
-                                                            alt="popular course"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider-wrap">
-                                    <div class="carousel">
-                                        <div class="slick-carousel" id="course_carousel" data-length="6">
-                                            <div class="props item-props-first">
-                                                <div></div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="card product-card portrait round"><a
-                                                        class="waves-effect hidden-link"
-                                                        href="{% url 'website:course-detail' %}">&nbsp;</a>
-                                                    <div class="figure">
-                                                        <div class="responsive-img"
-                                                            style="background-image:url({% static 'website/images/courses/1.jpeg' %});">
-                                                        </div>
-                                                    </div>
-                                                    <div class="desc">
-                                                        <div class="text">
-                                                            <h6 class="title pb-2 text-truncate">Instant Kendo UI Mobile
-                                                            </h6>
-                                                            <p class="use-text-paragraph">Filled with practical,
-                                                                step-by-step instructions and clear explanations for the
-                                                                most important and useful tasks.</p>
-                                                        </div>
-                                                        <div>
-                                                            <div class="property">
-                                                                <div class="rating"><i class="material-icons star-icon"
-                                                                        title="1">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="2">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="3">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="4">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="5">star</i></div>
-                                                                <strong>$50</strong>
-                                                            </div><a
-                                                                class="btn btn-outlined primary button block waves-effect"
-                                                                href="{% url 'website:course-detail' %}">see detail</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="card product-card portrait round"><a
-                                                        class="waves-effect hidden-link"
-                                                        href="{% url 'website:course-detail' %}">&nbsp;</a>
-                                                    <div class="figure">
-                                                        <div class="responsive-img"
-                                                            style="background-image:url({% static 'website/images/courses/5.jpeg' %});">
-                                                        </div>
-                                                    </div>
-                                                    <div class="desc">
-                                                        <div class="text">
-                                                            <h6 class="title pb-2 text-truncate">Joy of Cooking</h6>
-                                                            <p class="use-text-paragraph">The famously irreverent chef
-                                                                also offers playful riffs on classics, reimagining
-                                                                tuna-and-rice bowls.</p>
-                                                        </div>
-                                                        <div>
-                                                            <div class="property">
-                                                                <div class="rating"><i class="material-icons star-icon"
-                                                                        title="1">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="2">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="3">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="4">star</i><i
-                                                                        class="material-icons star-icon-disable"
-                                                                        title="1">star</i></div>
-                                                                <strong>$10</strong>
-                                                            </div><a
-                                                                class="btn btn-outlined primary button block waves-effect"
-                                                                href="{% url 'website:course-detail' %}">see detail</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="card product-card portrait round"><a
-                                                        class="waves-effect hidden-link"
-                                                        href="{% url 'website:course-detail' %}">&nbsp;</a>
-                                                    <div class="figure">
-                                                        <div class="responsive-img"
-                                                            style="background-image:url({% static 'website/images/courses/10th.jpeg' %});">
-                                                        </div>
-                                                    </div>
-                                                    <div class="desc">
-                                                        <div class="text">
-                                                            <h6 class="title pb-2 text-truncate">Face the Music: A Life
-                                                                Exposed</h6>
-                                                            <p class="use-text-paragraph">Face the Music is the shocking
-                                                                inspirational story of one of rock’s most enduring
-                                                                icons.</p>
-                                                        </div>
-                                                        <div>
-                                                            <div class="property">
-                                                                <div class="rating"><i class="material-icons star-icon"
-                                                                        title="1">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="2">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="3">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="4">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="5">star</i></div>
-                                                                <strong>$50</strong>
-                                                            </div><a
-                                                                class="btn btn-outlined primary button block waves-effect"
-                                                                href="{% url 'website:course-detail' %}">see detail</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="card product-card portrait round"><a
-                                                        class="waves-effect hidden-link"
-                                                        href="{% url 'website:course-detail' %}">&nbsp;</a>
-                                                    <div class="figure">
-                                                        <div class="responsive-img"
-                                                            style="background-image:url({% static 'website/images/courses/8.jpeg' %});">
-                                                        </div>
-                                                    </div>
-                                                    <div class="desc">
-                                                        <div class="text">
-                                                            <h6 class="title pb-2 text-truncate">Metaverse For Beginners
-                                                            </h6>
-                                                            <p class="use-text-paragraph">When people talk about the
-                                                                future, they usually mean virtual reality.</p>
-                                                        </div>
-                                                        <div>
-                                                            <div class="property">
-                                                                <div class="rating"><i class="material-icons star-icon"
-                                                                        title="1">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="2">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="3">star</i><i
-                                                                        class="material-icons star-icon-disable"
-                                                                        title="1">star</i><i
-                                                                        class="material-icons star-icon-disable"
-                                                                        title="2">star</i></div>
-                                                                <strong>$25</strong>
-                                                            </div><a
-                                                                class="btn btn-outlined primary button block waves-effect"
-                                                                href="{% url 'website:course-detail' %}">see detail</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="card product-card portrait round"><a
-                                                        class="waves-effect hidden-link"
-                                                        href="{% url 'website:course-detail' %}">&nbsp;</a>
-                                                    <div class="figure">
-                                                        <div class="responsive-img"
-                                                            style="background-image:url({% static 'website/images/courses/3.jpeg' %});">
-                                                        </div>
-                                                    </div>
-                                                    <div class="desc">
-                                                        <div class="text">
-                                                            <h6 class="title pb-2 text-truncate">Practical Ethics in
-                                                                Sport Management</h6>
-                                                            <p class="use-text-paragraph">Leaders and managers
-                                                                throughout the sporting world face many ethical
-                                                                challenges on a daily basis.</p>
-                                                        </div>
-                                                        <div>
-                                                            <div class="property">
-                                                                <div class="rating"><i class="material-icons star-icon"
-                                                                        title="1">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="2">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="3">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="4">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="5">star</i></div>
-                                                                <strong>$50</strong>
-                                                            </div><a
-                                                                class="btn btn-outlined primary button block waves-effect"
-                                                                href="{% url 'website:course-detail' %}">see detail</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="card product-card portrait round"><a
-                                                        class="waves-effect hidden-link"
-                                                        href="{% url 'website:course-detail' %}">&nbsp;</a>
-                                                    <div class="figure">
-                                                        <div class="responsive-img"
-                                                            style="background-image:url({% static 'website/images/courses/2.jpeg' %});">
-                                                        </div>
-                                                    </div>
-                                                    <div class="desc">
-                                                        <div class="text">
-                                                            <h6 class="title pb-2 text-truncate">Economic Geography:
-                                                                Past, Present and Future</h6>
-                                                            <p class="use-text-paragraph">The impact of economic
-                                                                geography both within the field of geography.</p>
-                                                        </div>
-                                                        <div>
-                                                            <div class="property">
-                                                                <div class="rating"><i class="material-icons star-icon"
-                                                                        title="1">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="2">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="3">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="4">star</i><i
-                                                                        class="material-icons star-icon"
-                                                                        title="5">star</i></div>
-                                                                <strong>$40</strong>
-                                                            </div><a
-                                                                class="btn btn-outlined primary button block waves-effect"
-                                                                href="{% url 'website:course-detail' %}">see detail</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button class="btn-floating nav prev waves-effect" id="prev_project"
-                                            type="button">
-                                            <i class="fa-solid fa-arrow-left"></i>
-                                        </button>
-                                        <button class="btn-floating nav next waves-effect" id="next_project"
-                                            type="button">
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                        </button>
-                                    </div>
-
-                        </section>
-                        <!-- ##### END EXPLORE #####-->
 
 
-                        <!-- ##### ABOUT #####-->
-                        <section class="space-top-short" id="about">
-                            <div class="root">
-                                <div class="container fixed-width">
-                                    <div class="row">
-                                        <div class="col-md-6 illu-wrap">
-                                            <div class="wow fadeInLeftShort" data-wow-offset="-100"
-                                                data-wow-delay="0.2s" data-wow-duration="0.6s">
-                                                <div class="illustration"><img class="img-2d3d"
-                                                        src="{% static 'website/images/index/about.png' %}"
-                                                        data-2d="https://res.cloudinary.com/skyrev/image/upload/v1613842285/skyrev/education/about_2d_2x_dcz2oh.png"
-                                                        data-3d="https://res.cloudinary.com/skyrev/image/upload/v1613842286/skyrev/education/about_3d_2x_rtx0nf.png"
-                                                        alt="about"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6" >
-                                            <div class="text-md-start text-center">
-                                                <div class="title-main align-left">
-                                                    <h4 class="secondary"><span>About us</span></h4>
-                                                    <p class="desc use-text-subtitle2">Our mission is to diversify the
-                                                        tech industry through accessible education and apprenticeship,
-                                                        unlocking the door to opportunity and empowering people to
-                                                        achieve their dreams.</p>
-                                                </div><a class="btn secondary waves-effect"
-                                                    href="{% url 'website:login' %}">Join
-                                                    Now</a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </section><!-- ##### END ABOUT #####-->
 
                         <!-- ##### mentor #####-->
                         <div class="space-bottom-short space-top-short" id="mentor">
@@ -766,7 +715,8 @@
                                                             <div class="subtitle">Web Designer</div>
                                                             <div class="desc"><span>100 Connection</span></div>
                                                         </div>
-                                                        <div class="action-area">
+
+                                                        <!-- <div class="action-area">
                                                             <div class="card-actions action"><a
                                                                     class="waves-effect btn btn-flat" href="#"><span
                                                                         class="btn-content"><i
@@ -782,27 +732,30 @@
                                                                         Albums</span></a></div><a
                                                                 class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
                                                                 href="href.html" data-class="btn-small">See Profile</a>
-                                                        </div>
+                                                        </div> -->
+
+
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="item px-3" data-key="1">
                                                 <div class="card profile-card landscape round">
-                                                    <div class="figure">
+                                                    <div class="figure mr-5">
                                                         <div class="responsive-img"
-                                                            style="background-image:url({% static 'website/images/index/mentor/mentorbg2.png' %});">
+                                                            style="background-image:url({% static 'website/images/index/mentor/mentor.jpg' %});">
                                                         </div>
                                                     </div>
-                                                    <div class="avatar-img avatar big"><img
-                                                            src="{% static 'website/images/index/mentor/mentor.jpg' %}"
-                                                            alt="avatar"></div>
-                                                    <div class="properties text-truncate">
+                                                    
+
+
+                                                   <div class="properties text-truncate">
                                                         <div class="card-content">
                                                             <h6><strong>John Dalton</strong></h6>
                                                             <div class="subtitle">Web Designer</div>
                                                             <div class="desc"><span>100 Connection</span></div>
                                                         </div>
-                                                        <div class="action-area">
+
+                                                        <!-- <div class="action-area">
                                                             <div class="card-actions action"><a
                                                                     class="waves-effect btn btn-flat" href="#"><span
                                                                         class="btn-content"><i
@@ -818,8 +771,8 @@
                                                                         Albums</span></a></div><a
                                                                 class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
                                                                 href="href.html" data-class="btn-small">See Profile</a>
-                                                        </div>
-                                                    </div>
+                                                        </div> -->
+                                                    </div> 
                                                 </div>
                                             </div>
                                             <div class="item px-3" data-key="2">
@@ -838,7 +791,9 @@
                                                             <div class="subtitle">Web Designer</div>
                                                             <div class="desc"><span>100 Connection</span></div>
                                                         </div>
-                                                        <div class="action-area">
+                                                      
+                                                      
+                                                        <!-- <div class="action-area">
                                                             <div class="card-actions action"><a
                                                                     class="waves-effect btn btn-flat" href="#"><span
                                                                         class="btn-content"><i
@@ -854,7 +809,7 @@
                                                                         Albums</span></a></div><a
                                                                 class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
                                                                 href="href.html" data-class="btn-small">See Profile</a>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -874,7 +829,7 @@
                                                             <div class="subtitle">Web Designer</div>
                                                             <div class="desc"><span>100 Connection</span></div>
                                                         </div>
-                                                        <div class="action-area">
+                                                        <!-- <div class="action-area">
                                                             <div class="card-actions action"><a
                                                                     class="waves-effect btn btn-flat" href="#"><span
                                                                         class="btn-content"><i
@@ -890,7 +845,7 @@
                                                                         Albums</span></a></div><a
                                                                 class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
                                                                 href="href.html" data-class="btn-small">See Profile</a>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -910,7 +865,7 @@
                                                             <div class="subtitle">Web Designer</div>
                                                             <div class="desc"><span>100 Connection</span></div>
                                                         </div>
-                                                        <div class="action-area">
+                                                        <!-- <div class="action-area">
                                                             <div class="card-actions action"><a
                                                                     class="waves-effect btn btn-flat" href="#"><span
                                                                         class="btn-content"><i
@@ -926,7 +881,7 @@
                                                                         Albums</span></a></div><a
                                                                 class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
                                                                 href="href.html" data-class="btn-small">See Profile</a>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -946,7 +901,7 @@
                                                             <div class="subtitle">Web Designer</div>
                                                             <div class="desc"><span>100 Connection</span></div>
                                                         </div>
-                                                        <div class="action-area">
+                                                        <!-- <div class="action-area">
                                                             <div class="card-actions action"><a
                                                                     class="waves-effect btn btn-flat" href="#"><span
                                                                         class="btn-content"><i
@@ -962,7 +917,7 @@
                                                                         Albums</span></a></div><a
                                                                 class="waves-effect btn btn-outlined primary main-btn mq-xs-down"
                                                                 href="href.html" data-class="btn-small">See Profile</a>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -1052,8 +1007,10 @@
                                 </div>
                             </div>
                         </section><!-- ##### END TESTIMONIALS #####-->
+
+
                         <!-- ##### BLOG #####-->
-                        <section class="space-top" id="blog-home">
+                        <section class="space-top" id="crash">
                             <div class="root">
                                 <div class="modal video-popup" id="video_modal">
                                     <div class="modal-content">
@@ -1148,6 +1105,8 @@
                                 </div>
                             </div>
                         </section><!-- ##### END BLOG #####-->
+
+                        
                     </main><!-- ##### SUBSCRIBE FORM #####-->
                     <section class="bottom-deco-wrap space-top" id="subscribe">
                         <div class="footer-top-deco">
