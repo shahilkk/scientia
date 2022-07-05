@@ -39,3 +39,6 @@ def profile(request):
 
 def reference(request):
     return render(request,'student/references.html')    
+
+def innerpage(request):
+    return render(request,'student/innerpage.html')    

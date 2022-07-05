@@ -1,32 +1,34 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
-	<meta name="robots" content="" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="GetSkills  : GetSkills Online Learning Admin Bootstrap 5 Template" />
-	<meta property="og:title" content="GetSkills  : GetSkills Online Learning  Admin Bootstrap 5 Template" />
-	<meta property="og:description" content="GetSkills  : GetSkills Online Learning  Admin Bootstrap 5 Template" />
-	<meta property="og:image" content="social-image.html" />
-	<meta name="format-detection" content="telephone=no">
-	
-	<!-- PAGE TITLE HERE -->
-	<title>GetSkills Online Learning Admin</title>
-	
-	<!-- FAVICONS ICON -->
-	<link rel="shortcut icon" type="image/png" href="{% static 'admin/images/favicon.png' %}" />
-	<link href="{% static 'admin/vendor/jquery-nice-select/css/nice-select.css' %}" rel="stylesheet">
-	<link href="{% static 'admin/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css' %}" rel="stylesheet">
-	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GetSkills  : GetSkills Online Learning Admin Bootstrap 5 Template" />
+    <meta property="og:title" content="GetSkills  : GetSkills Online Learning  Admin Bootstrap 5 Template" />
+    <meta property="og:description" content="GetSkills  : GetSkills Online Learning  Admin Bootstrap 5 Template" />
+    <meta property="og:image" content="social-image.html" />
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- PAGE TITLE HERE -->
+    <title>Scientia</title>
+
+    <!-- FAVICONS ICON -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'admin/images/favicon.png' %}" />
+    <link href="{% static 'admin/vendor/jquery-nice-select/css/nice-select.css' %}" rel="stylesheet">
+    <link href="{% static 'admin/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css' %}"
+        rel="stylesheet">
+
     <link href="{% static 'admin/vendor/swiper/css/swiper-bundle.min.css' %}" rel="stylesheet">
 
     <link rel="stylesheet" href="{% static 'admin/vendor/magnific-popup/magnific-popup.min.css' %}">
 
-	<!-- Style css -->
+    <!-- Style css -->
     <link href="{% static 'admin/css/style.css' %}" rel="stylesheet">
 
     <!-- Add Instructors -->
@@ -35,30 +37,31 @@
     <!-- Datatable -->
     <link href="{% static 'admin/vendor/datatables/css/jquery.dataTables.min.css' %}" rel="stylesheet">
 
-	
+
 </head>
+
 <body>
 
     <!--*******************
         Preloader start
     ********************-->
     <div id="preloader">
-		<div class="lds-ripple">
-			<div></div>
-			<div></div>
-		</div>
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
     </div>
 
     <!--**********************************
         Main wrapper start
     ***********************************-->
     <div id="main-wrapper">
-		
+
         <!--**********************************
             Nav header start
         ***********************************-->
         {% include 'admin/partials/toplogo.html' %}
-		<!--**********************************
+        <!--**********************************
             Header start
         ***********************************-->
         {% include 'admin/partials/topnav.html' %}
@@ -70,22 +73,22 @@
         ***********************************-->
         {% include 'admin/partials/sidebar.html' %}
 
-		
-		<!--**********************************
+
+        <!--**********************************
             Content body start
         ***********************************-->
         <div class="content-body">
-          
-			{% block content %}
+
+            {% block content %}
 
             {% endblock %}
         </div>
         <!--**********************************
             Content body end
         ***********************************-->
-		
-		
-		
+
+
+
         <!--**********************************
             Footer start
         ***********************************-->
@@ -95,7 +98,7 @@
         ***********************************-->
 
 
-	</div>
+    </div>
 
 
     <!--**********************************
@@ -103,36 +106,34 @@
     ***********************************-->
     <!-- Required {% static 'admin/vendors -->
     <script src="{% static 'admin/vendor/global/global.min.js' %}"></script>
-	<script src="{% static 'admin/vendor/chart.js/Chart.bundle.min.js' %}"></script>
-	<script src="{% static 'admin/vendor/jquery-nice-select/js/jquery.nice-select.min.js' %}"></script>
-	
-	<!-- Apex Chart -->
-	<script src="{% static 'admin/vendor/apexchart/apexchart.js' %}"></script>
+    <script src="{% static 'admin/vendor/chart.js/Chart.bundle.min.js' %}"></script>
+    <script src="{% static 'admin/vendor/jquery-nice-select/js/jquery.nice-select.min.js' %}"></script>
+
+    <!-- Apex Chart -->
     <script src="{% static 'admin/vendor/magnific-popup/magnific-popup.js' %}"></script><!-- MAGNIFIC-POPUP JS -->
 
     <!-- Required vendors -->
     <script src="{% static 'admin/vendor/bootstrap-datetimepicker/js/moment.js' %}"></script>
-	<script src="{% static 'admin/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js' %}"></script>
+    <script src="{% static 'admin/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js' %}"></script>
 
     <script src="{% static 'admin/vendor/swiper/js/swiper-bundle.min.js' %}"></script>
 
-   
+
     <script src="{% static 'admin/js/dlab.carousel.js' %}"></script>
 
     <!-- Chart piety plugin files -->
-	 <script src="{% static 'admin/vendor/day-fullcalendar/main.min.js' %}"></script>
-     <script src="{% static 'admin/vendor/peity/jquery.peity.min.js' %}"></script>
+    <script src="{% static 'admin/vendor/day-fullcalendar/main.min.js' %}"></script>
+    <script src="{% static 'admin/vendor/peity/jquery.peity.min.js' %}"></script>
 
-	<!-- Dashboard 1 -->
-	<script src="{% static 'admin/js/dashboard/instructor-dashboard.js' %}"></script>
+    <!-- Dashboard 1 -->
+    <script src="{% static 'admin/js/dashboard/instructor-dashboard.js' %}"></script>
     <script src="{% static 'admin/js/dashboard/instructor-student.js' %}"></script>
-	
-    <script src="{% static 'admin/js/custom.js' %}"></script>
-	<script src="{% static 'admin/js/dlabnav-init.js' %}"></script>
-	<script src="{% static 'admin/js/demo.js' %}"></script>
+
+    <script src="{% static 'admin/js/dlabnav-init.js' %}"></script>
+    <script src="{% static 'admin/js/demo.js' %}"></script>
     <script src="{% static 'admin/js/styleSwitcher.js' %}"></script>
 
-<!-- Add instructors -->
+    <!-- Add instructors -->
     <script src="{% static 'admin/vendor/jquery-steps/build/jquery.steps.min.js' %}"></script>
     <script src="{% static 'admin/vendor/jquery-validation/jquery.validate.min.js' %}"></script>
     <!-- Form validate init -->
@@ -140,14 +141,22 @@
     <!-- Form Steps -->
     <script src="{% static 'admin/vendor/jquery-smartwizard/dist/js/jquery.smartWizard.js' %}"></script>
     <script src="{% static 'admin/vendor/jquery-nice-select/js/jquery.nice-select.min.js' %}"></script>
+
+
+
+
+
+    <!-- =========== toggle -->
+    <script src="{% static 'admin/vendor/apexchart/apexchart.js' %}"></script>
+    <script src="{% static 'admin/js/custom.js' %}"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             // SmartWizard initialize
-            $('#smartwizard').smartWizard(); 
+            $('#smartwizard').smartWizard();
         });
     </script>
 
-<!-- Datatable -->
+    <!-- Datatable -->
     <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 
 
@@ -161,27 +170,72 @@
 
 
     <script>
-		$(document).ready(function(){
-			$(".pagination-down a").on('click',function(){
-				$(".pagination-down a").removeClass("active");
-				$(this).addClass("active");
+        $(document).ready(function () {
+            $(".pagination-down a").on('click', function () {
+                $(".pagination-down a").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('#datetimepicker').datetimepicker({
+                inline: true,
+            });
+        });
+
+        $(document).ready(function () {
+            $(".booking-calender .fa.fa-clock-o").removeClass(this);
+            $(".booking-calender .fa.fa-clock-o").addClass('fa-clock');
+        });
+
+
+    </script>
+    
+<!-- <script>
+    var handleNavigation = function() {
+		$(".nav-control").on('click', function() {
+
+			$('#main-wrapper').toggleClass("menu-toggle");
+
+			$(".hamburger").toggleClass("is-active");
+		});
+	}
+    var handleMenuTabs = function() {
+		if(screenWidth <= 991 ){
+			jQuery('.menu-tabs .nav-link').on('click',function(){
+				if(jQuery(this).hasClass('open'))
+				{
+					jQuery(this).removeClass('open');
+					jQuery('.fixed-content-box').removeClass('active');
+					jQuery('.hamburger').show();
+				}else{
+					jQuery('.menu-tabs .nav-link').removeClass('open');
+					jQuery(this).addClass('open');
+					jQuery('.fixed-content-box').addClass('active');
+					jQuery('.hamburger').hide();
+				}
+				//jQuery('.fixed-content-box').toggleClass('active');
 			});
-		});
-		
-	</script>
-	<script>
-		$(function () {
-			$('#datetimepicker').datetimepicker({
-				inline: true,
+			jQuery('.close-fixed-content').on('click',function(){
+				jQuery('.fixed-content-box').removeClass('active');
+				jQuery('.hamburger').removeClass('is-active');
+				jQuery('#main-wrapper').removeClass('menu-toggle');
+				jQuery('.hamburger').show();
 			});
-		});
-		
-		$(document).ready(function(){
-			$(".booking-calender .fa.fa-clock-o").removeClass(this);
-			$(".booking-calender .fa.fa-clock-o").addClass('fa-clock');
-		});
-		
-		
-	</script>
+		}
+	}
+    var handleChartSidebar = function(){
+		$('.chat-rightarea-btn').on('click',function(){
+			$(this).toggleClass('active');
+			$('.chat-right-area').toggleClass('active');
+		})
+		$('.chat-hamburger').on('click',function(){
+			$('.chat-left-area').toggleClass('active');
+		})
+	}
+</script> -->
 </body>
+
 </html>
