@@ -23,6 +23,11 @@ def courseDetail(request):
 def course(request):
     return render(request,"website/course.html")
 
-
 def contact(request):
     return render(request,"website/contact.html")
+
+def policy(request):
+    return render(request,"website/policy.html")
+
+def crashCourseRegistration(request):
+    return render(request,"website/crash-course-registration.html")

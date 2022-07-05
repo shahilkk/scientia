@@ -1,6 +1,23 @@
 {% extends 'website/partials/base.html' %}
 {% load static %}
 {% block content %}
+
+  <!-- ##### FILTER #####-->
+  <div class="modal bottom-sheet" id="modal_filter">
+    <div class="modal-content modal-filter">
+        <nav class="filter-head">
+            <div class="nav-wrapper">
+                <div class="d-flex"><button
+                        class="btn btn-icon btn-small invert waves-effect modal-close" type="button"><i
+                            class="material-icons">close</i></button>
+                    <h5 class="use-text-subtitle2 mx-2 my-3 my-sm-2">Filter</h5>
+                </div><button class="modal-close btn-flat waves-effect" type="button">DONE</button>
+            </div>
+        </nav>
+        <div class="filter-style" id="filter_mobile"></div>
+    </div>
+</div><!-- ##### END FILTER #####-->
+
 <div class="container-wrap">
     <!-- #### SEARCH ####-->
     <div class="hero-banner-wrap">
@@ -35,15 +52,16 @@
             <!-- #### SORTER ####-->
             <div class="row sorter align-items-center flex-sm-row-reverse">
                 <div class="col-lg-3 col-sm-8 py-1 px-0">
-                    <div class="d-flex justify-content-sm-end justify-content-center align-items-center">
+                    <div
+                        class="d-flex justify-content-sm-end justify-content-center align-items-center">
                         <a class="modal-trigger btn btn-outlined primary waves-effect me-4 show-sm-down"
                             id="open_filter" href="#modal_filter"><i
                                 class="material-icons left">filter_list</i>Filter</a>
                         <div class="toggle-btn-group me-4 show-sm-up" id="switch_view"><button
-                                class="btn btn-outlined primary active" type="button" data-value="grid"><i
-                                    class="material-icons">grid_on</i></button>
-                            <button class="btn btn-outlined primary" type="button" data-value="list"><i
-                                    class="material-icons">view_list</i></button>
+                                class="btn btn-outlined primary active" type="button"
+                                data-value="grid"><i class="material-icons">grid_on</i></button>
+                            <button class="btn btn-outlined primary" type="button"
+                                data-value="list"><i class="material-icons">view_list</i></button>
                         </div>
                         <div class="input-field dark primary"><select class="select" id="sort_by">
                                 <option value="" disabled="" selected="">Sort By:</option>
@@ -72,66 +90,22 @@
                                         <li><a class="waves-effect collection-item active" data-value="all"
                                                 href="#!">All categories</a></li>
                                         <li><a class="waves-effect collection-item" data-value="cat-a"
-                                                href="#!">Category a</a></li>
+                                                href="#!">Lower Primary</a></li>
                                         <li><a class="waves-effect collection-item" data-value="cat-b"
-                                                href="#!">Category b</a></li>
+                                                href="#!">Upper Primary</a></li>
                                         <li><a class="waves-effect collection-item" data-value="cat-c"
-                                                href="#!">Category c</a></li>
+                                                href="#!">High School</a></li>
                                         <li><a class="waves-effect collection-item" data-value="cat-d"
-                                                href="#!">Category d</a></li>
+                                                href="#!">Higher Secondary</a></li>
                                         <li><a class="waves-effect collection-item" data-value="cat-e"
-                                                href="#!">Category e</a></li>
+                                                href="#!">Crash Courses</a></li>
                                         <li><a class="waves-effect collection-item" data-value="cat-f"
-                                                href="#!">Category f</a></li>
+                                                href="#!">Skill Development</a></li>
                                     </ul>
                                 </div>
-                                <div class="filter-block filter_rating">
-                                    <ul class="collection with-header">
-                                        <li class="collection-header">Rating</li>
-                                        <li><a class="waves-effect collection-item active" data-value="0" href="#!">All
-                                                Rating</a></li>
-                                        <li><a class="waves-effect collection-item" data-value="1" href="#!"><span
-                                                    class="star"><i class="material-icons star-icon">star</i><i
-                                                        class="material-icons star-icon-disable">star</i><i
-                                                        class="material-icons star-icon-disable">star</i><i
-                                                        class="material-icons star-icon-disable">star</i><i
-                                                        class="material-icons star-icon-disable">star</i></span>
-                                                <span class="caption">Minimum 1 star
-                                                    rating</span></a></li>
-                                        <li><a class="waves-effect collection-item" data-value="2" href="#!"><span
-                                                    class="star"><i class="material-icons star-icon">star</i><i
-                                                        class="material-icons star-icon">star</i><i
-                                                        class="material-icons star-icon-disable">star</i><i
-                                                        class="material-icons star-icon-disable">star</i><i
-                                                        class="material-icons star-icon-disable">star</i></span>
-                                                <span class="caption">Minimum 2 star
-                                                    rating</span></a></li>
-                                        <li><a class="waves-effect collection-item" data-value="3" href="#!"><span
-                                                    class="star"><i class="material-icons star-icon">star</i><i
-                                                        class="material-icons star-icon">star</i><i
-                                                        class="material-icons star-icon">star</i><i
-                                                        class="material-icons star-icon-disable">star</i><i
-                                                        class="material-icons star-icon-disable">star</i></span>
-                                                <span class="caption">Minimum 3 star
-                                                    rating</span></a></li>
-                                        <li><a class="waves-effect collection-item" data-value="4" href="#!"><span
-                                                    class="star"><i class="material-icons star-icon">star</i><i
-                                                        class="material-icons star-icon">star</i><i
-                                                        class="material-icons star-icon">star</i><i
-                                                        class="material-icons star-icon">star</i><i
-                                                        class="material-icons star-icon-disable">star</i></span>
-                                                <span class="caption">Minimum 4 star
-                                                    rating</span></a></li>
-                                        <li><a class="waves-effect collection-item" data-value="5" href="#!"><span
-                                                    class="star"><i class="material-icons star-icon">star</i><i
-                                                        class="material-icons star-icon">star</i><i
-                                                        class="material-icons star-icon">star</i><i
-                                                        class="material-icons star-icon">star</i><i
-                                                        class="material-icons star-icon">star</i></span>
-                                                <span class="caption">Minimum 5 star
-                                                    rating</span></a></li>
-                                    </ul>
-                                </div>
+                               
+
+
                                 <div class="filter-block filter_radio">
                                     <ul class="collection with-header">
                                         <li class="collection-header">Filter Radio</li>
@@ -165,6 +139,8 @@
                                         </li>
                                     </ul>
                                 </div>
+
+
                                 <div class="filter-block filter_tags">
                                     <div class="collection with-header">
                                         <div class="collection-header">Filter Tags</div>
@@ -181,6 +157,8 @@
                                                     Four</label></span></div>
                                     </div>
                                 </div>
+
+
                                 <div class="filter-block filter_price">
                                     <div class="collection with-header">
                                         <div class="collection-header">Filter Range</div>
@@ -199,6 +177,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+
                                 <div class="filter-block filter_check">
                                     <ul class="collection with-header">
                                         <li class="collection-header">Filter Check</li>
@@ -230,6 +210,7 @@
                                         </li>
                                     </ul>
                                 </div>
+
                             </aside>
                         </div>
                     </div>
@@ -237,7 +218,7 @@
                 <!-- ##### PRODUCTS #####-->
                 <div class="col-lg-10 col-md-9 px-sm-3 px-0">
                     <div class="row" id="product_result"
-                        data-items="[{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/21.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-three&quot;,&quot;tag-four&quot;],&quot;price&quot;:50,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-d&quot;,&quot;radio&quot;:&quot;radio-b&quot;},{&quot;title&quot;:&quot;Cras convallis lacus orci&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/22.jpg&quot;,&quot;category&quot;:&quot;cat-b&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-one&quot;,&quot;tag-four&quot;],&quot;price&quot;:10,&quot;rating&quot;:2,&quot;check&quot;:&quot;check-d&quot;,&quot;radio&quot;:&quot;radio-e&quot;},{&quot;title&quot;:&quot;Integer orci justo&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/23.jpg&quot;,&quot;category&quot;:&quot;cat-b&quot;,&quot;tag&quot;:[&quot;tag-one&quot;],&quot;price&quot;:100,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-a&quot;,&quot;radio&quot;:&quot;radio-e&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584555/dandelion/24.jpg&quot;,&quot;category&quot;:&quot;cat-c&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;],&quot;price&quot;:80,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-c&quot;,&quot;radio&quot;:&quot;radio-d&quot;},{&quot;title&quot;:&quot;Cras convallis lacus orci&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/26.jpg&quot;,&quot;category&quot;:&quot;cat-d&quot;,&quot;tag&quot;:[&quot;tag-two&quot;],&quot;price&quot;:20,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-b&quot;,&quot;radio&quot;:&quot;radio-a&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/27.jpg&quot;,&quot;category&quot;:&quot;cat-e&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-three&quot;],&quot;price&quot;:5,&quot;rating&quot;:4,&quot;check&quot;:&quot;check-a&quot;,&quot;radio&quot;:&quot;radio-b&quot;},{&quot;title&quot;:&quot;Pellentesque ullamcorper&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584558/dandelion/28.jpg&quot;,&quot;category&quot;:&quot;cat-c&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-four&quot;,&quot;tag-two&quot;],&quot;price&quot;:70,&quot;rating&quot;:4,&quot;check&quot;:&quot;check-a&quot;,&quot;radio&quot;:&quot;radio-a&quot;},{&quot;title&quot;:&quot;Cras convallis lacus orci&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584558/dandelion/29.jpg&quot;,&quot;category&quot;:&quot;cat-d&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-three&quot;],&quot;price&quot;:74,&quot;rating&quot;:4,&quot;check&quot;:&quot;check-a&quot;,&quot;radio&quot;:&quot;radio-b&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584559/dandelion/30.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-three&quot;],&quot;price&quot;:80,&quot;rating&quot;:1,&quot;check&quot;:&quot;check-b&quot;,&quot;radio&quot;:&quot;radio-b&quot;},{&quot;title&quot;:&quot;Phasellus ante massa&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/21.jpg&quot;,&quot;category&quot;:&quot;cat-d&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-three&quot;],&quot;price&quot;:40,&quot;rating&quot;:4,&quot;check&quot;:&quot;check-d&quot;,&quot;radio&quot;:&quot;radio-a&quot;},{&quot;title&quot;:&quot;Cras convallis lacus orci&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/22.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-two&quot;,&quot;tag-three&quot;],&quot;price&quot;:40,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-b&quot;,&quot;radio&quot;:&quot;radio-a&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/22.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-one&quot;],&quot;price&quot;:70,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-a&quot;,&quot;radio&quot;:&quot;radio-d&quot;},{&quot;title&quot;:&quot;Phasellus ante massa&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/23.jpg&quot;,&quot;category&quot;:&quot;cat-e&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-three&quot;],&quot;price&quot;:55,&quot;rating&quot;:2,&quot;check&quot;:&quot;check-e&quot;,&quot;radio&quot;:&quot;radio-d&quot;},{&quot;title&quot;:&quot;Pellentesque ullamcorper&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584555/dandelion/24.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-three&quot;],&quot;price&quot;:90,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-d&quot;,&quot;radio&quot;:&quot;radio-c&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/25.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-two&quot;,&quot;tag-four&quot;],&quot;price&quot;:80,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-a&quot;,&quot;radio&quot;:&quot;radio-f&quot;},{&quot;title&quot;:&quot;Cras convallis lacus orci&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/26.jpg&quot;,&quot;category&quot;:&quot;cat-b&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;,&quot;tag-four&quot;],&quot;price&quot;:10,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-e&quot;,&quot;radio&quot;:&quot;radio-a&quot;},{&quot;title&quot;:&quot;Pellentesque ullamcorper&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/27.jpg&quot;,&quot;category&quot;:&quot;cat-c&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-three&quot;],&quot;price&quot;:100,&quot;rating&quot;:4,&quot;check&quot;:&quot;check-f&quot;,&quot;radio&quot;:&quot;radio-f&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584558/dandelion/28.jpg&quot;,&quot;category&quot;:&quot;cat-b&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-four&quot;],&quot;price&quot;:70,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-d&quot;,&quot;radio&quot;:&quot;radio-b&quot;},{&quot;title&quot;:&quot;Integer orci justo&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584558/dandelion/29.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;,&quot;tag-four&quot;],&quot;price&quot;:10,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-d&quot;,&quot;radio&quot;:&quot;radio-c&quot;},{&quot;title&quot;:&quot;Phasellus ante massa&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584559/dandelion/30.jpg&quot;,&quot;category&quot;:&quot;cat-f&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;],&quot;price&quot;:20,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-b&quot;,&quot;radio&quot;:&quot;radio-e&quot;},{&quot;title&quot;:&quot;Pellentesque ullamcorper&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/21.jpg&quot;,&quot;category&quot;:&quot;cat-d&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;,&quot;tag-four&quot;],&quot;price&quot;:80,&quot;rating&quot;:1,&quot;check&quot;:&quot;check-d&quot;,&quot;radio&quot;:&quot;radio-e&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/22.jpg&quot;,&quot;category&quot;:&quot;cat-b&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;,&quot;tag-four&quot;],&quot;price&quot;:45,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-c&quot;,&quot;radio&quot;:&quot;radio-a&quot;},{&quot;title&quot;:&quot;Cras convallis lacus orci&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/23.jpg&quot;,&quot;category&quot;:&quot;cat-f&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;,&quot;tag-four&quot;],&quot;price&quot;:40,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-c&quot;,&quot;radio&quot;:&quot;radio-a&quot;},{&quot;title&quot;:&quot;Phasellus ante massa&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584555/dandelion/24.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-four&quot;],&quot;price&quot;:50,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-f&quot;,&quot;radio&quot;:&quot;radio-c&quot;},{&quot;title&quot;:&quot;Cras convallis lacus orci&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/25.jpg&quot;,&quot;category&quot;:&quot;cat-f&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;],&quot;price&quot;:20,&quot;rating&quot;:3,&quot;check&quot;:&quot;check-a&quot;,&quot;radio&quot;:&quot;radio-c&quot;},{&quot;title&quot;:&quot;Pellentesque ullamcorper&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/26.jpg&quot;,&quot;category&quot;:&quot;cat-b&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;],&quot;price&quot;:70,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-c&quot;,&quot;radio&quot;:&quot;radio-c&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/27.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-four&quot;],&quot;price&quot;:45,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-b&quot;,&quot;radio&quot;:&quot;radio-a&quot;}]">
+                        data-items="[{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/21.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-three&quot;,&quot;tag-four&quot;],&quot;price&quot;:50,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-d&quot;,&quot;radio&quot;:&quot;radio-b&quot;},{&quot;title&quot;:&quot;Cras convallis lacus orci&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/22.jpg&quot;,&quot;category&quot;:&quot;cat-b&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-one&quot;,&quot;tag-four&quot;],&quot;price&quot;:10,&quot;rating&quot;:2,&quot;check&quot;:&quot;check-d&quot;,&quot;radio&quot;:&quot;radio-e&quot;},{&quot;title&quot;:&quot;Integer orci justo&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/23.jpg&quot;,&quot;category&quot;:&quot;cat-b&quot;,&quot;tag&quot;:[&quot;tag-one&quot;],&quot;price&quot;:100,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-a&quot;,&quot;radio&quot;:&quot;radio-e&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584555/dandelion/24.jpg&quot;,&quot;category&quot;:&quot;cat-c&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;],&quot;price&quot;:80,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-c&quot;,&quot;radio&quot;:&quot;radio-d&quot;},{&quot;title&quot;:&quot;Cras convallis lacus orci&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/26.jpg&quot;,&quot;category&quot;:&quot;cat-d&quot;,&quot;tag&quot;:[&quot;tag-two&quot;],&quot;price&quot;:20,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-b&quot;,&quot;radio&quot;:&quot;radio-a&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/27.jpg&quot;,&quot;category&quot;:&quot;cat-e&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-three&quot;],&quot;price&quot;:5,&quot;rating&quot;:4,&quot;check&quot;:&quot;check-a&quot;,&quot;radio&quot;:&quot;radio-b&quot;},{&quot;title&quot;:&quot;Pellentesque ullamcorper&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584558/dandelion/28.jpg&quot;,&quot;category&quot;:&quot;cat-c&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-four&quot;,&quot;tag-two&quot;],&quot;price&quot;:70,&quot;rating&quot;:4,&quot;check&quot;:&quot;check-a&quot;,&quot;radio&quot;:&quot;radio-a&quot;},{&quot;title&quot;:&quot;Cras convallis lacus orci&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584558/dandelion/29.jpg&quot;,&quot;category&quot;:&quot;cat-d&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-three&quot;],&quot;price&quot;:74,&quot;rating&quot;:4,&quot;check&quot;:&quot;check-a&quot;,&quot;radio&quot;:&quot;radio-b&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584559/dandelion/30.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-three&quot;],&quot;price&quot;:80,&quot;rating&quot;:1,&quot;check&quot;:&quot;check-b&quot;,&quot;radio&quot;:&quot;radio-b&quot;},{&quot;title&quot;:&quot;Phasellus ante massa&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/21.jpg&quot;,&quot;category&quot;:&quot;cat-d&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-three&quot;],&quot;price&quot;:40,&quot;rating&quot;:4,&quot;check&quot;:&quot;check-d&quot;,&quot;radio&quot;:&quot;radio-a&quot;},{&quot;title&quot;:&quot;Cras convallis lacus orci&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/22.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-two&quot;,&quot;tag-three&quot;],&quot;price&quot;:40,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-b&quot;,&quot;radio&quot;:&quot;radio-a&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/22.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-one&quot;],&quot;price&quot;:70,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-a&quot;,&quot;radio&quot;:&quot;radio-d&quot;},{&quot;title&quot;:&quot;Phasellus ante massa&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/23.jpg&quot;,&quot;category&quot;:&quot;cat-e&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-three&quot;],&quot;price&quot;:55,&quot;rating&quot;:2,&quot;check&quot;:&quot;check-e&quot;,&quot;radio&quot;:&quot;radio-d&quot;},{&quot;title&quot;:&quot;Pellentesque ullamcorper&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584555/dandelion/24.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-three&quot;],&quot;price&quot;:90,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-d&quot;,&quot;radio&quot;:&quot;radio-c&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/25.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-two&quot;,&quot;tag-four&quot;],&quot;price&quot;:80,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-a&quot;,&quot;radio&quot;:&quot;radio-f&quot;},{&quot;title&quot;:&quot;Cras convallis lacus orci&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/26.jpg&quot;,&quot;category&quot;:&quot;cat-b&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;,&quot;tag-four&quot;],&quot;price&quot;:10,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-e&quot;,&quot;radio&quot;:&quot;radio-a&quot;},{&quot;title&quot;:&quot;Pellentesque ullamcorper&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/27.jpg&quot;,&quot;category&quot;:&quot;cat-c&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-three&quot;],&quot;price&quot;:100,&quot;rating&quot;:4,&quot;check&quot;:&quot;check-f&quot;,&quot;radio&quot;:&quot;radio-f&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584558/dandelion/28.jpg&quot;,&quot;category&quot;:&quot;cat-b&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-four&quot;],&quot;price&quot;:70,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-d&quot;,&quot;radio&quot;:&quot;radio-b&quot;},{&quot;title&quot;:&quot;Integer orci justo&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584558/dandelion/29.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;,&quot;tag-four&quot;],&quot;price&quot;:10,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-d&quot;,&quot;radio&quot;:&quot;radio-c&quot;},{&quot;title&quot;:&quot;Phasellus ante massa&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584559/dandelion/30.jpg&quot;,&quot;category&quot;:&quot;cat-f&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;],&quot;price&quot;:20,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-b&quot;,&quot;radio&quot;:&quot;radio-e&quot;},{&quot;title&quot;:&quot;Pellentesque ullamcorper&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/21.jpg&quot;,&quot;category&quot;:&quot;cat-d&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;,&quot;tag-four&quot;],&quot;price&quot;:80,&quot;rating&quot;:1,&quot;check&quot;:&quot;check-d&quot;,&quot;radio&quot;:&quot;radio-e&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/22.jpg&quot;,&quot;category&quot;:&quot;cat-b&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;,&quot;tag-four&quot;],&quot;price&quot;:45,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-c&quot;,&quot;radio&quot;:&quot;radio-a&quot;},{&quot;title&quot;:&quot;Cras convallis lacus orci&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/23.jpg&quot;,&quot;category&quot;:&quot;cat-f&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;,&quot;tag-four&quot;],&quot;price&quot;:40,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-c&quot;,&quot;radio&quot;:&quot;radio-a&quot;},{&quot;title&quot;:&quot;Phasellus ante massa&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584555/dandelion/24.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-four&quot;],&quot;price&quot;:50,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-f&quot;,&quot;radio&quot;:&quot;radio-c&quot;},{&quot;title&quot;:&quot;Cras convallis lacus orci&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/25.jpg&quot;,&quot;category&quot;:&quot;cat-f&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;],&quot;price&quot;:20,&quot;rating&quot;:3,&quot;check&quot;:&quot;check-a&quot;,&quot;radio&quot;:&quot;radio-c&quot;},{&quot;title&quot;:&quot;Pellentesque ullamcorper&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-glo bal-services/image/upload/v1544584556/dandelion/26.jpg&quot;,&quot;category&quot;:&quot;cat-b&quot;,&quot;tag&quot;:[&quot;tag-one&quot;,&quot;tag-two&quot;],&quot;price&quot;:70,&quot;rating&quot;:5,&quot;check&quot;:&quot;check-c&quot;,&quot;radio&quot;:&quot;radio-c&quot;},{&quot;title&quot;:&quot;Ut sed eros finibus&quot;,&quot;img&quot;:&quot;https://res.cloudinary.com/walden-global-services/image/upload/v1544584556/dandelion/27.jpg&quot;,&quot;category&quot;:&quot;cat-a&quot;,&quot;tag&quot;:[&quot;tag-four&quot;],&quot;price&quot;:45,&quot;rating&quot;:0,&quot;check&quot;:&quot;check-b&quot;,&quot;radio&quot;:&quot;radio-a&quot;}]">
                         <div class="col col-lg-4 col-sm-6 px-sm-3 px-0">
                             <div class="card product-card portrait round"><a class="waves-effect hidden-link"
                                     href="{% url 'website:course-detail' %}">&nbsp;</a>

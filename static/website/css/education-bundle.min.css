@@ -48618,3 +48618,12 @@ nav.filter-head .nav-wrapper button {
     color: black;
 
 }
+.policy-main{
+    margin-top: 75px;
+}
+.policy{
+    border: 1px solid var(--v-primary-base);
+    border-radius: 30px;
+    padding: 38px; 
+       
+}
