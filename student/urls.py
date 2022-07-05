@@ -14,4 +14,5 @@ urlpatterns = [
     path('takexam',views.takexam,name='takexam'),
     path('profile',views.profile,name='profile'),
     path('reference',views.reference,name='reference'),
+    path('innerpage',views.innerpage,name='innerpage'),
 ]

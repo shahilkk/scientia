@@ -13,7 +13,7 @@
 
 
                 <div class="d-flex sidebar-account flex-shrink-0 mr-auto mr-lg-0">
-                    <a href="index.html" class="flex d-flex align-items-center text-underline-0">
+                    <a href="{% url 'student:home' %}" class="flex d-flex align-items-center text-underline-0">
                         <span class="mr-1  text-white">
                             <!-- LOGO -->
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" width="30" height="30">
@@ -23,7 +23,7 @@
                             </svg>
                         </span>
                         <span class="flex d-flex flex-column text-white">
-                            <strong class="sidebar-brand">LEMA</strong>
+                            <strong class="sidebar-brand">Scientia</strong>
                         </span>
                     </a>
                 </div>
@@ -41,10 +41,7 @@
                 </ul>
 
 
-                <form class="search-form search-form--light d-none d-sm-flex flex ml-3" action="https://lema.frontted.com/index.html">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <button class="btn" type="submit"><i class="material-icons">search</i></button>
-                </form>
+              
 
 
                 <ul class="nav navbar-nav d-none d-md-flex">
@@ -195,6 +192,9 @@
                         </a>
                         <a class="dropdown-item d-flex align-items-center py-2" href="#">
                             <span class="material-icons mr-2">settings</span> Settings
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                            <span class="material-icons mr-2">person</span> Profile
                         </a>
                         <a class="dropdown-item d-flex align-items-center py-2" href="login.html">
                             <span class="material-icons mr-2">exit_to_app</span> Logout
