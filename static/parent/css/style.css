@@ -6868,3 +6868,21 @@ body:not(.ms-settings-open) .ms-settings-toggle:hover{
   padding: inherit;
   border-radius: 20px;
 }
+/* add Student */
+
+.addstudent{
+  color: #00838F;
+}
+
+.sub-heading{
+  text-align: center;
+  font-size: large;
+  font-family: inherit;
+  color: #00838f;
+}
+.category{
+  height: 126px;
+}
+.ms-card-body{
+  color: white;
+}

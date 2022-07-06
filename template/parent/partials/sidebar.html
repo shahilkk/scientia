@@ -8,69 +8,39 @@
       <!-- <img src="{% static 'parent/img/logo/weeducate-4.png' %}"
         alt="logo"> -->
 
-        <h1 style="color: #00838F;"> Scientia</h1>
-       </a>
+      <h1 style="color: #00838F;"> Scientia</h1>
+    </a>
   </div>
 
   <!-- Navigation -->
   <ul class="accordion ms-main-aside fs-14" id="side-nav-accordion">
     <!-- Dashboard -->
     <li class="menu-item">
-      <a href="{% url 'parent:index' %}" class="has-chevron" data-toggle="collapse" data-target="#dashboard" aria-expanded="false"
-        aria-controls="dashboard">
-        <span><i class="material-icons fs-16">dashboard</i>Dashboard </span>
+      <a href="{% url 'parent:index' %}" class="">
+        <span><i class="material-icons fs-16">dashboard</i>Dashboard</span>
       </a>
-      <ul id="dashboard" class="collapse" aria-labelledby="dashboard" data-parent="#side-nav-accordion">
-        <li> <a href="{% url 'parent:index' %}">Dashboard</a> </li>
 
-      </ul>
     </li>
     <!-- /Dashboard -->
 
-    <!------------------------Proessors Start------------------------>
 
-    <!-- <li class="menu-item">
-
-      <a href="#" class="has-chevron" data-toggle="collapse" data-target="#professor" aria-expanded="false"
-        aria-controls="dashboard">
-        <span><i class="fa fa-user fs-16"></i>Professors</span>
+    <!--Student Start-->
+    <li class="menu-item">
+      <a href="{% url 'parent:addstudent' %}" >
+        <span><i class="fa fa-users fs-16"></i>Add Student</span>
       </a>
-      <ul id="professor" class="collapse" aria-labelledby="dashboard" data-parent="#side-nav-accordion">
-        <li> <a href="pages/professors/allprofessor.html">All Professors</a> </li>
-        <li> <a href="pages/professors/addprofessor.html">Add Professors</a> </li>
-        <li> <a href="pages/professors/aboutprofessor.html">About Professors</a> </li>
-      </ul>
-    </li> -->
-
-
-
-    <!-------------------------- /Proessors End ---------------------->
-
-        <!--Student Start-->
-        <li class="menu-item">
-          <a href="#" class="has-chevron" data-toggle="collapse" data-target="#student" aria-expanded="false"
-            aria-controls="dashboard">
-            <span><i class="fa fa-users fs-16"></i>Student</span>
-          </a>
-          <ul id="student" class="collapse" aria-labelledby="courses" data-parent="#side-nav-accordion">
-            <li> <a href="{% url 'parent:all-courses' %}">Student Add</a> </li>
-            <!-- <li> <a href="pages/student/studenttable.html">Student Table</a> </li> -->
-          </ul>
-        </li>
-        <!-- /Student End--->
+    </li>
+    <!-- /Student End--->
 
     <!---------------------------Courses Start------------------------->
-    
-      <li class="menu-item">
-      <a href="#" class="has-chevron" data-toggle="collapse" data-target="#courses" aria-expanded="false"
-        aria-controls="dashboard">
+
+    <li class="menu-item">
+      <a href="{% url 'parent:category' %}">
         <span><i class="fa fa-graduation-cap fs-16"></i>Courses</span>
       </a>
-      <ul id="courses" class="collapse" aria-labelledby="courses" data-parent="#side-nav-accordion">
-        <li> <a href="{% url 'parent:all-courses' %}">All Courses</a> </li>
-      </ul>
+
     </li>
-    
+
     <!--------------------------- /Courses End------------------------->
 
 
@@ -78,15 +48,10 @@
 
     <!--Staff Start-->
     <li class="menu-item">
-      <a href="#" class="has-chevron" data-toggle="collapse" data-target="#staff" aria-expanded="false"
-        aria-controls="dashboard">
-        <span><i class="fa fa-user-circle fs-16"></i>Staff</span>
+      <a href="#">
+        <span><i class="fa fa-user-circle fs-16"></i>Teachers</span>
       </a>
-      <ul id="staff" class="collapse" aria-labelledby="staff" data-parent="#side-nav-accordion">
-        <li> <a href="pages/staff/addstaff.html">Add Staff</a> </li>
-        <li> <a href="pages/staff/staffprofile.html">Staff Proflie</a> </li>
 
-      </ul>
     </li>
     <!-- /Staff End--->
 
@@ -94,34 +59,14 @@
 
     <!--Fees Start-->
     <li class="menu-item">
-      <a href="#" class="has-chevron" data-toggle="collapse" data-target="#fees" aria-expanded="false"
-        aria-controls="dashboard">
+      <a href="#">
         <span><i class="fas fa-dollar-sign"></i>Fees</span>
       </a>
-      <ul id="fees" class="collapse" aria-labelledby="staff" data-parent="#side-nav-accordion">
-        <li> <a href="pages/fees/feescollection.html">Fees Collection</a> </li>
-        <li> <a href="pages/fees/addfees.html">Add Fees</a> </li>
-        <li> <a href="pages/fees/feesrecepit.html">Fees Recepit</a> </li>
 
-
-      </ul>
     </li>
     <!-- /Fees End--->
 
-    <!--Departement Start-->
-    <li class="menu-item">
-      <a href="#" class="has-chevron" data-toggle="collapse" data-target="#departement" aria-expanded="false"
-        aria-controls="dashboard">
-        <span><i class="fa fa-building fs-16"></i>Departement</span>
-      </a>
-      <ul id="departement" class="collapse" aria-labelledby="departement" data-parent="#side-nav-accordion">
-        <li> <a href="pages/departement/departement.html">Departement List</a> </li>
-        <li> <a href="pages/departement/adddepartement.html">Add Departement</a> </li>
 
-
-      </ul>
-    </li>
-    <!-- /Departemnt End--->
 
 
 

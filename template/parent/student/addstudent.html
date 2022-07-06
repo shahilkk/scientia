@@ -16,21 +16,36 @@
       </div>
     </div>
 
+    <!-- heading -->
+<div class="p-3 addstudent">
+<center><h1>Add your Child here....!</h1></center>
+</div>
+
+<!-- end heading -->
     <div class="col-lg-12">
       <div class="ms-panel">
         <div class="ms-panel-header">
-          <h6>Student Add</h6>
+          
+          <h6 class="sub-heading">Basic Details</h6>
         </div>
         <div class="ms-panel-body">
           <form>
 
             <div class="row">
-              <div class="col-lg-12">
+              <!-- <div class="col-lg-6">
                 <div class="form-group">
-                  <label for="name">Selected Course</label>
+                  <label for="name">SelectCatagory</label>
                   <input type="Text" class="form-control" id="exampleEmail" placeholder="Date Of Birth">
                 </div>
               </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Select Course</label>
+                  <input type="Text" class="form-control" id="exampleEmail" placeholder="">
+                </div>
+              </div> -->
+              
+
               <div class="col-lg-6">
                 <div class="form-group">
                   <label for="name">First Name</label>
@@ -72,18 +87,8 @@
                   </select>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <label for="name">Upload Documents</label>
-                  <input type="file" class="form-control" id="exampleEmail" placeholder="Upload Docuements">
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <label for="name">Parent Number</label>
-                  <input type="text" class="form-control" id="exampleEmail" placeholder="Parents Number">
-                </div>
-              </div>
+              
+             
               <div class="col-lg-6">
                 <div class="form-group">
                   <label for="name">Blood Group</label>
@@ -129,29 +134,134 @@
                   <input type="text" class="form-control" id="exampleEmail" placeholder="First name">
                 </div>
               </div>
-
-              <!---------------------- end Address  ----------------------------->
               <div class="col-lg-6">
                 <div class="form-group">
-                  <label for="examplePassword">Password</label>
-                  <input type="password" class="form-control" id="examplePassword" placeholder="Password">
+                  <label for="name">Photo</label>
+                  <input type="file" class="form-control" id="exampleEmail" placeholder="Upload Docuements">
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <label for="examplePassword">Confirm Password</label>
-                  <input type="password" class="form-control" id="examplePassword" placeholder="Confirm Password">
-                </div>
-              </div>
-
-
             </div>
+            <!---------------------- end Address  ----------------------------->
+
+            <!---------------------- course selection  ----------------------------->
+            <div class="ms-panel-header">
+              <h6 class="sub-heading">Select Course</h6>
+            </div>
+           <div class="row pt-5">
+            <div class="form-group col-lg-6">
+              <label for="inputState">Select Catagory</label>
+              <select id="inputState" class="form-control">
+                <option selected>Lower Primary</option>
+                <option>Upper Primary</option>
+                <option>.....</option>
+              </select>
+            </div>
+            <div class="form-group col-lg-6">
+              <label for="inputState">Select Class</label>
+              <select id="inputState" class="form-control">
+                <option selected>10th</option>
+                <option>9th</option>
+                <option>....</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-xl-12 col-md-12">
+            <div class="ms-panel ms-panel-fh">
+              <div class="ms-panel-header">
+                <h6>Select Subject</h6>
+              </div>
+              <div class="ms-panel-body">
+               
+
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                      <ul class="ms-list ms-list-display">
+                        <li>
+                          <label class="ms-switch">
+                             <input type="checkbox" checked>
+                             <span class="ms-switch-slider ms-switch-primary round"></span>
+                           </label>
+                          <span> Subject 1 </span>
+                        </li>
+                        <li>
+                          <label class="ms-switch">
+                             <input type="checkbox" checked>
+                             <span class="ms-switch-slider ms-switch-secondary round"></span>
+                           </label>
+                          <span> Subject 2 </span>
+                        </li>
+                        <li>
+                          <label class="ms-switch">
+                             <input type="checkbox" checked>
+                             <span class="ms-switch-slider ms-switch-success round"></span>
+                           </label>
+                          <span> Subject 3</span>
+                        </li>
+                        <li>
+                          <label class="ms-switch">
+                             <input type="checkbox" checked>
+                             <span class="ms-switch-slider ms-switch-danger round"></span>
+                           </label>
+                          <span> Subject 4</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <ul class="ms-list ms-list-display">
+                        <li>
+                          <label class="ms-switch">
+                             <input type="checkbox" checked>
+                             <span class="ms-switch-slider ms-switch-warning round"></span>
+                           </label>
+                          <span> Subject 5 </span>
+                        </li>
+                        <li>
+                          <label class="ms-switch">
+                             <input type="checkbox" checked>
+                             <span class="ms-switch-slider ms-switch-info round"></span>
+                           </label>
+                          <span> Subject 6 </span>
+                        </li>
+                        <li>
+                          <label class="ms-switch">
+                             <input type="checkbox" checked>
+                             <span class="ms-switch-slider ms-switch-dark round"></span>
+                           </label>
+                          <span> Subject 7 </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+<!----------------------end course selection  ----------------------------->
+
+<div class="ms-panel-header">
+  <h6 class="sub-heading">Select Subject</h6>
+</div>
+
+<div class="col-lg-12 pt-3">
+  <div class="form-group">
+    <label for="name">District</label>
+    <input type="text" class="form-control" id="exampleEmail" placeholder="First name">
+  </div>
+</div>
+<div class="col-lg-12">
+  <div class="form-group">
+    <label for="name">District</label>
+    <input type="text" class="form-control" id="exampleEmail" placeholder="First name">
+  </div>
+</div>
+
           </form>
         </div>
         <center>
-          <button type="button" class="btn btn-warning mb-5">Submit</button>
+
           <button type="button" class="btn btn-outline-warning mb-5 ml-3"><a href="{% url 'parent:index' %}">Cancel</a></button>
-          <button type="button" class="btn btn-warning mb-5"><a href="{% url 'parent:all-courses' %}"><i class="fa fa-solid fa-plus"></i></a></button>
+          <button type="button" class="btn btn-warning mb-5">Submit</button>
+          <button type="button" class="btn  mb-5 ml-5"><a href="{% url 'parent:addstudent' %}"><i class="fa fa-solid fa-plus"></i></a></button>
         </center>
       </div>
 
