@@ -36,6 +36,12 @@ def takexam(request):
 def profile(request):
     return render(request,'student/profile.html')    
 
+    
+
+
+def editprofile(request):
+    return render(request,'student/editprofile.html')    
+
 
 def reference(request):
     return render(request,'student/references.html')    

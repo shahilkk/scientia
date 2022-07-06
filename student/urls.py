@@ -13,6 +13,7 @@ urlpatterns = [
     path('modulwise',views.modulwise,name='modulwise'),
     path('takexam',views.takexam,name='takexam'),
     path('profile',views.profile,name='profile'),
+    path('editprofile',views.editprofile,name='editprofile'),
     path('reference',views.reference,name='reference'),
     path('innerpage',views.innerpage,name='innerpage'),
 ]
