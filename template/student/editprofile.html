@@ -1,0 +1,128 @@
+{% extends 'student/partials/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid page__heading-container">
+    <div class="page__heading d-flex align-items-center justify-content-between">
+
+        <h1 class="m-0">Edit Account</h1>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container-fluid page__container">
+    <div class="card card-form">
+        <div class="row no-gutters">
+            <div class="col-lg-4 card-body">
+                <p><strong class="headings-color">Basic Information</strong></p>
+                <p class="text-muted mb-0">Edit your account details and settings.</p>
+            </div>
+            <div class="col-lg-8 card-form__body card-body">
+                <div class="form-group">
+                    <label>Avatar</label>
+                    <div class="dz-clickable media align-items-center" data-toggle="dropzone"
+                        data-dropzone-url="http://" data-dropzone-clickable=".dz-clickable"
+                        data-dropzone-files='["assets/images/account-add-photo.svg"]'>
+                        <div class="dz-preview dz-file-preview dz-clickable mr-3">
+                            <div class="avatar avatar-lg">
+                                <img src=" {% static 'student/images/account-add-photo.svg' %} " class="avatar-img rounded" alt="..."
+                                    data-dz-thumbnail>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <button class="btn btn-sm btn-primary dz-clickable">Choose photo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="fname">First name</label>
+                            <input id="fname" type="text" class="form-control" placeholder="First name" value="Adrian">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="lname">Last name</label>
+                            <input id="lname" type="text" class="form-control" placeholder="Last name" value="Demian">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Phone">Phone Number</label>
+                    <input id="Phone" type="text" class="form-control" placeholder="Phone number" value="9859877562">
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email Id</label>
+                    <input id="Email" type="email" class="form-control" placeholder="Email Id" value="Adrian@gmail.com">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-form">
+        <div class="row no-gutters">
+            <div class="col-lg-4 card-body">
+                <p><strong class="headings-color">Qualification Details</strong></p>
+                <p class="text-muted mb-0">Edit your Qualification Details and settings.</p>
+            </div>
+            <div class="col-lg-8 card-form__body card-body">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="fname">Qualification</label>
+                            <input id="fname" type="text" class="form-control" placeholder="First name" value="Qualification">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="lname">Experince</label>
+                            <input id="lname" type="text" class="form-control" placeholder="Last name" value="Experince">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Phone">Specialized in</label>
+                    <input id="Phone" type="text" class="form-control" placeholder="Phone number" value="Specialized">
+                </div>
+                <div class="form-group">
+                    <label for="Email">Achievments</label>
+                    <textarea id="Email" type="email" class="form-control" placeholder="Email Id" value="Achievments"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-form">
+        <div class="row no-gutters">
+            <div class="col-lg-4 card-body">
+                <p><strong class="headings-color">Profile Settings</strong></p>
+                <p class="text-muted mb-0">Update your public profile with relevant and meaningful information.</p>
+            </div>
+            <div class="col-lg-8 card-form__body card-body">
+                <div class="form-group">
+                    <label for="desc2">Address</label>
+                    <textarea id="desc2" rows="4" class="form-control" placeholder="Description ..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="desc2">City</label>
+                    <input id="desc2" rows="4" class="form-control" placeholder="Description ..."></input>
+                </div>
+                <div class="form-group">
+                    <label for="desc2">State</label>
+                    <input id="desc2" rows="4" class="form-control" placeholder="Description ..."></input>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-right mb-5">
+        <a href="#" class="btn btn-success">Save</a>
+    </div>
+</div>
+{% endblock %}
