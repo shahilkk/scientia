@@ -10,8 +10,8 @@ var dataSet = [
 
 
 var dataSet2 = [
-  // [ "Tiger Nixon", "System Architect", "10th", "50,000", "25,000", "25,000" ],
-
+     [ "Tiger Nixon", "System Architect", "10th", "50,000", "25,000", "25,000" ],
+     [ "Shahil", "10th", "50,000", "25,000", "25,000","10/10/2022" ],
     
   ];
 
@@ -24,7 +24,10 @@ var dataSet3 = [
       // fee details
     var dataSet4 = [
     // [ "Tiger Nixon", "1", "B.Tech", "5421789", "2011/04/25", "$135" ],
-     [ "Jan", "101", "10th", "2022/10/10", "25,000", "25,000","due date" ],
+     [ "Shahil", "10th", "50,000", "25,000", "25,000","10/10/2022" ],
+     [ "Ashiq", "10th", "50,000", "25,000", "25,000","10/10/2022" ],
+     [ "Harshin", "10th", "50,000", "25,000", "25,000","10/10/2022" ],
+     [ "Shahil", "10th", "50,000", "25,000", "25,000","10/10/2022" ],
 
 
     
@@ -147,12 +150,12 @@ var dataSet3 = [
   var tableTwo = $('#data-table-2').DataTable( {
     data: dataSet4,
     columns: [
-      { title: "Month" },
-      { title: "Roll No" },
+      { title: "name" },
       { title: "Class" },
-      { title: "Due Date" },
-      { title: "Tottal Payed" },
-      { title: "Pending Fee" }
+      { title: "Tottal fee" },
+      { title: "Payed Fee" },
+      { title: "Due Fee" },
+      { title: "Due Date" }
     ],
   });
   var tableThree = $('#data-table-3').DataTable( {

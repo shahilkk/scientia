@@ -33,3 +33,6 @@ def feeDetails(request):
 
 def holiday(request):
     return render(request,"parent/holiday.html")
+
+def studentDetails(request):
+    return render(request,"parent/studentdetails.html")
