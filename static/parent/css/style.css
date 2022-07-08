@@ -2693,11 +2693,13 @@ input:checked + .ms-switch-slider.ms-switch-dark{
 /*  background-image: linear-gradient(to right, #926afe, #bd9aff);*/
 }
 .ms-card.card-gradient-success{
-  background-color: #B2EBF2;
+  /* background-color: #B2EBF2; */
+  background-image: linear-gradient(to right, #12b252, #00838f);
 /*  background-image: linear-gradient(to right, #12b252, #31e97a);*/
 }
 .ms-card.card-gradient-warning{
-  background-color: #B2EBF2;
+  /* background-color: #B2EBF2; */
+  background-image: linear-gradient(to right, #12b252, #00838f);
 /*  background-image: linear-gradient(to right, #fea837, #fed257);*/
 }
 .ms-card.card-gradient-danger{
@@ -6899,7 +6901,17 @@ body:not(.ms-settings-open) .ms-settings-toggle:hover{
 }
 .category{
   height: 126px;
+  color: white;
 }
 .ms-card-body{
   color: white;
+}
+
+thead{
+  background-color: #00838f;
+  color: white;
+}
+
+.category-name{
+  color:white
 }
