@@ -72,30 +72,7 @@ var dataSet3 = [
     
     
  var dataSet7 = [
-    [ "john", "1234567", "VX-235", "VX-234", "Brokylen to botanic", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "john Lary", "2234567", "DX-235", "CX-234", "Brokylen to Newyork", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "Korey", "13456745", "KX-435", "TX-234", "Brokylen to Washingaton", "<i class='fas fa-map-marked-alt'></i>" ],
-    [ "john", "1234567", "VX-235", "VX-234", "Brokylen to botanic", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "john Lary", "2234567", "DX-235", "CX-234", "Brokylen to Newyork", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "Korey", "13456745", "KX-435", "TX-234", "Brokylen to Washingaton", "<i class='fas fa-map-marked-alt'></i>" ],
-    [ "john", "1234567", "VX-235", "VX-234", "Brokylen to botanic", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "john Lary", "2234567", "DX-235", "CX-234", "Brokylen to Newyork", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "Korey", "13456745", "KX-435", "TX-234", "Brokylen to Washingaton", "<i class='fas fa-map-marked-alt'></i>" ],
-    [ "john", "1234567", "VX-235", "VX-234", "Brokylen to botanic", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "john Lary", "2234567", "DX-235", "CX-234", "Brokylen to Newyork", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "Korey", "13456745", "KX-435", "TX-234", "Brokylen to Washingaton", "<i class='fas fa-map-marked-alt'></i>" ],
-    [ "john", "1234567", "VX-235", "VX-234", "Brokylen to botanic", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "john Lary", "2234567", "DX-235", "CX-234", "Brokylen to Newyork", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "Korey", "13456745", "KX-435", "TX-234", "Brokylen to Washingaton", "<i class='fas fa-map-marked-alt'></i>" ],
-    [ "john", "1234567", "VX-235", "VX-234", "Brokylen to botanic", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "john Lary", "2234567", "DX-235", "CX-234", "Brokylen to Newyork", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "Korey", "13456745", "KX-435", "TX-234", "Brokylen to Washingaton", "<i class='fas fa-map-marked-alt'></i>" ],
-    [ "john", "1234567", "VX-235", "VX-234", "Brokylen to botanic", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "john Lary", "2234567", "DX-235", "CX-234", "Brokylen to Newyork", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "Korey", "13456745", "KX-435", "TX-234", "Brokylen to Washingaton", "<i class='fas fa-map-marked-alt'></i>" ],
-    [ "john", "1234567", "VX-235", "VX-234", "Brokylen to botanic", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "john Lary", "2234567", "DX-235", "CX-234", "Brokylen to Newyork", "<i class='fas fa-map-marked-alt'></i>" ],
-     [ "Korey", "13456745", "KX-435", "TX-234", "Brokylen to Washingaton", "<i class='fas fa-map-marked-alt'></i>" ],
+    [ "john", "Calicut", "+91 54674673"],
      
   ];
     
@@ -211,12 +188,10 @@ var dataSet3 = [
      var tableOne = $('#data-table-7').DataTable( {
     data: dataSet7,
     columns: [
-      { title: "Driver Name" },
-      { title: "Mobile Number" },
-      { title: "Licence Number" },
-      { title: "Vehicle Number" },
-      { title: "Route Name" },
-      { title: "MAP" }
+      { title: "Teacher Name" },
+      { title: "Subject" },
+      { title: "Phone Number" }
+      
     ],
   });
      var tableOne = $('#data-table-8').DataTable( {

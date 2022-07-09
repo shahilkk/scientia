@@ -3953,7 +3953,7 @@ border: 0;
 }
 .nav-tabs li a.active{
   color: #fff;
-  background-color: #fbb022;
+  background-color: #00838f;
 }
 .nav-tabs.tabs-bordered li a{
   -webkit-transition: 0s;
