@@ -2,6 +2,7 @@
 {% load static %}
 {% block content %}
 
+<link rel="stylesheet" href="{% static 'teacher/css/jquery.dataTables.min.css' %} ">
 
 
 <div class="container-fluid page__heading-container">
@@ -39,7 +40,305 @@
                         Ducimus aperiam aut corporis, facere nobis id quos dignissimos, ut corrupti asperiores reprehenderit culpa praesentium exercitationem, officia commodi.
                     </div>
                     <div class="tab-pane fade" id="activity_quotes">
-                        Odit consectetur dolore maxime similique qui officia deserunt fugiat quo tempore consequuntur dicta ratione sint commodi eum eligendi, magnam aliquid expedita quas accusantium, sed nobis tenetur illum mollitia. Quis ipsum tenetur distinctio tempore vitae atque quam.
+                        <div class="card height-auto">
+                            <div class="card-body">
+                                <div class="heading-layout1">
+                                    <div class="item-title my-3">
+                                        <h3 class="mb-4">All Question Papers</h3>
+                                    </div>
+                                  
+                                </div>
+                                <form class="mg-b-20  my-3">
+                                    <div class="row gutters-8 ">
+                                        <div class="col-3-xxxl col-xl-3 col-lg-3 col-12 form-group">
+                                            <input type="text" placeholder="Search by ID ..." class="form-control">
+                                        </div>
+                                        <div class="col-4-xxxl col-xl-4 col-lg-3 col-12 form-group">
+                                            <input type="text" placeholder="Search by Name ..." class="form-control">
+                                        </div>
+                                        <div class="col-4-xxxl col-xl-3 col-lg-3 col-12 form-group">
+                                            <input type="text" placeholder="Search by Phone ..." class="form-control">
+                                        </div>
+                                        <div class="col-1-xxxl col-xl-2 col-lg-3 col-12 form-group">
+                                            <button type="submit" class="btn btn-outline-primary">SEARCH</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="table-responsive">
+                                    <table class="table display data-table text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                
+                                                <th>Subject</th>
+                                                <th>Class</th>
+                                                <th>File</th>
+                                      
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                           
+                                            
+                                            <tr>
+                                                
+                                                <td>English Grammer</td>
+                                                <td>English</td>
+                                                <td><a class="material-icons text-secondary" href="#">remove_red_eye</a></td>
+                                                
+                
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <span class="flaticon-more-button-of-three-dots"></span>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-times text-orange-red"></i>Close</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                
+                                                <td>Expert Mathmetic</td>
+                                                <td>Math</td>
+                                                <td><a class="material-icons text-secondary" href="#">remove_red_eye</a></td>
+                                                
+                
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <span class="flaticon-more-button-of-three-dots"></span>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-times text-orange-red"></i>Close</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                
+                                                <td>Bangla Grammer</td>
+                                                <td>Bangla</td>
+                                                <td><a class="material-icons text-secondary" href="#">remove_red_eye</a></td>
+                                                
+                                                
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <span class="flaticon-more-button-of-three-dots"></span>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-times text-orange-red"></i>Close</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                
+                                                <td>English Grammer</td>
+                                                <td>English</td>
+                                                <td><a class="material-icons text-secondary" href="#">remove_red_eye</a></td>
+                                                
+                
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <span class="flaticon-more-button-of-three-dots"></span>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-times text-orange-red"></i>Close</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                
+                                                <td>Computer Science</td>
+                                                <td>Science</td>
+                                                <td><a class="material-icons text-secondary" href="#">remove_red_eye</a></td>
+                                                
+                
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <span class="flaticon-more-button-of-three-dots"></span>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-times text-orange-red"></i>Close</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                
+                                                <td>English Grammer</td>
+                                                <td>English</td>
+                                                <td><a class="material-icons text-secondary" href="#">remove_red_eye</a></td>
+                                                
+                
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <span class="flaticon-more-button-of-three-dots"></span>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-times text-orange-red"></i>Close</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                
+                                                <td>Expert Mathmetic</td>
+                                                <td>Math</td>
+                                                <td><a class="material-icons text-secondary" href="#">remove_red_eye</a></td>
+                                                
+                
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <span class="flaticon-more-button-of-three-dots"></span>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-times text-orange-red"></i>Close</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                
+                                                <td>Bangla Grammer</td>
+                                                <td>Bangla</td>
+                                                <td><a class="material-icons text-secondary" href="#">remove_red_eye</a></td>
+                                                
+                                                
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <span class="flaticon-more-button-of-three-dots"></span>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-times text-orange-red"></i>Close</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                
+                                                <td>English Grammer</td>
+                                                <td>English</td>
+                                                <td><a class="material-icons text-secondary" href="#">remove_red_eye</a></td>
+                                                
+                
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <span class="flaticon-more-button-of-three-dots"></span>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-times text-orange-red"></i>Close</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                            <a class="dropdown-item" href="#"><i
+                                                                    class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                          
+                                        </tbody>
+                                    </table>
+                                    <div class="card-body">
+                                        <div class="pagination-light float-right">
+                                            <ul class="pagination m-0">
+                
+                
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true" class="material-icons">chevron_left</span>
+                                                        <span>Prev</span>
+                                                    </a>
+                                                </li>
+                
+                
+                                                <li class="page-item active">
+                                                    <a class="page-link" href="#" aria-label="1">
+                                                        <span>1</span>
+                                                    </a>
+                                                </li>
+                
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="2">
+                                                        <span>2</span>
+                                                    </a>
+                                                </li>
+                
+                
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span>Next</span>
+                                                        <span aria-hidden="true" class="material-icons">chevron_right</span>
+                                                    </a>
+                                                </li>
+                
+                
+                                            </ul>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -49,4 +348,6 @@
 </div>
 
 
+
+<script src="{% static 'teacher/js/jquery.dataTables.min.js' %} "></script>
 {% endblock %}

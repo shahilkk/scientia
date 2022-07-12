@@ -1,0 +1,72 @@
+{% extends 'parent/partials/base.html' %}
+{% load static %}
+{% block content %}
+<div class="ms-content-wrapper">
+  <div class="row">
+    <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb pl-0">
+                <li class="breadcrumb-item"><a href="#"><i class="material-icons">home</i> Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Courses</li>
+               
+            </ol>
+        </nav>
+    </div>
+</div>
+  <!-- category card -->
+<div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6">
+    <a href="{% url 'parent:course' %}">
+    <div class="ms-card card-gradient-primary category">
+      <div class="ms-card-body">
+        <h1 class="category-name">Lower Primary</h1>
+      </div>
+    </div>
+  </a>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6">
+    <a href="">
+    <div class="ms-card card-gradient-primary category">
+      <div class="ms-card-body">
+        <h1 class="category-name">Upper Primary</h1>
+      </div>
+    </div>
+  </a>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6">
+    <a href="">
+    <div class="ms-card card-gradient-primary category">
+      <div class="ms-card-body">
+        <h1 class="category-name">High School</h1>
+      </div>
+    </div>
+  </a>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6">
+    <a href="">
+    <div class="ms-card card-gradient-primary category">
+      <div class="ms-card-body">
+        <h1 class="category-name">Higher Secondary</h1>
+      </div>
+    </div>
+  </a>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6">
+    <a href="">
+    <div class="ms-card card-gradient-primary category">
+      <div class="ms-card-body">
+        <h1 class="category-name">Crash Course</h1>
+      </div>
+    </div>
+  </a>
+  </div>
+
+</div>
+
+</div>
+
+{% endblock %}

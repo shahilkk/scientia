@@ -2693,11 +2693,13 @@ input:checked + .ms-switch-slider.ms-switch-dark{
 /*  background-image: linear-gradient(to right, #926afe, #bd9aff);*/
 }
 .ms-card.card-gradient-success{
-  background-color: #B2EBF2;
+  /* background-color: #B2EBF2; */
+  background-image: linear-gradient(to right, #12b252, #00838f);
 /*  background-image: linear-gradient(to right, #12b252, #31e97a);*/
 }
 .ms-card.card-gradient-warning{
-  background-color: #B2EBF2;
+  /* background-color: #B2EBF2; */
+  background-image: linear-gradient(to right, #12b252, #00838f);
 /*  background-image: linear-gradient(to right, #fea837, #fed257);*/
 }
 .ms-card.card-gradient-danger{
@@ -3306,6 +3308,9 @@ a .badge[class*='badge-outline-']{
 /* Pagination */
 .pagination.has-gap .page-item .page-link{
   margin-right: 0.425rem;
+}
+.pagination{
+  padding-left: 301px;
 }
 .page-item:not(.active) .page-link,
 .page-item:not(.active-circle) .page-link,
@@ -4596,8 +4601,21 @@ table.dataTable thead .sorting_desc_disabled:after{
 
 .dataTables_filter label input{
   border-radius: 25px;
-  padding: 11px 14px;
+  margin-inline: auto;
+  margin-left: 100px;
+  padding: 20px ;
 }
+/* 
+@media only screen and (max-width: 786px) {
+  .dataTables_filter label input{
+    border-radius: 25px;
+    margin-inline: auto;
+    margin-left: 100px;
+    padding: 20px ;
+    
+  }
+} */
+
 
 /* Maps */
 .map-container{
@@ -6853,8 +6871,9 @@ body:not(.ms-settings-open) .ms-settings-toggle:hover{
 }
 
 .ms-card{
-  background-color: #00838f1c;
+  background-color: #ffffff;
   padding: 13px;
+  border-color: mintcream;
 }
 
 /* profile page */
@@ -6867,4 +6886,32 @@ body:not(.ms-settings-open) .ms-settings-toggle:hover{
   background-color: black;
   padding: inherit;
   border-radius: 20px;
+}
+/* add Student */
+
+.addstudent{
+  color: #00838F;
+}
+
+.sub-heading{
+  text-align: center;
+  font-size: large;
+  font-family: inherit;
+  color: #00838f;
+}
+.category{
+  height: 126px;
+  color: white;
+}
+.ms-card-body{
+  color: white;
+}
+
+thead{
+  background-color: #00838f;
+  color: white;
+}
+
+.category-name{
+  color:white
 }

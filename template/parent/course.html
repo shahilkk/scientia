@@ -1,0 +1,75 @@
+{% extends 'parent/partials/base.html' %}
+{% load static %}
+{% block content %}
+<div class="ms-content-wrapper"> 
+<div class="row">
+
+  <div class="col-md-12">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb pl-0">
+        <li class="breadcrumb-item"><a href="#"><i class="material-icons">home</i> Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Category</li>
+          <li class="breadcrumb-item active" aria-current="page">Courses</li>
+      </ol>
+    </nav>
+  </div>
+
+    <div class="col-md-12">
+        <h2 class="section-title">Catagories</h2>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="ms-card">
+          <div class="ms-card-img">
+            <img src="{% static 'parent/img/courses/ruby-course.jpg' %}" alt="card_img">
+          </div>
+          <div class="ms-card-body">
+            <h6>Catagory Name</h6>
+            <p>Course Name</p>
+            <a href="{% url 'parent:aboutcourse' %}" class="btn btn-warning btn-block">Learn More</a>
+            <a href="{% url 'parent:addstudent' %}" class="btn btn-outline-warning btn-block">Purchase</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="ms-card">
+          <div class="ms-card-img">
+            <img src="{% static 'parent/img/courses/node-course.jpg' %}" alt="card_img">
+          </div>
+          <div class="ms-card-body">
+            <h6>Catagory Name</h6>
+            <p>Course Name</p>
+            <a href="#" class="btn btn-warning btn-block">Learn More</a>
+            <a href="#" class="btn btn-outline-warning btn-block">Purchase</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="ms-card">
+          <div class="ms-card-img">
+            <img src="{% static 'parent/img/courses/net-course.jpg' %}" alt="card_img">
+          </div>
+          <div class="ms-card-body">
+            <h6>Catagory Name</h6>
+            <p>Course Name</p>
+            <a href="#" class="btn btn-warning btn-block">Learn More</a>
+            <a href="#" class="btn btn-outline-warning btn-block">Purchase</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="ms-card">
+          <div class="ms-card-img">
+            <img src="{% static 'parent/img/courses/java-course.jpg' %}" alt="card_img">
+          </div>
+          <div class="ms-card-body">
+            <h6>Catagory Name</h6>
+            <p>Course Name</p>
+            <a href="#" class="btn btn-warning btn-block">Learn More</a>
+            <a href="#" class="btn btn-outline-warning btn-block">Purchase</a>
+          </div>
+        </div>
+      </div>
+</div>
+
+</div>
+{% endblock %}
