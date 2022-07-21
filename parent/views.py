@@ -39,3 +39,6 @@ def teacher(request):
 
 def studentDetails(request):
     return render(request,"parent/student/studentdetails.html")
+
+def editprofile(request):
+    return render(request,"parent/editprofile.html")
