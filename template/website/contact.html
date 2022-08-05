@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends 'website/partials/base.html' %}
 {% load static %}
 {% block content %}
@@ -61,4 +62,68 @@
 
 
 
+=======
+{% extends 'website/partials/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="space-top-short space-bottom-short-sm">
+    <div class="form-style">
+        <div class="container inner-wrap max-md">
+            <div class="full-form-wrap">
+                <div class="title-main align-center">
+                    <h4 class="primary"><span>Say Hello to Us</span></h4>
+                    <p class="desc use-text-subtitle2">Vestibulum faucibus eget erat eget pretium.
+                        Donec commodo convallis eget suscipit orci. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.</p>
+                </div>
+                <div class="form">
+                    <form id="contact_form">
+                        <div class="row spacing6">
+                            <div class="col-sm-6 px-6">
+                                <div class="input-field dark primary"><input class="validate" id="name" type="text"
+                                        required> <label for="name">What is
+                                        your name? *</label></div>
+                            </div>
+                            <div class="col-sm-6 px-6">
+                                <div class="input-field dark primary"><input class="validate" id="email" type="email"
+                                        required> <label for="email">What is
+                                        your email? *</label></div>
+                            </div>
+                            <div class="col-sm-6 px-6">
+                                <div class="input-field dark primary"><input id="phone" type="tel">
+                                    <label for="phone">What is your phone number?</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 px-6">
+                                <div class="input-field dark primary"><input id="company" type="text"> <label
+                                        for="company">Where is your place?</label></div>
+                            </div>
+                            <div class="col-sm-12 px-6">
+                                <div class="input-field dark primary"><textarea class="materialize-textarea"
+                                        id="message" rows="6"></textarea> <label for="message">Write your message
+                                        here</label></div>
+                            </div>
+                        </div>
+                        <div class="btn-area flex">
+                            <div class="form-control-label"><label><input class="filled-in primary" type="checkbox"
+                                        required><span>I have read and accept the
+                                        Terms of</span></label><br><a href="#">Service &amp; Privacy
+                                    Policy *</a></div>
+                            <div class="my-8 my-sm-0"><button class="btn btn-large waves-effect primary"
+                                    type="submit">Send
+                                    Message</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+>>>>>>> 12ad07180b029b0e5f575dbfcfd07ac81857ab1d
 {% endblock %}

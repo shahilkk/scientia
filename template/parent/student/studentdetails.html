@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     {% extends 'parent/partials/base.html' %}
     {% load static %}
     {% block content %}
@@ -247,4 +248,102 @@ lectus sem nulla eu. Maecenas arcu, nec ridiculus quisque orci, vulputate mattis
             
         </div>
     
+=======
+    {% extends 'parent/partials/base.html' %}
+    {% load static %}
+    {% block content %}
+    <!-- Body Content Wrapper -->
+    <div class="ms-content-wrapper">
+      <div class="row">
+
+        <div class="col-md-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb pl-0">
+              <li class="breadcrumb-item"><a href="#"><i class="material-icons">home</i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Student Details</li>
+                 
+            </ol>
+          </nav>
+        </div>
+        </div>
+        <div class="row">
+         <div class="col-xl-4 col-md-12">
+          <div class="ms-card">
+            <div class="ms-card-img">
+              <img src="{% static 'parent/img/profile/topper-2.jpg' %}" alt="card_img" class="w-100">
+            </div>
+            <div class="ms-card-body">
+               <center> <h1> Pro. Charlotte Deo</h1>
+                <p class="text-dark">9th Statnderd
+                <br>Roll Number: 101
+                   </p>
+                    <i class="fa fa-graduation-cap"></i><b class="ml-2">Course</b>:(course name)
+                    <i class="fas fa-star"></i><b class="ml-2">Roll Number</b>: (student roll number)
+                    
+                  </center>
+               
+            </div>
+          </div>
+        </div>
+          
+           <div class="col-xl-8 col-md-12">
+                 
+          <div class="ms-panel height-93">
+            <div class="ms-panel-header">
+              <h6>Report</h6>
+            </div>
+            <div class="">
+              <div class="ms-panel">
+                <div class="ms-panel-header">
+                  <div class=" d-flex justify-content-between">
+                    <div class="ms-header-text">
+                      <h1>Daily Assessment Report</h1>
+                      <p>Track your childs Daily Report</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="ms-panel-body p-0">
+                  <div class="table-responsive">
+                    <table class="table table-bordered mb-0">
+                      <thead class="daiilymark">
+                        <tr>
+                          <th scope="col">Date</th>
+                          <th scope="col" >Subject</th>
+                          <th scope="col" >Mark Scored</th>
+                          <th scope="col">Tottal Mark</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="markdata">
+                          <td>05/10/2022</td>
+                          <td>English</td>
+                          <td class="mark">60</td>
+                          <td>100</td>
+                        </tr>
+                       
+                        
+                        
+                       
+                   
+                     
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            
+          </div>
+          
+      </div>
+        </div>
+         
+            
+            
+            
+        </div>
+    
+>>>>>>> 12ad07180b029b0e5f575dbfcfd07ac81857ab1d
     {% endblock %}

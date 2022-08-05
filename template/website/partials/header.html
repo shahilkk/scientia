@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% load static %}
 <div class="sidenav mobile-nav" id="slide_menu">
         <div class="side-multilv">
@@ -121,4 +122,129 @@
                      
                 </div>
         </div>
+=======
+{% load static %}
+<div class="sidenav mobile-nav" id="slide_menu">
+        <div class="side-multilv">
+                <div class="collection side-multilv">
+                        <ul class="collapsible expandable">
+                                <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
+                                                href="{% url 'website:index' %}">home</a></li>
+                                <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
+                                                href="{% url 'website:index' %}">Popular Course</a></li>
+
+                                <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
+                                                href="{% url 'website:contact' %}">Contact Us</a></li>
+
+                        </ul>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="collection">
+                        <ul>
+                                <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
+                                                href="l{% url 'website:login' %}">Login</a></li>
+                                <li class="collection-item"><a class="sidenav-close waves-effect menu-list"
+                                                href="{% url 'website:register' %}">register</a></li>
+                        </ul>
+                </div>
+        </div>
+</div>
+<header class="app-bar header" id="header">
+        <div class="container">
+                <div class="header-content">
+                        <nav class="nav-menu"><button
+                                        class="btn-icon waves-effect sidenav-trigger hamburger hamburger--spin show-md-down"
+                                        id="mobile_menu" type="button" data-target="slide_menu"><span
+                                                class="hamburger-box"><span
+                                                        class="bar hamburger-inner"></span></span></button>
+                                <div class="logo"><a href="{% url 'website:index' %}"><span
+                                                        class="logo-main landscape medium"><img
+                                                                src="{% static 'website/images/logo-education.png' %}"
+                                                                alt="logo">Scientia</span></a>
+                                </div>
+                                <div class="scrollactive-nav scrollnav show-lg-up multi-menu">
+
+                                        <ul class="main-menu">
+                                                <li><a class="btn btn-flat anchor-link waves-effect"
+                                                                href="{% url 'website:index' %}">Home</a>
+                                                </li>
+                                                <li><a class="btn btn-flat anchor-link waves-effect"
+                                                                href="{% url 'website:course' %}">popular
+                                                                course</a></li>
+
+                                                <li><a class="btn btn-flat anchor-link waves-effect"
+                                                                href="{% url 'website:contact' %}">Contact
+                                                                Us</a>
+                                                </li>
+
+                                        </ul>
+                                </div>
+                                <nav class="user-menu"><a class="btn btn-flat waves-effect show-sm-up"
+                                                href="{% url 'website:login' %}">Login</a>
+                                        <a class="btn waves-effect primary show-sm-up"
+                                                href="{% url 'website:register' %}">register</a>
+                                        <span class="spacer vertical-divider show-lg-up"></span>
+                                        <div class="menu-setting">
+                                                <div class="setting"><button
+                                                                class="btn btn-icon waves-effect btn-small dropdown-trigger ma-1"
+                                                                data-target="dropdown_config" data-align="left"
+                                                                type="button"><i class="icon material-icons"
+                                                                        id="setting_icon">settings</i></button>
+                                                        <div class="dropdown-content setting" id="dropdown_config">
+                                                                <ul class="collection with-header">
+                                                                        <li class="collection-header">
+                                                                                theme
+                                                                                mode
+                                                                        </li>
+                                                                        <li class="collection-item no-hover pl-4">
+                                                                                <div class="flex-menu">
+                                                                                        <div class="switch">
+                                                                                                <label>light
+                                                                                                        <input id="theme_switcher"
+                                                                                                                type="checkbox"><span
+                                                                                                                class="lever"></span>
+                                                                                                        dark</label>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </li>
+                                                                </ul>
+                                                                <div class="dropdown-divider">
+                                                                </div>
+                                                                <ul class="collection with-header lang-menu"
+                                                                        id="lang_menu">
+                                                                        <li class="collection-header">
+                                                                                language
+                                                                        </li>
+                                                                        <li class="collection-item lang-list waves-effect avatar">
+                                                                                <a data-lang="ar" href="#">
+                                                                                        <div class="flag circle">
+                                                                                                <i class="ar"></i>
+                                                                                        </div>
+                                                                                        <span
+                                                                                                class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿العربيّة</span>
+                                                                                </a>
+                                                                        </li>
+                                                                       
+                                                                        <li class="collection-item lang-list waves-effect avatar">
+                                                                                <a data-lang="en" href="#">
+                                                                                        <div class="flag circle">
+                                                                                                <i class="en"></i>
+                                                                                        </div>
+                                                                                        <span
+                                                                                                class="content lang-opt text-truncate">English</span>
+                                                                                </a>
+                                                                        </li>
+                                                                        
+                                                                        
+                                                                        
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </nav>
+                        </nav>
+                     
+                </div>
+        </div>
+>>>>>>> 12ad07180b029b0e5f575dbfcfd07ac81857ab1d
 </header>
