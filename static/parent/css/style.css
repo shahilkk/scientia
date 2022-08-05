@@ -2933,8 +2933,8 @@ input:checked + .ms-switch-slider.ms-switch-dark{
 }
 .btn-primary{
   color: #fff;
-  background-color: #fbb022;
-  border-color: #fbb022;
+  background-color: #00828e;
+  border-color: #00828e;
 }
 .btn-white{
   font-weight: 500;
@@ -3125,6 +3125,7 @@ input:checked + .ms-switch-slider.ms-switch-dark{
 .btn-gradient-primary{
   background-color: #0ab1e8;
   background-image: linear-gradient(to right, #0ab1e8, #28f39a);
+  color: black;
 }
 .btn-gradient-secondary{
   background-color: #926afe;
@@ -3953,7 +3954,7 @@ border: 0;
 }
 .nav-tabs li a.active{
   color: #fff;
-  background-color: #fbb022;
+  background-color: #00838f;
 }
 .nav-tabs.tabs-bordered li a{
   -webkit-transition: 0s;
@@ -6913,5 +6914,37 @@ thead{
 }
 
 .category-name{
-  color:white
+  color: #1d1d1d;
+}
+.custom-control-label::before, .custom-file-label, .custom-select {
+  transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  background: azure !important;
+}
+
+.dataTables_length label{
+  display: none !important;
+}
+
+.form-control-sm{
+  height: calc(-39.1875rem + 2px);
+  padding: 0.25rem 0.5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  position: inheritfixed;
+  z-index: 9;
+  left: -102px;
+  display: block;
+  position: relative;
+}
+
+
+.daiilymark{
+  background-color: #481172;
+}
+.markdata{
+  font-weight: bolder;
+}
+.mark{
+  color: red;
 }
