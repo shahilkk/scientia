@@ -1,0 +1,110 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="container-fluid">
+
+    <div class="row page-titles">
+        <ol class="breadcrumb">
+            <li class=" active"><a href="{% url 'admins:home' %}">Dashboard /</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0)"> Add Category </a></li>
+        </ol>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">ADD CATEGORY</h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-validation">
+                        <form class="needs-validation" novalidate >
+                            <div class="row">
+
+                                <div class="col-xl-12">
+
+                                    <div class="mb-3 row">
+                                        <label class="col-lg-12 col-form-label" for="category">Category
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="col-lg-12">
+                                            <input type="text" class="form-control" id="category"  placeholder="Enter  Categoryname..." required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-lg-12 ms-auto text-center">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-10 col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="thead-info">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Category Name</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td>Mark</td>
+                                    <td>22/02/2022</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <a href="#" class="btn btn-success shadow btn-s sharp me-1 badge  light badge-success"><i
+                                                    class="fa fa-edit"></i></a>        
+                                            <a href="#" class="btn btn-danger shadow btn-s sharp badge  light badge-danger"><i
+                                                    class="fa fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <td>Jacob</td>
+                                    <td>31/08/2023</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <a href="#" class="btn btn-success shadow btn-s sharp me-1 badge  light badge-success"><i
+                                                    class="fa fa-edit"></i></a>        
+                                            <a href="#" class="btn btn-danger shadow btn-s sharp badge  light badge-danger"><i
+                                                    class="fa fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-1"></div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}

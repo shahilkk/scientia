@@ -7,11 +7,17 @@ def index(request):
 
 
 # courses and related
+def add_category(request):
+    return render(request,'admin/add_category.html')
+
 def add_course(request):
     return render(request,'admin/add_course.html')
 
 def courses(request):
     return render(request,'admin/courses.html')
+
+def course_by_category(request):
+    return render(request,'admin/categorywise_course.html')
 
 def course_details(request):
     return render(request,'admin/course_details.html')

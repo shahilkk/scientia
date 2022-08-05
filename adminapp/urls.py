@@ -7,8 +7,10 @@ urlpatterns = [
     path('',views.index,name='home'),
 
     # course
+    path('addcategory',views.add_category,name='addcategory'),
     path('addcourse',views.add_course,name='addcourse'),
     path('courses',views.courses,name='courses'),
+    path('categorywisecourse',views.course_by_category,name='categorywisecourse'),
     path('coursedetails',views.course_details,name='coursedetails'),
     path('crashcourse',views.crash_course,name='crashcourse'),
 

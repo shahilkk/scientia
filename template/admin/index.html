@@ -2,6 +2,10 @@
 {% load static %}
 {% block content %}
 
+
+<link rel="stylesheet" href="{%  static 'adminapp/vendor/chartist/css/chartist.min.css' %}">
+
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-xl-6 col-xxl-12">
@@ -78,13 +82,15 @@
                         </div>
                     </div>
                 </div>
+                
+
                 <div class="col-xl-6 col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Simple line chart</h4>
+                            <h4 class="card-title">Pie chart with custom labels</h4>
                         </div>
                         <div class="card-body">
-                            <div id="simple-line-chart" class="ct-chart ct-golden-section chartlist-chart" ></div>
+                            <div id="pie-chart" class="ct-chart ct-golden-section chartlist-chart"></div>
                         </div>
                     </div>
                 </div>
@@ -118,35 +124,23 @@
 </div>
 
 
+{% block js %}
 <!-- Required vendors -->
-<script src="{% static 'admin/vendor/global/global.min.js' %}"></script>
-<script src="{% static 'admin/vendor/chart.js/Chart.bundle.min.js' %}"></script>
-<script src="{% static 'admin/vendor/jquery-nice-select/js/jquery.nice-select.min.js' %}"></script>
-
-<!-- Apex Chart -->
-
-<script src="{% static 'admin/vendor/bootstrap-datetimepicker/js/moment.js' %}"></script>
-<script src="{% static 'admin/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js' %}' %}"></script>
-
-<!-- Dashboard 1 -->
-<script src="{% static 'admin/js/dashboard/dashboard-1.js' %}"></script>
-
-<script src="{% static 'admin/js/dlabnav-init.js' %}"></script>
-<script src="{% static 'admin/js/demo.js' %}"></script>
-<script src="{% static 'admin/js/styleSwitcher.js' %}"></script>
-<script>
-    $(function () {
-        $('#datetimepicker').datetimepicker({
-            inline: true,
-        });
-    });
+    <script src="{% static 'adminapp/vendor/global/global.min.js' %}"></script>
+    <script src="{% static 'adminapp/vendor/chart.js' %}/Chart.bundle.min.js' %}"></script>
+	<!-- Apex Chart -->
+	<script src="{% static 'adminapp/vendor/apexchart/apexchart.js' %}"></script>
     
-    $(document).ready(function(){
-        $(".booking-calender .fa.fa-clock-o").removeClass(this);
-        $(".booking-calender .fa.fa-clock-o").addClass('fa-clock');
-    });
-    
-    
-</script>
+    <!-- Chart Chartist plugin files -->
+    <script src="{% static 'adminapp/vendor/chartist/js/chartist.min.js' %}"></script>
+    <script src="{% static 'adminapp/vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js' %}"></script>
+	<script src="{% static 'adminapp/vendor/jquery-nice-select/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'adminapp/js/plugins-init/chartist-init.js' %}"></script>
+
+	<script src="{% static 'adminapp/js/custom.js' %}"></script>
+	<script src="{% static 'adminapp/js/dlabnav-init.js' %}"></script>
+	<script src="{% static 'adminapp/js/demo.js' %}"></script>
+    <script src="{% static 'adminapp/js/styleSwitcher.js' %}"></script>
+{% endblock %}
 
 {% endblock %}
