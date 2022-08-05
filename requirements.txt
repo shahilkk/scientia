@@ -1,6 +1,15 @@
+<<<<<<< HEAD
+asgiref==3.5.2
+Django==4.0.5
+Pillow==9.1.1
+python-decouple==3.6
+sqlparse==0.4.2
+tzdata==2022.1
+=======
 asgiref==3.5.2
 Django==4.0.5
 Pillow==9.1.1
 python-decouple
 sqlparse==0.4.2
 tzdata==2022.1
+>>>>>>> 12ad07180b029b0e5f575dbfcfd07ac81857ab1d

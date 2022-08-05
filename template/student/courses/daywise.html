@@ -1,3 +1,361 @@
+
+{% extends 'student/partials/base.html' %}
+{% load static %}
+{% block content %}
+<!-- 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"> -->
+
+<style>
+   * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container{
+
+     margin-top:150px;
+}
+
+body {
+  background: #000;
+  font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+}
+
+ul { list-style-type: none; }
+
+a {
+  color: #b63b4d;
+  text-decoration: none;
+}
+
+
+.accordion {
+      width: 100%;
+    max-width: 384px;
+    margin: 30px auto 20px;
+    background: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 0px;
+}
+
+.accordion .link {
+  cursor: pointer;
+  display: block;
+  padding: 15px 15px 15px 42px;
+  color: #4D4D4D;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid #CCC;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link { border-bottom: 0; }
+
+.accordion li i {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  font-size: 18px;
+  color: #595959;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 16px;
+}
+
+.accordion li.open .link {     color: #AA00FF; }
+
+.accordion li.open i { color: #AA00FF;}
+
+.accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+.submenu {
+  display: none;
+  background: #444359;
+  font-size: 14px;
+}
+
+.submenu li { border-bottom: 1px solid #4b4a5e; }
+
+.submenu a {
+  display: block; 
+  text-decoration: none;
+  color: #d9d9d9;
+  padding: 12px;
+  padding-left: 42px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.submenu a:hover {
+  background: #b63b4d;
+  color: #FFF;
+}
+</style>
+
+<div class="container-fluid page__heading-container">
+    <div
+        class="page__heading d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-lg-between text-center text-lg-left">
+        <div>
+            <h1 class="m-lg-0">Getting Started with this Course</h1>
+            <div class="d-inline-flex align-items-center">
+                <i class="material-icons icon-16pt mr-1 text-muted">access_time</i> 2 <small
+                    class="text-muted ml-1 mr-1">hours</small>: 26 <small class="text-muted ml-1">min</small>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="container-fluid page__container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                        src="https://player.vimeo.com/video/97243285?title=0&amp;byline=0&amp;portrait=0"
+                        allowfullscreen=""></iframe>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="media align-items-center">
+                        <div class="media-left">
+                            <img src="{% static 'student/images/256_luke-porter-261779-unsplash.jpg' %}"
+                                alt="About Adrian" width="40" class="rounded-circle">
+                        </div>
+                        <div class="media-body">
+                            <div class="card-title mb-0"><a href="student-profile.html" class="text-body"><strong>Adrian
+                                        Demian</strong></a></div>
+                            <p class="text-muted mb-0">Instructor</p>
+                        </div>
+                        <div class="media-right">
+                            <a href="#" class="btn btn-whatsapp btn-sm"><i class="fab fa-whatsapp"></i></a>
+                            <!-- <a href="#" class="btn btn-twitter btn-sm"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-light btn-sm"><i class="fab fa-github"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    Having over 12 years exp. Adrian is one of the lead UI designers in the industry Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Facere, aut.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header card-header-large bg-light d-flex align-items-center">
+                    <div class="flex">
+                        <h4 class="card-header__title">Course Description</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta eius enim inventoreus optio
+                        ratione veritatis. Beatae deserunt illum ipsam magniima mollitia officiis quia tempora!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta eius enim inventoreus optio
+                        ratione veritatis. Beatae deserunt illum ipsam magniima mollitia officiis quia tempora!</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+
+            <!-- Lessons -->
+            <div class="card">
+                <div class="card-header card-header-large bg-light d-flex align-items-center">
+                    <div class="flex">
+                        <h4 class="card-header__title">Course Lessons</h4>
+                    </div>
+                </div>
+
+
+                <ul id="accordion" class="accordion">
+                    <li>
+                        <div class="link"><i class="fa fa-laptop"></i>Laptops<i class="fa fa-chevron-down"></i></div>
+                        <ul class="submenu">
+                            <li><a href="#">Dell Acron</a></li>
+                            <li><a href="#">HP Envy</a></li>
+                            <li><a href="#">Macbook Air</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="link"><i class="fa fa-tv"></i>Smart TV<i class="fa fa-chevron-down"></i></div>
+                        <ul class="submenu">
+                            <li><a href="#">Sony Bravia</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">MI</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="link"><i class="fa fa-mobile"></i>Mobiles<i class="fa fa-chevron-down"></i></div>
+                        <ul class="submenu">
+                            <li><a href="#">Samsung S9</a></li>
+                            <li><a href="#">Apple X</a></li>
+                            <li><a href="#">Honor Play</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="link"><i class="fa fa-globe"></i>Search Engines<i class="fa fa-chevron-down"></i>
+                        </div>
+                        <ul class="submenu">
+                            <li><a href="#">Google</a></li>
+                            <li><a href="#">Bing</a></li>
+                            <li><a href="#">Yahoo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+                <!-- <ul class="list-group list-group-fit">
+                    <li class="list-group-item">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="text-muted">1.</div>
+                            </div>
+                            <div class="media-body">
+                                <a href="#">Overview</a>
+                            </div>
+                            <div class="media-right">
+                                <small class="text-muted">3:33</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item active">
+                        <div class="media">
+                            <div class="media-left">2.</div>
+                            <div class="media-body">
+                                <a class="text-white" href="#">Asset Pipeline</a>
+                            </div>
+                            <div class="media-right">
+                                <small>18:43</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="text-muted">3.</div>
+                            </div>
+                            <div class="media-body">
+                                <a href="#">Getting Started</a>
+                                <small class="badge badge-soft-success ">FREE</small>
+                            </div>
+                            <div class="media-right">
+                                <small class="text-muted">5:21</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="text-muted">4.</div>
+                            </div>
+                            <div class="media-body">
+                                <a href="#">Advanced Workflows</a>
+                                <small class="badge badge-soft-warning ">PRO</small>
+                            </div>
+                            <div class="media-right">
+                                <small class="text-muted">5:24</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="text-muted">5.</div>
+                            </div>
+                            <div class="media-body">
+                                <a href="#">Tips & Tricks</a>
+                                <small class="badge badge-soft-warning ">PRO</small>
+                            </div>
+                            <div class="media-right">
+                                <small class="text-muted">11:38</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="text-muted">6.</div>
+                            </div>
+                            <div class="media-body">
+                                <a href="#">Final Quiz</a>
+                            </div>
+                            <div class="media-right">
+                                <small class="badge badge-soft-primary ">QUIZ</small>
+                            </div>
+                        </div>
+                    </li>
+                </ul> -->
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        var Accordion = function (el, multiple) {
+            this.el = el || {};
+            this.multiple = multiple || false;
+
+            var links = this.el.find('.link');
+
+            links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+        }
+
+        Accordion.prototype.dropdown = function (e) {
+           
+            var $el = e.data.el;
+            $this = $(this),
+                $next = $this.next();
+
+            $next.slideToggle();
+            $this.parent().toggleClass('open');
+
+            if (!e.data.multiple) {
+                $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+            };
+        }
+
+        var accordion = new Accordion($('#accordion'), false);
+    });
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+=======
 {% extends 'student/partials/base.html' %}
 {% load static %}
 {% block content %}
@@ -445,4 +803,5 @@
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
 {% endblock %}

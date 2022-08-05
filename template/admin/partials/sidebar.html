@@ -16,7 +16,7 @@
                     <li><a href="{% url 'admins:instructordashboard' %}">Staff Dashboard </a></li>                    
                     <li><a href="{% url 'admins:studentdashboard' %}">Student Dashboard </a></li>
                     <li><a href="{% url 'admins:schedule' %}">Schedule</a></li>
-                    <li><a href="{% url 'admins:profile' %}">Profile</a></li>
+                    <!-- <li><a href="{% url 'admins:profile' %}">Profile</a></li> -->
                 </ul>
 
             </li>
@@ -27,6 +27,7 @@
                     <span class="nav-text">Courses</span>
                 </a>
                 <ul aria-expanded="false">
+                    <li><a href="{% url 'admins:addcategory' %}">Add Category</a></li>
                     <li><a href="{% url 'admins:addcourse' %}">Add Courses</a></li>
                     <li><a href="{% url 'admins:courses' %}">Courses</a></li>
                     <li><a href="{% url 'admins:crashcourse' %}">Crash Course</a></li>

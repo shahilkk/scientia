@@ -3,6 +3,8 @@
 {% block content %}
 
 
+<link rel="stylesheet" href="{% static 'admin/fee/css/select2.min.css' %}">
+<link rel="stylesheet" href="{% static 'admin/fee/css/datepicker.min.css' %}">
 
 <div class="container-fluid">
 
@@ -18,6 +20,13 @@
             <div class="card">
                 <div class="card-header">
                     <h4 class="card-title">ADD COURSE</h4>
+                    <div class="col-auto">
+                        <a href="{% url 'admins:addcategory' %}" class="btn btn-primary me-1">
+                            <i class="fas fa-plus"></i>
+                            Add Category
+                        </a>
+    
+                    </div>
                 </div>
                 <div class="card-body">
                     <div class="form-validation">
@@ -25,16 +34,38 @@
                             <div class="row">
 
                                 <div class="col-xl-6">
-                                    <div class="mb-3 row">
-                                        <label class="col-lg-4 col-form-label" for="validationCourse01">Course Name
+
+                                    <div class="mb-3 row form-group">
+                                        <label  class="col-lg-4 col-form-label" for="category">Category 
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="validationCourse01"  placeholder="Enter  coursename..." required>
+                                            <select class="select2 form-control form-group" id="category">
+                                                <option value="">Select Category</option>
+                                                <option value="1">Lower primary</option>
+                                                <option value="2">Upper Primary</option>
+                                                <option value="3">Highschool</option>
+                                                <option value="3">Higher secondary</option>
+                                                <option value="3">Cra</option>
+                                            </select>
+                                            
                                         </div>
                                     </div>
 
                                     <div class="mb-3 row">
+                                        <label class="col-lg-4 col-form-label" for="validationCourseName">Course Name
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="col-lg-6">
+                                            <input type="text" class="form-control" id="validationCourseName"  placeholder="Enter  coursename..." required>
+                                            <div class="invalid-feedback">
+                                                Please Enter course name.
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- <div class="mb-3 row">
                                         <label class="col-lg-4 col-form-label" for="validationCourse01">About The Course <span
                                                 class="text-danger">*</span>
                                         </label>
@@ -44,37 +75,46 @@
                                                 Please enter course details.
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="mb-3 row">
-                                        <label class="col-lg-4 col-form-label" for="validationCourse01">Amount
+                                        <label class="col-lg-4 col-form-label" for="validationCourseAmount">Amount
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="validationCourse01" placeholder="$21.60" required>
+                                            <input type="text" class="form-control" id="validationCourseAmount" placeholder="$21.60" required>
                                             <div class="invalid-feedback">
                                                 Please enter a Amount.
                                             </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 row">
+                                        <label class="col-lg-4 col-form-label" for="validationCourseAmount">Profile
+                                           
+                                        </label>
+                                        <div class="col-lg-6">
+                                            <input type="file" class="form-control" id="validationCourseAmount" placeholder="$21.60">
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="col-xl-6">
                                     <div class="mb-3 row">
-                                        <label class="col-lg-4 col-form-label" for="validationCourse01">Course Code
+                                        <label class="col-lg-4 col-form-label" for="validationCourseCode">Course Code
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="validationCourse01"  placeholder="Enter  course..." required>
+                                            <input type="text" class="form-control" id="validationCourseCode"  placeholder="Enter  course Code..." required>
                                         </div>
                                     </div>
                                     
                                     <div class="mb-3 row">
-                                        <label class="col-lg-4 col-form-label" for="validationCourse01">Objectives of the Course <span
+                                        <label class="col-lg-4 col-form-label" for="validationCourseObjective">Objectives of the Course <span
                                                 class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
-                                            <textarea class="form-control" id="validationCourse01"  rows="5" placeholder="What would you like to see?" required></textarea>
+                                            <textarea class="form-control" id="validationCourseObjective"  rows="5" placeholder="What would you like to see?" required></textarea>
                                             <div class="invalid-feedback">
                                                 Please enter course details.
                                             </div>
@@ -98,4 +138,23 @@
 </div>
     
 
-    {% endblock %}
+{% block js %}
+<!-- Select 2 Js -->
+<script src="{% static 'admin/fee/js/jquery-3.3.1.min.js' %}"></script>
+    <!-- Plugins js -->
+    <script src="{% static 'admin/fee/js/plugins.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'admin/fee/js/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'admin/fee/js/bootstrap.min.js' %}"></script>
+    <!-- Select 2 Js -->
+    <script src="{% static 'admin/fee/js/select2.min.js' %}"></script>
+    <!-- Date Picker Js -->
+    <script src="{% static 'admin/fee/js/datepicker.min.js' %}"></script>
+    <!-- Scroll Up Js -->
+    <script src="{% static 'admin/fee/js/jquery.scrollUp.min.js' %}"></script>
+    <!-- Custom Js -->
+    <script src="{% static 'admin/fee/js/main.js' %}"></script>
+{% endblock %}
+
+{% endblock %}

@@ -1,3 +1,89 @@
+<<<<<<< HEAD
+{% load static %}
+<!-- Sidebar Navigation Left -->
+<aside id="ms-side-nav" class="side-nav fixed ms-aside-scrollable ms-aside-left">
+
+  <!-- Logo -->
+  <div class="logo-sn ms-d-block-lg">
+    <a class="pl-0 ml-0 text-center" href="{% url 'parent:index' %}">
+      <!-- <img src="{% static 'parent/img/logo/weeducate-4.png' %}"
+        alt="logo"> -->
+
+      <h1 style="color: #00838F;"> Scientia</h1>
+    </a>
+  </div>
+
+  <!-- Navigation -->
+  <ul class="accordion ms-main-aside fs-14" id="side-nav-accordion">
+    <!-- Dashboard -->
+    <li class="menu-item">
+      <a href="{% url 'parent:index' %}" class="">
+        <span><i class="material-icons fs-16">dashboard</i>Dashboard</span>
+      </a>
+
+    </li>
+    <!-- /Dashboard -->
+
+
+    <!--Student Start-->
+    <li class="menu-item">
+      <a href="{% url 'parent:addstudent' %}" >
+        <span><i class="fa fa-users fs-16"></i>Add Student</span>
+      </a>
+    </li>
+    <!-- /Student End--->
+
+    <!---------------------------Courses Start------------------------->
+
+    <li class="menu-item">
+      <a href="{% url 'parent:category' %}">
+        <span><i class="fa fa-graduation-cap fs-16"></i>Courses</span>
+      </a>
+
+    </li>
+
+    <!--------------------------- /Courses End------------------------->
+
+
+
+
+    <!--Staff Start-->
+    <li class="menu-item">
+      <a href="#">
+        <span><i class="fa fa-user-circle fs-16"></i>Teachers</span>
+      </a>
+
+    </li>
+    <!-- /Staff End--->
+
+
+
+    <!--Fees Start-->
+    <li class="menu-item">
+      <a href="{% url 'parent:fee' %}">
+        <span><i class="fas fa-dollar-sign"></i>Fee</span>
+      </a>
+
+    </li>
+    <!-- /Fees End--->
+
+
+
+
+
+    <!--Holiday Start-->
+    <li class="menu-item">
+      <a href="{% url 'parent:holiday' %}">
+        <span><i class="fa fa-calendar fs-16"></i>Holidays</span>
+      </a>
+    </li>
+    <!-- /Holiday End--->
+
+
+  </ul>
+
+
+=======
 {% load static %}
 <!-- Sidebar Navigation Left -->
 <aside id="ms-side-nav" class="side-nav fixed ms-aside-scrollable ms-aside-left">
@@ -87,4 +173,5 @@
   </ul>
 
 
+>>>>>>> 12ad07180b029b0e5f575dbfcfd07ac81857ab1d
 </aside>

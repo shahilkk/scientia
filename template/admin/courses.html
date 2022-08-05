@@ -109,27 +109,24 @@
                 <div class="card all-crs-wid">
                     <div class="card-body">
                         <div class="courses-bx">
-                            <div class="dlab-media">
-                                <img src="{% static 'admin/images/courses/course1.jpg' %}" alt="">
-                            </div>
                             <div class="dlab-info">
                                 <div class="dlab-title d-flex justify-content-between">
                                     <div>
                                         <h4><a href="{% url 'admins:coursedetails' %}">Fullstack Developer</a></h4>
-                                        <div class="star-rating"> 
+                                        <!-- <div class="star-rating"> 
                                             <span class="bi bi-star" data-rating="1"></span>
                                             <span class="bi bi-star" data-rating="2"></span>
                                             <span class="bi bi-star" data-rating="3"></span>
                                             <span class="bi bi-star" data-rating="4"></span>
                                             <span class="bi bi-star" data-rating="5"></span>
                                             <input type="hidden" name="whatever" class="rating-value" value="3">
-                                          </div>
+                                          </div> -->
                                     </div>	
-                                    <h4 class="text-primary"><span>$</span>50.99</h4>
+                                    <!-- <h4 class="text-primary"><span>$</span>50.99</h4> -->
                                 </div>
                                 <div class="d-flex justify-content-between content align-items-center">
                                     <span></span>
-                                    <a href="{% url 'admins:coursedetails' %}" class="btn btn-primary btn-sm">View all</a>
+                                    <a href="{% url 'admins:categorywisecourse' %}" class="btn btn-primary btn-sm">View all</a>
                                 </div>
                             </div>
                         </div>
@@ -203,18 +200,6 @@
             
             
             
-        </div>
-        <div class="pagination-down">
-            <div class="d-flex align-items-center justify-content-between flex-wrap">
-                <h4 class="sm-mb-0 mb-3">Showing <span>1-6 </span>from <span>100 </span>data</h4>
-                <ul>
-                    <li><a href="javascript:void(0);"><i class="fas fa-chevron-left"></i></a></li>
-                    <li><a href="javascript:void(0);" class="active">1</a></li>
-                    <li><a href="javascript:void(0);">2</a></li>
-                    <li><a href="javascript:void(0);">3</a></li>
-                    <li><a href="javascript:void(0);"><i class="fas fa-chevron-right"></i></a></li>
-                </ul>
-            </div>
         </div>
     </div>
 
